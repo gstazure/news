@@ -119,6 +119,7 @@
             display: flex;
             align-items: center;
             margin-right: 15px;
+            position: relative;
         }
         .news-details {
             flex-grow: 1;
@@ -245,9 +246,13 @@
                 a.setAttribute("id", this.id + "autocomplete-list");
                 a.setAttribute("class", "autocomplete-items");
                 this.parentNode.appendChild(a);
-                for (i = 0; i < arr.length; i++) {
-                    if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                
+                let matchCount = 0;
+                for (i = 0; i < arr.length && matchCount < 10; i++) {
+                    // Check if the topic starts with the typed value (case insensitive)
+                    if (arr[i].toUpperCase().indexOf(val.toUpperCase()) === 0) {
                         b = document.createElement("DIV");
+                        // Highlight the matching part
                         b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
                         b.innerHTML += arr[i].substr(val.length);
                         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
@@ -256,6 +261,7 @@
                             closeAllLists();
                         });
                         a.appendChild(b);
+                        matchCount++;
                     }
                 }
             });
@@ -301,6 +307,10 @@
         }
 
         const all_topics = {{ all_topics|tojson }};
+        console.log('all_topics type:', typeof all_topics);
+        console.log('all_topics length:', all_topics.length);
+        console.log('first few topics:', all_topics.slice(0, 5));
+        
         const topicInputs = document.querySelectorAll('.topic-input');
         topicInputs.forEach(input => {
             autocomplete(input, all_topics);

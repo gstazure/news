@@ -1,0 +1,527 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 127,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "7ed42be9-8e66-4b5d-ac3a-56edb23ce69d",
+      "title": "Q1 2026 Axis Bank Ltd Earnings Call Transcript",
+      "description": "Jul 17, 2025 / 12:50PM GMTOperator Ladies and gentlemen, good day, and welcome to the Axis Bank conference call to discuss the bank's financial results for the",
+      "keywords": "GuruFocus, Article, News, GuruFocus News, FRA:UZC",
+      "snippet": "Jul 17, 2025 / 12:50PM GMT\n\nOperator\n\n\n\nLadies and gentlemen, good day, and welcome to the Axis Bank conference call to discuss the bank's financial results for...",
+      "url": "https://www.gurufocus.com/news/2986691/q1-2026-axis-bank-ltd-earnings-call-transcript",
+      "image_url": "https://static.gurufocus.com/images/global_logo_twitter_card.png",
+      "language": "en",
+      "published_at": "2025-07-18T05:02:33.000000Z",
+      "source": "gurufocus.com",
+      "relevance_score": 39.497543,
+      "entities": [
+        {
+          "symbol": "AXISBANK-BL.NS",
+          "name": "AXIS BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 106.36894,
+          "sentiment_score": 0.35858,
+          "highlights": [
+            {
+              "highlight": "Jul 17, 2025 / 12:50PM GMT\n\nOperator\n\n\n\n[+231 characters]",
+              "sentiment": 0.7096,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Axis</em> <em>Bank</em> reserves the[+270 characters]",
+              "sentiment": 0.0516,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "On behalf of <em>Axis</em> <em>Bank</em>[+293 characters]",
+              "sentiment": 0.6705,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Amitabh Chaudhry - <em>Axis</em> <em>Ban[+157 characters]",
+              "sentiment": 0.3612,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Q1 2026 <em>Axis</em> <em>Bank</em> Ltd Earnings Call Transcript",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": [
+        {
+          "uuid": "7ed42be9-8e66-4b5d-ac3a-56edb23ce69d",
+          "title": "Q1 2026 Axis Bank Ltd Earnings Call Transcript",
+          "description": "Jul 17, 2025 / 12:50PM GMTOperator Ladies and gentlemen, good day, and welcome to the Axis Bank conference call to discuss the bank's financial results for the",
+          "keywords": "GuruFocus, Article, News, GuruFocus News, FRA:UZC",
+          "snippet": "Jul 17, 2025 / 12:50PM GMT\n\nOperator\n\n\n\nLadies and gentlemen, good day, and welcome to the Axis Bank conference call to discuss the bank's financial results for...",
+          "url": "https://www.gurufocus.com/news/2986691/q1-2026-axis-bank-ltd-earnings-call-transcript",
+          "image_url": "https://static.gurufocus.com/images/global_logo_twitter_card.png",
+          "language": "en",
+          "published_at": "2025-07-18T05:02:33.000000Z",
+          "source": "gurufocus.com",
+          "relevance_score": 39.497543,
+          "entities": [
+            {
+              "symbol": "AXISBANK-BL.NS",
+              "name": "AXIS BANK",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 106.36894,
+              "sentiment_score": 0.35858,
+              "highlights": [
+                {
+                  "highlight": "Jul 17, 2025 / 12:50PM GMT\n\nOperator\n\n\n\n[+231 characters]",
+                  "sentiment": 0.7096,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "<em>Axis</em> <em>Bank</em> reserves the[+270 characters]",
+                  "sentiment": 0.0516,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "On behalf of <em>Axis</em> <em>Bank</em>[+293 characters]",
+                  "sentiment": 0.6705,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "Amitabh Chaudhry - <em>Axis</em> <em>Ban[+157 characters]",
+                  "sentiment": 0.3612,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "Q1 2026 <em>Axis</em> <em>Bank</em> Ltd Earnings Call Transcript",
+                  "sentiment": 0,
+                  "highlighted_in": "title"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "17f0fad6-af03-435b-b3dd-a108812eb7e2",
+          "title": "Axis Bank shares tumble over 7% on weak Q1FY26 earnings, brokerages divergent",
+          "description": "Axis Bank: Brokerages flag credit cost surge and margin pressure, revise target prices. Nuvama downgrades to hold",
+          "keywords": "Axis Bank, Axis Bank shares, Axis Bank Q1 results",
+          "snippet": "Axis Bank shares tanked over 7 per cent in early trade on Friday following a disappointing Q1 show. Analysts took divergent calls, flagging higher credit costs ...",
+          "url": "https://www.thehindubusinessline.com/markets/stock-markets/axis-bank-tumbles-over-7-on-weak-q1fy26-earnings-brokerages-divergent/article69826216.ece",
+          "image_url": "https://bl-i.thgim.com/public/incoming/umcbhp/article69826217.ece/alternates/LANDSCAPE_1200/IMG_FILE_PHOTO__A_person_2_1_C1DRV8TD.jpg",
+          "language": "en",
+          "published_at": "2025-07-18T04:51:52.000000Z",
+          "source": "thehindubusinessline.com",
+          "relevance_score": 39.497543,
+          "entities": [
+            {
+              "symbol": "AXISBANK.BO",
+              "name": "Axis Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 53.48722,
+              "sentiment_score": 0.1101,
+              "highlights": [
+                {
+                  "highlight": "<em>Axis</em> <em>Bank</em> shares tanke[+321 characters]",
+                  "sentiment": -0.1779,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "Also read\n\nHDFC Securities emphasised th[+264 characters]",
+                  "sentiment": 0.3818,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "More Like This\n\nPublished on July 18, 20[+55 characters]",
+                  "sentiment": 0.4144,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "<em>Axis</em> <em>Bank</em> shares tumble over 7% on weak Q1FY26 earnings, brokerages divergent",
+                  "sentiment": -0.1779,
+                  "highlighted_in": "title"
+                }
+              ]
+            },
+            {
+              "symbol": "JMFINANCIL.BO",
+              "name": "JM Financial Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 20.423351,
+              "sentiment_score": 0.5859,
+              "highlights": [
+                {
+                  "highlight": "<em>JM</em> <em>Financial</em> analysts [+279 characters]",
+                  "sentiment": 0.5859,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "AXISBANK-BL.NS",
+              "name": "AXIS BANK",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 92.32776,
+              "sentiment_score": 0.1101,
+              "highlights": [
+                {
+                  "highlight": "<em>Axis</em> <em>Bank</em> shares tanke[+321 characters]",
+                  "sentiment": -0.1779,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "Also read\n\nHDFC Securities emphasised th[+264 characters]",
+                  "sentiment": 0.3818,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "More Like This\n\nPublished on July 18, 20[+55 characters]",
+                  "sentiment": 0.4144,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "<em>Axis</em> <em>Bank</em> shares tumble over 7% on weak Q1FY26 earnings, brokerages divergent",
+                  "sentiment": -0.1779,
+                  "highlighted_in": "title"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "f13d753c-8e8c-4013-bcfa-644522c0e444",
+          "title": "Axis Bank Sees Barrage Of Price Target Cuts After Rise In Q1 Provision, Worsening Asset Quality",
+          "description": "Brokerages have turned cautious on Axis Bank following its April-June quarter earnings miss, with most of them trimming their target prices on the private lender amid rising concerns over asset quality and elevated credit costs.",
+          "keywords": "Axis Bank Ltd.",
+          "snippet": "Brokerages have turned cautious on Axis Bank following its April-June quarter earnings miss, with most of them trimming their target prices on the private lende...",
+          "url": "https://www.ndtvprofit.com/quarterly-earnings/axis-bank-sees-barrage-of-price-target-cuts-after-rise-in-q1-provision-worsening-asset-quality",
+          "image_url": "https://media.assettype.com/bloombergquint%2F2025-04-22%2Fqosa2on8%2FAxis%20Bank%20Board%20and%20ATM%20Machine%20(Photographer_%20Vijay%20Sartape%20_%20Source_%20NDTV%20Profit)%2012_02_2024..jpg?rect=0%2C227%2C3024%2C1588&w=1200&auto=format%2Ccompress&ogImage=true",
+          "language": "en",
+          "published_at": "2025-07-18T03:11:30.000000Z",
+          "source": "bloombergquint.com",
+          "relevance_score": 39.497543,
+          "entities": [
+            {
+              "symbol": "AXISBANK-BL.NS",
+              "name": "AXIS BANK",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 81.65145,
+              "sentiment_score": 0.0374,
+              "highlights": [
+                {
+                  "highlight": "Brokerages have turned cautious on <em>A[+206 characters]",
+                  "sentiment": 0.4767,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "<em>Axis</em> <em>Bank</em> Sees Barrage Of Price Target Cuts After Rise In Q1 Provision, Worsening Asset Quality",
+                  "sentiment": -0.4019,
+                  "highlighted_in": "title"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "a004a9bb-feb7-4f47-bd0f-26230752f5ee",
+      "title": "Axis Bank appoints Neeraj Gambhir as Executive Director",
+      "description": "Private sector Axis Bank on Friday announced the appointment of Neeraj Gambhir as a whole-time director, designated as executive director of the bank.",
+      "keywords": "Axis Bank, Neeraj Gambhir, executive director, RBI, Appointment",
+      "snippet": "Private sector Axis Bank on Friday announced the appointment of Neeraj Gambhir as a whole-time director, designated as executive director of the bank.\n\nHis appo...",
+      "url": "https://www.thehindubusinessline.com/money-and-banking/axis-bank-elevates-neeraj-gambhir-as-executive-director/article69827257.ece",
+      "image_url": "https://bl-i.thgim.com/public/incoming/x4n7hn/article69827264.ece/alternates/LANDSCAPE_1200/2024-07-24T102823Z_2014243942_RC20P5AJIZ38_RTRMADP_3_AXIS-BANK-RESULTS.JPG",
+      "language": "en",
+      "published_at": "2025-07-18T10:57:17.000000Z",
+      "source": "thehindubusinessline.com",
+      "relevance_score": 38.962543,
+      "entities": [
+        {
+          "symbol": "AXISBANK-BL.NS",
+          "name": "AXIS BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 106.322,
+          "sentiment_score": 0.245033,
+          "highlights": [
+            {
+              "highlight": "Private sector <em>Axis</em> <em>Bank</e[+335 characters]",
+              "sentiment": 0.7351,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Published on July 18, 2025\n\nCompanies to[+39 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Axis</em> <em>Bank</em> appoints Neeraj Gambhir as Executive Director",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": [
+        {
+          "uuid": "a8cc0663-2158-4d1b-b9c0-e5b9d97a2e91",
+          "title": "Axis Bank Appoints Neeraj Gambhir As New Executive Director",
+          "description": "Axis Bank Ltd. on Friday announced that on the recommendation of the Nomination and Remuneration Committee, the Board of Directors of Axis Bank has approved the appointment of Neeraj Gambhir as its new whole time director or executive director for a term of three years, according to an exchange filing.",
+          "keywords": "Axis Bank Ltd., Axis Bank, Executive Directors",
+          "snippet": "Axis Bank announced that on the recommendation of the Nomination and Remuneration Committee, the Board of Directors approved the appointment of Neeraj Gambhir a...",
+          "url": "https://www.ndtvprofit.com/business/axis-bank-appoints-neeraj-gambhir-as-new-executive-director",
+          "image_url": "https://media.assettype.com/bloombergquint%2F2024-07%2F83416d93-9f7e-41f1-a935-5626d10adfca%2F940v8qeg_reuters_image_625x300_30_August_22.jpg?rect=0%2C0%2C4097%2C2151&w=1200&auto=format%2Ccompress&ogImage=true",
+          "language": "en",
+          "published_at": "2025-07-18T10:32:03.000000Z",
+          "source": "bloombergquint.com",
+          "relevance_score": 38.962543,
+          "entities": [
+            {
+              "symbol": "AXISBANK-BL.NS",
+              "name": "AXIS BANK",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 102.43827,
+              "sentiment_score": 0.21075,
+              "highlights": [
+                {
+                  "highlight": "<em>Axis</em> <em>Bank</em> announced th[+249 characters]",
+                  "sentiment": 0.4215,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "<em>Axis</em> <em>Bank</em> Appoints Neeraj Gambhir As New Executive Director",
+                  "sentiment": 0,
+                  "highlighted_in": "title"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "8fa9473c-3d5a-47c2-964f-3e3453ad1222",
+          "title": "Axis Bank appoints Neeraj Gambhir as executive director",
+          "description": "Axis Bank has announced the appointment of Neeraj Gambhir as an executive director, effective August 4, 2025. Gambhir, currently Group Executive – Treasury, Markets and Wholesale banking products, brings over 30 years of experience in the financial sector. He has held leadership positions at Nomura, Lehman Brothers, and ICICI Bank, demonstrating his extensive expertise.",
+          "keywords": "axis bank, Axis Bank executive director appointment, Neeraj Gambhir Axis Bank, banking executive appointment news, Financial sector leadership, Neeraj Gambhir career, icici bank",
+          "snippet": "Synopsis\n\nAxis Bank has announced the appointment of Neeraj Gambhir as an executive director, effective August 4, 2025. Gambhir, currently Group Executive – T...",
+          "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/axis-bank-appoints-neeraj-gambhir-as-executive-director/articleshow/122757367.cms",
+          "image_url": "https://img.etimg.com/thumb/msid-122757160,width-1200,height-630,imgsize-449148,overlay-economictimes/articleshow.jpg",
+          "language": "en",
+          "published_at": "2025-07-18T08:59:18.000000Z",
+          "source": "economictimes.indiatimes.com",
+          "relevance_score": 38.962543,
+          "entities": [
+            {
+              "symbol": "AXISBANK-BL.NS",
+              "name": "AXIS BANK",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 106.32368,
+              "sentiment_score": 0.2997,
+              "highlights": [
+                {
+                  "highlight": "Synopsis\n\n<em>Axis</em> <em>Bank</em> ha[+246 characters]",
+                  "sentiment": 0.5994,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "<em>Axis</em> <em>Bank</em> appoints Neeraj Gambhir as executive director",
+                  "sentiment": 0,
+                  "highlighted_in": "title"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "fb47fe23-c5fe-4044-b54b-09bf16f6efae",
+          "title": "Axis Bank names Neeraj Gambhir as Executive Director for a 3-year term",
+          "description": "Axis Bank has appointed Neeraj Gambhir as Executive Director for a three-year term.",
+          "keywords": "Axis Bank, Neeraj Gambhir, Executive Director, Arjun Chowdhry, appointment",
+          "snippet": "Axis Bank has appointed Neeraj Gambhir as Executive Director for a three-year term, the lender informed in an exchange filing on Friday.\n\nGambhir will take char...",
+          "url": "https://www.livemint.com/companies/axis-bank-names-neeraj-gambhir-as-executive-director-for-3-year-term-after-arjun-chowdhrys-exit-11752828881147.html",
+          "image_url": "https://www.livemint.com/lm-img/img/2025/07/18/1600x900/AXIS-BANK-RESULTS--0_1721828731293_1752829955782.JPG",
+          "language": "en",
+          "published_at": "2025-07-18T08:58:09.000000Z",
+          "source": "livemint.com",
+          "relevance_score": 38.962543,
+          "entities": [
+            {
+              "symbol": "AXISBANK.NS",
+              "name": "Axis Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 65.65973,
+              "sentiment_score": 0.133967,
+              "highlights": [
+                {
+                  "highlight": "<em>Axis</em> <em>Bank</em> has appointe[+263 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "“This is to inform you that based on t[+183 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "<em>Axis</em> <em>Bank</em> names Neeraj Gambhir as Executive Director for a 3-year term",
+                  "sentiment": 0,
+                  "highlighted_in": "title"
+                }
+              ]
+            },
+            {
+              "symbol": "AXISBANK-BL.NS",
+              "name": "AXIS BANK",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 89.39474,
+              "sentiment_score": 0.058533,
+              "highlights": [
+                {
+                  "highlight": "<em>Axis</em> <em>Bank</em> has appointe[+263 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "“This is to inform you that based on t[+174 characters]",
+                  "sentiment": -0.2263,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "<em>Axis</em> <em>Bank</em> names Neeraj Gambhir as Executive Director for a 3-year term",
+                  "sentiment": 0,
+                  "highlighted_in": "title"
+                }
+              ]
+            },
+            {
+              "symbol": "AXISBANK.BO",
+              "name": "Axis Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 65.65541,
+              "sentiment_score": 0.133967,
+              "highlights": [
+                {
+                  "highlight": "<em>Axis</em> <em>Bank</em> has appointe[+263 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "“This is to inform you that based on t[+183 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "<em>Axis</em> <em>Bank</em> names Neeraj Gambhir as Executive Director for a 3-year term",
+                  "sentiment": 0,
+                  "highlighted_in": "title"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "43c8a20d-1b9f-48f5-9a84-b218fd7a32c7",
+      "title": "Algoquant Fintech gets ₹280 crore credit support from Axis Bank",
+      "description": "Algoquant Fintech secures ₹280 crore credit line from Axis Bank to support growth, working capital needs, and market expansion as part of its scaling strategy.",
+      "keywords": "Algoquant Axis Bank funding, credit facilities, Algoquant fintech growth plan, Axis Bank working capital support, Algoquant expansion funding",
+      "snippet": "Algoquant Fintech on Saturday said the company has secured Rs 280 crore credit facilities from private lender Axis Bank.\n\nThe proceeds will be utilised to fund ...",
+      "url": "https://www.thehindubusinessline.com/money-and-banking/algoquant-fintech-secures-280-crore-credit-line-from-axis-bank/article69830838.ece",
+      "image_url": "https://bl-i.thgim.com/public/incoming/situx5/article69830850.ece/alternates/LANDSCAPE_1200/algoquant.jpg",
+      "language": "en",
+      "published_at": "2025-07-19T08:11:39.000000Z",
+      "source": "thehindubusinessline.com",
+      "relevance_score": 38.276855,
+      "entities": [
+        {
+          "symbol": "AXISBANK-BL.NS",
+          "name": "AXIS BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 98.86068,
+          "sentiment_score": 0.704325,
+          "highlights": [
+            {
+              "highlight": "Algoquant Fintech on Saturday said the c[+219 characters]",
+              "sentiment": 0.8481,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "As part of its growth and operational st[+259 characters]",
+              "sentiment": 0.7783,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "\"Following thorough deliberation and ass[+273 characters]",
+              "sentiment": 0.5423,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Algoquant Fintech gets ₹280 crore credit support from <em>Axis</em> <em>Bank</em>",
+              "sentiment": 0.6486,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    }
+  ]
+}

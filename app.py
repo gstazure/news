@@ -57,7 +57,7 @@ def index():
             errors.append("Please enter a search query.")
 
     topics = list(load_topics())[:5]
-    return render_template('index.html', sample_topics=topics, news_results=news_results, query=query, errors=errors, all_topics=json.dumps(list(load_topics())))
+    return render_template('index.html', sample_topics=topics, news_results=news_results, query=query, errors=errors, all_topics=list(load_topics()))
 
 @app.route('/process_selected', methods=['POST'])
 def process_selected():
