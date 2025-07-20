@@ -1,0 +1,418 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 50,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "6da22c5d-f923-4be6-b37a-79ec730ca4e1",
+      "title": "Asian Paints Doubles Returns On Exit From Akzo Nobel",
+      "description": "Asian Paints had acquired a stake in Akzo Nobel in fiscal year 2017-18, when the fair value of the holding was around Rs 359.81 crore. The company has now sold its entire stake through an open market transaction, offloading over 20 lakh shares at approximately Rs 3,651 per share on the NSE. The deal is valued at about Rs 730 crore.",
+      "keywords": "Akzo Nobel India Ltd., Asian Paints Ltd.",
+      "snippet": "India’s largest paint maker, Asian Paints, is navigating an intensely competitive phase, but that hasn’t stopped the company from doubling the returns on it...",
+      "url": "https://www.ndtvprofit.com/business/asian-paints-doubles-returns-on-exit-from-akzo-nobel",
+      "image_url": "https://media.assettype.com/bloombergquint%2F2024-11-11%2Fg370o9e2%2Fpeople-renovating-the-house-2023-11-27-05-16-23-utc.jpg?rect=0%2C5%2C2216%2C1163&w=1200&auto=format%2Ccompress&ogImage=true",
+      "language": "en",
+      "published_at": "2025-07-09T17:40:56.000000Z",
+      "source": "bloombergquint.com",
+      "relevance_score": 45.91707,
+      "entities": [
+        {
+          "symbol": "ASIANPAINT.NS",
+          "name": "Asian Paints Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 69.3098,
+          "sentiment_score": 0.4315,
+          "highlights": [
+            {
+              "highlight": "India’s largest paint maker, <em>Asian[+325 characters]",
+              "sentiment": 0.6348,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "As of March 2025, <em>Asian</em> <em>Pai[+231 characters]",
+              "sentiment": 0.6597,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Asian</em> <em>Paints</em> Doubles Returns On Exit From Akzo Nobel",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "AKZOINDIA.NS",
+          "name": "Akzo Nobel India Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 45.389557,
+          "sentiment_score": 0.4654,
+          "highlights": [
+            {
+              "highlight": "India’s largest paint maker, Asian Pai[+316 characters]",
+              "sentiment": 0.6348,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "The stake sale was executed at a 6.8% pr[+330 characters]",
+              "sentiment": 0.296,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": [
+        {
+          "uuid": "7eceb55e-1a41-48a0-97ef-806aa8fc2b11",
+          "title": "Asian Paints sells entire 4.42 per cent stake in Akzo",
+          "description": "Asian Paints sells stake in Akzo Nobel India for Rs ₹734 crore in a major deal in the paints sector.",
+          "keywords": "Asian Paints, Akzo Nobel India, paint sector",
+          "snippet": "Asian Paints – the country’s largest paint-maker- has sold its entire stake in Akzo Nobel India for ₹734 crore. Over 20,00,000 equity shares representing ...",
+          "url": "https://www.thehindubusinessline.com/companies/asian-paints-sells-entire-442-per-cent-stake-in-akzo/article69792428.ece",
+          "image_url": "https://bl-i.thgim.com/public/incoming/g4pak7/article69792817.ece/alternates/LANDSCAPE_1200/2025-07-01T150421Z_2075836130_RC2QDFAP0L7T_RTRMADP_3_ASIAN-PAINTS-ANTITRUST.JPG",
+          "language": "en",
+          "published_at": "2025-07-09T14:54:28.000000Z",
+          "source": "thehindubusinessline.com",
+          "relevance_score": 45.91707,
+          "entities": [
+            {
+              "symbol": "AKZOINDIA.NS",
+              "name": "Akzo Nobel India Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 71.98624,
+              "sentiment_score": 0.523767,
+              "highlights": [
+                {
+                  "highlight": "Asian Paints – the country’s largest[+222 characters]",
+                  "sentiment": 0.296,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "In a notice to the bourses, on Wednesday[+315 characters]",
+                  "sentiment": 0.6808,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "The stake sale comes after Sajjan Jindal[+295 characters]",
+                  "sentiment": 0.5945,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "AKZOINDIA.BO",
+              "name": "Akzo Nobel India Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 71.98507,
+              "sentiment_score": 0.523767,
+              "highlights": [
+                {
+                  "highlight": "Asian Paints – the country’s largest[+222 characters]",
+                  "sentiment": 0.296,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "In a notice to the bourses, on Wednesday[+315 characters]",
+                  "sentiment": 0.6808,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "The stake sale comes after Sajjan Jindal[+295 characters]",
+                  "sentiment": 0.5945,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "c51cbda0-b722-41f1-aa94-49dbf729eb6f",
+          "title": "Asian Paints Sells Rs 730-Crore Stake To Exit Akzo Nobel Post JSW Deal",
+          "description": "Asian Paints Ltd. confirmed that it offloaded its entire stake in Akzo Nobel India Ltd. in a large trade on Wednesday. The transaction accounted for 4.42% of the company’s outstanding equity, with 20.1 lakh shares exchanged at an average price of Rs 3,651 apiece, according to an exchange filing. The development comes weeks after the promoters of Akzo Nobel India signed a share purchase agreement with JSW Paints.",
+          "keywords": "Akzo Nobel India Ltd., Asian Paints Ltd., share price",
+          "snippet": "Asian Paints Ltd. confirmed that it offloaded its entire stake in Akzo Nobel India Ltd. in a large trade on Wednesday.\n\nThe transaction accounted for 4.42% of t...",
+          "url": "https://www.ndtvprofit.com/markets/asian-paints-exits-akzo-nobel-post-jsw-deal",
+          "image_url": "https://media.assettype.com/bloombergquint%2F2025-06-09%2F7bmibd2g%2Fwoman-paints-board-with-brush-close-up-2025-03-27-00-58-35-utc.jpg?rect=0%2C952%2C6720%2C3528&w=1200&auto=format%2Ccompress&ogImage=true",
+          "language": "en",
+          "published_at": "2025-07-09T12:11:25.000000Z",
+          "source": "bloombergquint.com",
+          "relevance_score": 45.91707,
+          "entities": [
+            {
+              "symbol": "ASIANPAINT.NS",
+              "name": "Asian Paints Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 59.63505,
+              "sentiment_score": 0.36755,
+              "highlights": [
+                {
+                  "highlight": "<em>Asian</em> <em>Paints</em> Ltd. conf[+277 characters]",
+                  "sentiment": 0.7351,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "<em>Asian</em> <em>Paints</em> Sells Rs 730-Crore Stake To Exit Akzo Nobel Post JSW Deal",
+                  "sentiment": 0,
+                  "highlighted_in": "title"
+                }
+              ]
+            },
+            {
+              "symbol": "AKZOINDIA.NS",
+              "name": "Akzo Nobel India Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 44.503376,
+              "sentiment_score": 0.462033,
+              "highlights": [
+                {
+                  "highlight": "Asian Paints Ltd. confirmed that it offl[+286 characters]",
+                  "sentiment": 0.7351,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "JSW Paints' plans to fund its nearly Rs [+150 characters]",
+                  "sentiment": 0.0516,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "Shares of <em>Akzo</em> <em>Nobel</em> <[+210 characters]",
+                  "sentiment": 0.5994,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "^NSEI",
+              "name": "Nifty 50",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "index",
+              "industry": "N/A",
+              "match_score": 30.529808,
+              "sentiment_score": 0.296,
+              "highlights": [
+                {
+                  "highlight": "Shares of Akzo Nobel India closed 1.56% [+201 characters]",
+                  "sentiment": 0.296,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "2e0b1e2e-b1fa-488a-a58c-29e30efed60d",
+      "title": "Asian Paints shares trade higher at ₹2,497.30 despite muted FY25 results",
+      "description": "Asian Paints stock rises despite challenging FY25, focusing on institutional business, brand innovation, and market share defense for growth.",
+      "keywords": "Asian Paints shares, Asian Paints stock, Asian Paints results, Asian Paints FY25 results, Asian Paints  growth, NSE",
+      "snippet": "Asian Paints shares were trading higher at ₹2,497.30 on the NSE as of 12.40 pm on July 9, 2025, gaining 0.51 per cent from the previous close, despite the com...",
+      "url": "https://www.thehindubusinessline.com/markets/stock-markets/asian-paints-shares-trend-higher-despite-muted-fy25-results-strategic-focus-on-growth/article69790799.ece",
+      "image_url": "https://bl-i.thgim.com/public/incoming/eat6k7/article69790837.ece/alternates/LANDSCAPE_1200/2025-07-01T150421Z_2075836130_RC2QDFAP0L7T_RTRMADP_3_ASIAN-PAINTS-ANTITRUST.JPG",
+      "language": "en",
+      "published_at": "2025-07-09T07:30:01.000000Z",
+      "source": "thehindubusinessline.com",
+      "relevance_score": 43.802937,
+      "entities": [
+        {
+          "symbol": "ASIANPAINT.NS",
+          "name": "Asian Paints Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 64.87706,
+          "sentiment_score": 0.6798,
+          "highlights": [
+            {
+              "highlight": "<em>Asian</em> <em>Paints</em> shares we[+327 characters]",
+              "sentiment": 0.8979,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "To strengthen future performance, <em>As[+311 characters]",
+              "sentiment": 0.8885,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Looking ahead, <em>Asian</em> <em>Paints[+289 characters]",
+              "sentiment": 0.9022,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "More Like This\n\nPublished on July 9, 202[+57 characters]",
+              "sentiment": 0.4144,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Asian</em> <em>Paints</em> shares trade higher at ₹2,497.30 despite muted FY25 results",
+              "sentiment": 0.296,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "9cc45209-76e8-49b8-9ef5-4f73e12ad9fb",
+      "title": "Asian Paints shares get double upgrade from Jefferies with Rs 2,830 target price",
+      "description": "Jefferies has upgraded Asian Paints to 'buy,' foreseeing a potential 14% upside, citing stabilizing competition and easing input costs. Despite recent underperformance and challenges from Grasim's Birla Opus, a cyclical upturn in fundamentals is expected. The brokerage anticipates improved consumption, gross margins, and earnings growth for Asian Paints, making it a contrarian pick.",
+      "keywords": "asian paints, asian paints shares, asian paints share price, asian paints stock, markets news, stock market news, asian paints target, Asian Paints shares upgrade, Jefferies double upgrade Asian Paints, Asian Paints target price Rs 2830, Asian Paints investment recommendation, varun beverages, grasim, hindustan unilever",
+      "snippet": "Worst may be behind\n\n\n\nLive Events\n\nValuations and recovery\n\n\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our ETMarkets WhatsApp channel\n\nShar...",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/asian-paints-shares-get-double-upgrade-from-jefferies-with-rs-2830-target-price/articleshow/122336306.cms",
+      "image_url": "https://img.etimg.com/thumb/msid-122336277,width-1200,height-630,imgsize-51636,overlay-etmarkets/articleshow.jpg",
+      "language": "en",
+      "published_at": "2025-07-09T06:43:42.000000Z",
+      "source": "economictimes.indiatimes.com",
+      "relevance_score": 43.022232,
+      "entities": [
+        {
+          "symbol": "^NSEI",
+          "name": "Nifty 50",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "index",
+          "industry": "N/A",
+          "match_score": 18.453535,
+          "sentiment_score": 0.3182,
+          "highlights": [
+            {
+              "highlight": "However, Jefferies said the competitive [+335 characters]",
+              "sentiment": 0.3182,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ASIANPAINT.BO",
+          "name": "Asian Paints Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 59.33716,
+          "sentiment_score": 0.158329,
+          "highlights": [
+            {
+              "highlight": "Worst may be behind\n\n\n\nLive Events\n\nValu[+342 characters]",
+              "sentiment": -0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "a potential upside of nearly 14% from cu[+334 characters]",
+              "sentiment": -0.4215,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "However, Jefferies said the competitive [+353 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Asian</em> <em>Paints</em> is curren[+333 characters]",
+              "sentiment": -0.1779,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "“We do highlight that none of the abov[+337 characters]",
+              "sentiment": 0.9437,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Asian</em> <em>Paints</em> shares we[+204 characters]",
+              "sentiment": 0.296,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Asian</em> <em>Paints</em> shares get double upgrade from Jefferies with Rs 2,830 target price",
+              "sentiment": 0.296,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "VBL.BO",
+          "name": "Varun Beverages Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Defensive",
+          "match_score": 21.412834,
+          "sentiment_score": -0.17755,
+          "highlights": [
+            {
+              "highlight": "received a double upgrade from Jefferies[+334 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Beverages</em> , citing scope for ?[+149 characters]",
+              "sentiment": -0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HINDUNILVR.BO",
+          "name": "Hindustan Unilever Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Defensive",
+          "match_score": 21.52574,
+          "sentiment_score": -0.0493,
+          "highlights": [
+            {
+              "highlight": "Shares of Asian Paints received a double[+338 characters]",
+              "sentiment": 0.4588,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Unilever</em> and Varun Beverages , [+168 characters]",
+              "sentiment": -0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    }
+  ]
+}

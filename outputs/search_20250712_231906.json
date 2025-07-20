@@ -1,0 +1,1192 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 108,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "b6e74b8e-b291-430b-9476-0c5b08b7056a",
+      "title": "Mcap of 6 of top 10 valued firms erodes by ₹70,325.5 cr; HDFC Bank, ICICI Bank major laggards",
+      "description": "Last week's market update: Sensex dropped, Reliance Industries gained, HDFC Bank, ICICI Bank, and others faced erosion.",
+      "keywords": "hdfc bank, icici bank, value drop, valuation decline",
+      "snippet": "The combined market valuation of six of the top-10 valued firms eroded by ₹70,325.5 crore last week, with HDFC Bank and ICICI Bank emerging as the worst-hit i...",
+      "url": "https://www.thehindubusinessline.com/markets/mcap-of-6-of-top-10-valued-firms-erodes-by-703255-cr-hdfc-bank-icici-bank-major-laggards/article69779257.ece",
+      "image_url": "https://bl-i.thgim.com/public/incoming/udrdmt/article69779273.ece/alternates/LANDSCAPE_1200/PO18_Arrow_up.jpg",
+      "language": "en",
+      "published_at": "2025-07-06T04:02:39.000000Z",
+      "source": "thehindubusinessline.com",
+      "relevance_score": 22.09889,
+      "entities": [
+        {
+          "symbol": "SBKFF",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "us",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 40.662666,
+          "sentiment_score": 0.1682,
+          "highlights": [
+            {
+              "highlight": "In the top-10 pack, Reliance Industries,[+290 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "The mcap of Hindustan Unilever climbed ?[+162 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In the ranking of top-10 firms, Reliance[+250 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SBIN.NS",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 40.661823,
+          "sentiment_score": 0.1682,
+          "highlights": [
+            {
+              "highlight": "In the top-10 pack, Reliance Industries,[+290 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "The mcap of Hindustan Unilever climbed ?[+162 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In the ranking of top-10 firms, Reliance[+250 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDB.BA",
+          "name": "HDFC BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "ar",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 75.002686,
+          "sentiment_score": 0.379225,
+          "highlights": [
+            {
+              "highlight": "The combined market valuation of six of [+255 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In the top-10 pack, Reliance Industries,[+272 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In the ranking of top-10 firms, Reliance[+232 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Mcap of 6 of top 10 valued firms erodes by ₹70,325.5 cr; <em>HDFC</em> <em>Bank</em>, ICICI Bank major laggards",
+              "sentiment": 0.5719,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "BHARTIARTL.BO",
+          "name": "Bharti Airtel Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Communication Services",
+          "match_score": 35.21559,
+          "sentiment_score": 0.1682,
+          "highlights": [
+            {
+              "highlight": "In the top-10 pack, Reliance Industries,[+272 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "The mcap of <em>Bharti</em> <em>Airtel</[+236 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In the ranking of top-10 firms, Reliance[+232 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SBIN.BO",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 47.951817,
+          "sentiment_score": 0.1682,
+          "highlights": [
+            {
+              "highlight": "In the top-10 pack, Reliance Industries,[+290 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "The mcap of Hindustan Unilever climbed ?[+162 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In the ranking of top-10 firms, Reliance[+250 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK.BO",
+          "name": "HDFC Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 45.29052,
+          "sentiment_score": 0.379225,
+          "highlights": [
+            {
+              "highlight": "The combined market valuation of six of [+255 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In the top-10 pack, Reliance Industries,[+272 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In the ranking of top-10 firms, Reliance[+232 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Mcap of 6 of top 10 valued firms erodes by ₹70,325.5 cr; <em>HDFC</em> <em>Bank</em>, ICICI Bank major laggards",
+              "sentiment": 0.5719,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "ICICIBANK.BO",
+          "name": "ICICI Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 45.856117,
+          "sentiment_score": 0.23974,
+          "highlights": [
+            {
+              "highlight": "The combined market valuation of six of [+255 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In the top-10 pack, Reliance Industries,[+272 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>ICICI</em> <em>Bank</em> lost ₹13,[+234 characters]",
+              "sentiment": -0.3182,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In the ranking of top-10 firms, Reliance[+232 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Mcap of 6 of top 10 valued firms erodes by ₹70,325.5 cr; HDFC Bank, <em>ICICI</em> <em>Bank</em> major laggards",
+              "sentiment": 0.5719,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "BAJFINANCE.BO",
+          "name": "Bajaj Finance Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 28.767796,
+          "sentiment_score": 0.1682,
+          "highlights": [
+            {
+              "highlight": "In the top-10 pack, Reliance Industries,[+272 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "The valuation of <em>Bajaj</em> <em>Fina[+333 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In the ranking of top-10 firms, Reliance[+232 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TCS.BO",
+          "name": "Tata Consultancy Services Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 28.240993,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "In the top-10 pack, Reliance Industries,[+281 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HINDUNILVR.BO",
+          "name": "Hindustan Unilever Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Defensive",
+          "match_score": 34.16973,
+          "sentiment_score": 0.1682,
+          "highlights": [
+            {
+              "highlight": "In the top-10 pack, Reliance Industries,[+272 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "The mcap of <em>Hindustan</em> <em>Unile[+144 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In the ranking of top-10 firms, Reliance[+232 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCE.BO",
+          "name": "Reliance Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 25.41919,
+          "sentiment_score": 0.1682,
+          "highlights": [
+            {
+              "highlight": "In the top-10 pack, <em>Reliance</em> <e[+272 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "However, the market valuation of <em>Rel[+326 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In the ranking of top-10 firms, <em>Reli[+232 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "INFY.BO",
+          "name": "Infosys Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 21.08998,
+          "sentiment_score": 0.1682,
+          "highlights": [
+            {
+              "highlight": "In the top-10 pack, Reliance Industries,[+263 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Infosys</em> added ₹13,127.51 cror[+211 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In the ranking of top-10 firms, Reliance[+223 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCEPP.BO",
+          "name": "Reliance Industries Ltd",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 25.418968,
+          "sentiment_score": 0.1682,
+          "highlights": [
+            {
+              "highlight": "In the top-10 pack, <em>Reliance</em> <e[+272 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "However, the market valuation of <em>Rel[+326 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In the ranking of top-10 firms, <em>Reli[+232 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BANKINDIA.BO",
+          "name": "Bank of India Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 23.031158,
+          "sentiment_score": 0.1682,
+          "highlights": [
+            {
+              "highlight": "In the top-10 pack, Reliance Industries,[+281 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "The mcap of Hindustan Unilever climbed ?[+153 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In the ranking of top-10 firms, Reliance[+241 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "0136aba3-fdf9-4d12-b381-2a5499e929bd",
+      "title": "M-cap of 6 of top 10 most valued firms drops by Rs 70,325 crore; HDFC, ICICI Bank top drags",
+      "description": "The combined market valuation of six of the top-10 valued firms eroded by Rs 70,325.5 crore last week, with HDFC Bank and ICICI Bank emerging as the worst-hit in line with a bearish trend in equities.",
+      "keywords": "state bank of india, hdfc bank, reliance industries, hindustan unilever ltd, bharti airtel, infosys, bajaj finance, icici bank, Bearish Trend, market capitalization decline, ICICI Bank stock performance, stock market analysis, Bank, Insurance, life insurance corporation of india, tata consultancy services",
+      "snippet": "Live Events\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our ETMarkets WhatsApp channel\n\nThe combined market valuation of six of the top-10 val...",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/m-cap-of-6-of-top-10-most-valued-firms-drops-by-rs-70325-crore-hdfc-icici-bank-top-drags/articleshow/122276381.cms",
+      "image_url": "https://img.etimg.com/thumb/msid-122276393,width-1200,height-630,imgsize-74108,overlay-etmarkets/articleshow.jpg",
+      "language": "en",
+      "published_at": "2025-07-06T05:05:03.000000Z",
+      "source": "economictimes.indiatimes.com",
+      "relevance_score": 20.854776,
+      "entities": [
+        {
+          "symbol": "SBKFF",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "us",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 36.13843,
+          "sentiment_score": 0.2523,
+          "highlights": [
+            {
+              "highlight": "crore.The mcap of Bharti Airtel fell by [+327 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Bank</em> <em>of</em> <em>India</em>[+317 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SBIN.NS",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 36.138943,
+          "sentiment_score": 0.2523,
+          "highlights": [
+            {
+              "highlight": "crore.The mcap of Bharti Airtel fell by [+327 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Bank</em> <em>of</em> <em>India</em>[+317 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDB.BA",
+          "name": "HDFC BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "ar",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 40.38108,
+          "sentiment_score": 0.23625,
+          "highlights": [
+            {
+              "highlight": "Live Events\n\n\n\n\n\n(You can now subscribe [+334 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "points or 0.74 per cent.In the top-10 pa[+329 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "crore.Infosys added Rs 13,127.51 crore i[+327 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Bank</em>, TCS, Bharti Airtel, ICICI[+83 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BHARTIARTL.BO",
+          "name": "Bharti Airtel Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Communication Services",
+          "match_score": 34.5291,
+          "sentiment_score": 0.10092,
+          "highlights": [
+            {
+              "highlight": "eroded by Rs 70,325.5 crore last week, w[+329 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Airtel</em> , ICICI Bank, Life Insur[+169 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "crore in its market valuation which stoo[+329 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Airtel</em> fell by Rs 5,958.7 crore[+321 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "up by Rs 5,756.38 crore to Rs 7,24,545.2[+253 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SBIN.BO",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 43.181496,
+          "sentiment_score": 0.2523,
+          "highlights": [
+            {
+              "highlight": "crore.The mcap of Bharti Airtel fell by [+327 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Bank</em> <em>of</em> <em>India</em>[+317 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK.BO",
+          "name": "HDFC Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 29.489391,
+          "sentiment_score": 0.23625,
+          "highlights": [
+            {
+              "highlight": "Live Events\n\n\n\n\n\n(You can now subscribe [+334 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "points or 0.74 per cent.In the top-10 pa[+329 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "crore.Infosys added Rs 13,127.51 crore i[+327 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Bank</em>, TCS, Bharti Airtel, ICICI[+83 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ICICIBANK.BO",
+          "name": "ICICI Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 43.63634,
+          "sentiment_score": 0.207867,
+          "highlights": [
+            {
+              "highlight": "Live Events\n\n\n\n\n\n(You can now subscribe [+334 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "points or 0.74 per cent.In the top-10 pa[+329 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>ICICI</em> <em>Bank</em> lost Rs 13,[+329 characters]",
+              "sentiment": -0.3182,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "crore in its valuation to Rs 6,81,383.80[+326 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Bank</em>, State Bank of India, Info[+51 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "M-cap of 6 of top 10 most valued firms drops by Rs 70,325 crore; HDFC, <em>ICICI</em> <em>Bank</em> top drags",
+              "sentiment": 0.6204,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "BAJFINANCE.BO",
+          "name": "Bajaj Finance Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 28.186441,
+          "sentiment_score": 0.03728,
+          "highlights": [
+            {
+              "highlight": "as the worst-hit in line with a bearish [+324 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Finance</em> faced erosion from thei[+96 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "ICICI Bank lost Rs 13,566.92 crore in it[+329 characters]",
+              "sentiment": -0.3182,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "crore.The mcap of Hindustan Unilever cli[+332 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Finance</em> and Hindustan Unilever [+4 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TCS.BO",
+          "name": "Tata Consultancy Services Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 27.316372,
+          "sentiment_score": 0.2202,
+          "highlights": [
+            {
+              "highlight": "six of the top-10 valued firms eroded by[+325 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Consultancy</em> <em>Services</em> ([+213 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HINDUNILVR.BO",
+          "name": "Hindustan Unilever Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Defensive",
+          "match_score": 33.500294,
+          "sentiment_score": 0.189,
+          "highlights": [
+            {
+              "highlight": "ETMarkets WhatsApp channel\n\nThe combined[+333 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Unilever</em> Ltd were the gainers, [+257 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "8,032.15 crore from its market capitalis[+334 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Unilever</em> climbed Rs 7,906.37 cr[+335 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Unilever</em> Ltd.",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCE.BO",
+          "name": "Reliance Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 24.892439,
+          "sentiment_score": 0.1101,
+          "highlights": [
+            {
+              "highlight": "You can now subscribe to our ETMarkets W[+329 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Industries</em> Infosys and Hindusta[+290 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "dropped by Rs 13,236.44 crore to Rs 5,74[+330 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Industries</em> jumped Rs 15,359.36 [+340 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "INFY.BO",
+          "name": "Infosys Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 19.382872,
+          "sentiment_score": 0.4725,
+          "highlights": [
+            {
+              "highlight": "to our ETMarkets WhatsApp channel\n\nThe c[+326 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "6,81,383.80 crore.The mcap of Hindustan [+332 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCEPP.BO",
+          "name": "Reliance Industries Ltd",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 24.892227,
+          "sentiment_score": 0.1101,
+          "highlights": [
+            {
+              "highlight": "You can now subscribe to our ETMarkets W[+329 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Industries</em> Infosys and Hindusta[+290 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "dropped by Rs 13,236.44 crore to Rs 5,74[+330 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Industries</em> jumped Rs 15,359.36 [+340 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BANKINDIA.BO",
+          "name": "Bank of India Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.102669,
+          "sentiment_score": 0.2523,
+          "highlights": [
+            {
+              "highlight": "mcap of Bharti Airtel fell by Rs 5,958.7[+322 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>of</em> <em>India</em> went up by Rs[+294 characters]",
+              "sentiment": 0.5046,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "f7635bbc-45ef-430b-a8a9-dd3db29a89c8",
+      "title": "Market wrap: Bears hit top 10 firms’ worth by Rs 70,325 crore; HDFC Bank, ICICI Bank among worst losers",
+      "description": "India Business News: Amid global uncertainty, six of India's top ten companies, including HDFC Bank and ICICI Bank, saw a collective market valuation loss of Rs 70,325.5 c",
+      "keywords": "India's most valued companies, HDFC Bank market valuation, ICICI Bank market loss, stock market news India, Reliance Industries market cap, BSE Sensex drop, foreign portfolio investor outflows, Indian equities market, LIC market valuation, Bajaj Finance market cap decline",
+      "snippet": "AI image\n\nSix of India’s ten most valued companies collectively lost Rs 70,325.5 crore in market valuation last week, led by HDFC Bank and ICICI Bank, as dome...",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/market-wrap-bears-hit-top-10-firms-worth-by-rs-70325-crore-hdfc-bank-icici-bank-among-worst-losers/articleshow/122275981.cms",
+      "image_url": "https://static.toiimg.com/thumb/msid-122276020,width-1070,height-580,imgsize-170060,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "language": "en",
+      "published_at": "2025-07-06T04:28:18.000000Z",
+      "source": "timesofindia.indiatimes.com",
+      "relevance_score": 20.320442,
+      "entities": [
+        {
+          "symbol": "SBKFF",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "us",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 24.83415,
+          "sentiment_score": 0.8176,
+          "highlights": [
+            {
+              "highlight": "Infosys added Rs 13,127.51 crore to reac[+329 characters]",
+              "sentiment": 0.8176,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SBIN.NS",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 24.83457,
+          "sentiment_score": 0.8176,
+          "highlights": [
+            {
+              "highlight": "Infosys added Rs 13,127.51 crore to reac[+329 characters]",
+              "sentiment": 0.8176,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDB.BA",
+          "name": "HDFC BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "ar",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 73.00763,
+          "sentiment_score": -0.17545,
+          "highlights": [
+            {
+              "highlight": "AI image\n\nSix of India’s ten most valu[+331 characters]",
+              "sentiment": -0.1372,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Barring Friday’s modest rebound, the I[+330 characters]",
+              "sentiment": -0.5994,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Analysts observed that investors were fo[+288 characters]",
+              "sentiment": 0.7351,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Market wrap: Bears hit top 10 firms’ worth by Rs 70,325 crore; <em>HDFC</em> <em>Bank</em>, ICICI Bank among worst losers",
+              "sentiment": -0.7003,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "BHARTIARTL.BO",
+          "name": "Bharti Airtel Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Communication Services",
+          "match_score": 23.381477,
+          "sentiment_score": 0.7351,
+          "highlights": [
+            {
+              "highlight": "Analysts observed that investors were fo[+288 characters]",
+              "sentiment": 0.7351,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SBIN.BO",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 31.035252,
+          "sentiment_score": 0.8176,
+          "highlights": [
+            {
+              "highlight": "Infosys added Rs 13,127.51 crore to reac[+329 characters]",
+              "sentiment": 0.8176,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK.BO",
+          "name": "HDFC Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 43.20372,
+          "sentiment_score": -0.17545,
+          "highlights": [
+            {
+              "highlight": "AI image\n\nSix of India’s ten most valu[+331 characters]",
+              "sentiment": -0.1372,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Barring Friday’s modest rebound, the I[+330 characters]",
+              "sentiment": -0.5994,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Analysts observed that investors were fo[+288 characters]",
+              "sentiment": 0.7351,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Market wrap: Bears hit top 10 firms’ worth by Rs 70,325 crore; <em>HDFC</em> <em>Bank</em>, ICICI Bank among worst losers",
+              "sentiment": -0.7003,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "ICICIBANK.BO",
+          "name": "ICICI Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 43.75407,
+          "sentiment_score": -0.034133,
+          "highlights": [
+            {
+              "highlight": "AI image\n\nSix of India’s ten most valu[+331 characters]",
+              "sentiment": -0.1372,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Analysts observed that investors were fo[+288 characters]",
+              "sentiment": 0.7351,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Market wrap: Bears hit top 10 firms’ worth by Rs 70,325 crore; HDFC Bank, <em>ICICI</em> <em>Bank</em> among worst losers",
+              "sentiment": -0.7003,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "BAJFINANCE.BO",
+          "name": "Bajaj Finance Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 19.506706,
+          "sentiment_score": 0.7351,
+          "highlights": [
+            {
+              "highlight": "Analysts observed that investors were fo[+288 characters]",
+              "sentiment": 0.7351,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HINDUNILVR.BO",
+          "name": "Hindustan Unilever Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Defensive",
+          "match_score": 28.272415,
+          "sentiment_score": 0.77635,
+          "highlights": [
+            {
+              "highlight": "Infosys added Rs 13,127.51 crore to reac[+311 characters]",
+              "sentiment": 0.8176,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Analysts observed that investors were fo[+288 characters]",
+              "sentiment": 0.7351,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCE.BO",
+          "name": "Reliance Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 17.494373,
+          "sentiment_score": 0.4877,
+          "highlights": [
+            {
+              "highlight": "<em>Reliance</em> <em>Industries</em> re[+117 characters]",
+              "sentiment": 0.4877,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "INFY.BO",
+          "name": "Infosys Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 17.622658,
+          "sentiment_score": 0.77635,
+          "highlights": [
+            {
+              "highlight": "<em>Infosys</em> added Rs 13,127.51 cror[+302 characters]",
+              "sentiment": 0.8176,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Analysts observed that investors were fo[+279 characters]",
+              "sentiment": 0.7351,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCEPP.BO",
+          "name": "Reliance Industries Ltd",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 17.49421,
+          "sentiment_score": 0.4877,
+          "highlights": [
+            {
+              "highlight": "<em>Reliance</em> <em>Industries</em> re[+117 characters]",
+              "sentiment": 0.4877,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BANKINDIA.BO",
+          "name": "Bank of India Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 16.059242,
+          "sentiment_score": 0.8176,
+          "highlights": [
+            {
+              "highlight": "Infosys added Rs 13,127.51 crore to reac[+320 characters]",
+              "sentiment": 0.8176,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "GEOJITFSL.BO",
+          "name": "Geojit Financial Services Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 22.715565,
+          "sentiment_score": -0.6486,
+          "highlights": [
+            {
+              "highlight": "However, the week’s overall performanc[+315 characters]",
+              "sentiment": -0.6486,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    }
+  ]
+}

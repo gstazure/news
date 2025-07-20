@@ -1,0 +1,5 @@
+flask==2.3.3
+werkzeug==2.3.7
+python-dotenv==1.0.0
+newspaper3k==0.2.8
+openai==0.27.8

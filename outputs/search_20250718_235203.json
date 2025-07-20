@@ -1,0 +1,310 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 86,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "f5b40687-3152-4a81-8b7d-5e6e49866836",
+      "title": "Reliance Retail acquires Kelvinator",
+      "description": "Reliance Retail Ventures acquires iconic Kelvinator brand to democratize aspirational living in India's premium home appliances market.",
+      "keywords": "Reliance Retail acquires Kelvinator, Reliance Retail buys Kelvinator, Reliance Retail, Kelvinator",
+      "snippet": "Reliance Retail Ventures Limited, a division of Reliance Industries Limited, has announced the acquisition of Kelvinator, the iconic consumer durables brand, fo...",
+      "url": "https://www.thehindu.com/business/Industry/reliance-retail-acquires-kelvinator/article69826315.ece",
+      "image_url": "https://th-i.thgim.com/public/business/Industry/w91che/article34519613.ece/alternates/LANDSCAPE_1200/RELIANCERETAIL",
+      "language": "en",
+      "published_at": "2025-07-18T05:54:50.000000Z",
+      "source": "thehindu.com",
+      "relevance_score": 24.571852,
+      "entities": [
+        {
+          "symbol": "RELIANCE.NS",
+          "name": "Reliance Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 30.899069,
+          "sentiment_score": -0.2263,
+          "highlights": [
+            {
+              "highlight": "Reliance Retail Ventures Limited, a divi[+239 characters]",
+              "sentiment": -0.2263,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCE.BO",
+          "name": "Reliance Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 30.898949,
+          "sentiment_score": -0.2263,
+          "highlights": [
+            {
+              "highlight": "Reliance Retail Ventures Limited, a divi[+239 characters]",
+              "sentiment": -0.2263,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "00cdc76a-0dfb-4ebd-b6b0-61d61d21a2bc",
+      "title": "Reliance Retail Q1 PAT: Reliance Retail Q1 Profit Soars 28.3% to Rs 3,271 Crore Amid Revenue Growth, ETRetail",
+      "description": "Reliance Retail Q1 PAT: Reliance Retail reports a substantial increase in its profit after tax, growing 28.3% to Rs 3,271 crore in Q1 2025, alongside an 11.3% rise in gross revenue. The company continues to expand its customer base and store network, focusing on operational excellence and enhanced product offerings.",
+      "keywords": "Reliance Retail Q1 PAT, Reliance Industries, Mukesh Ambani, profit after tax increase, JioMart growth, Reliance Retail performance, retail business expansion, reliance retail, rrvl, reliance trends",
+      "snippet": "Advt\n\nAdvt\n\nJoin the community of 2M+ industry professionals. Subscribe to Newsletter to get latest insights & analysis in your inbox. All about ETRetail indust...",
+      "url": "https://retail.economictimes.indiatimes.com/news/industry/reliance-retail-q1-profit-soars-283-to-rs-3271-crore-amid-revenue-growth/122768851",
+      "image_url": "https://etimg.etb2bimg.com/thumb/msid-122768851,imgsize-254609,width-1200,height=627,overlay-etretail,resizemode-75/industry/reliance-retail-q1-profit-soars-283-to-rs-3271-crore-amid-revenue-growth.jpg",
+      "language": "en",
+      "published_at": "2025-07-18T15:45:05.000000Z",
+      "source": "retail.economictimes.indiatimes.com",
+      "relevance_score": 22.39374,
+      "entities": [
+        {
+          "symbol": "RELIANCEPP.BO",
+          "name": "Reliance Industries Ltd",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 32.514217,
+          "sentiment_score": 0.454267,
+          "highlights": [
+            {
+              "highlight": "New Delhi: Reliance Retail Venture Ltd ([+329 characters]",
+              "sentiment": 0.8689,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "in the same quarter last fiscal, accordi[+341 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "We are focusing on strengthening the por[+171 characters]",
+              "sentiment": 0.4939,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": [
+        {
+          "uuid": "037a2884-5482-461a-b8fa-18444eaee2f5",
+          "title": "Reliance Retail Q1 PAT up 28% led by grocery, fashion",
+          "description": "Reliance Retail Ventures reports 28% profit increase, strong performance in grocery and fashion segments, and growth in customer base.",
+          "keywords": "Reliance Retail Ventures, Reliance Retail Ventures Q1 FY26",
+          "snippet": "Reliance Industries owned Reliance Retail Ventures registered a 28 per cent increase in profit after tax with ₹3,271 crore in the quarter that ended on June 3...",
+          "url": "https://www.thehindubusinessline.com/companies/reliance-retail-q1-pat-up-28-led-by-grocery-fashion/article69828609.ece",
+          "image_url": "https://bl-i.thgim.com/public/incoming/7s89r3/article69768196.ece/alternates/LANDSCAPE_1200/IMG_FL01_COVER_MAIN_9_2_1_V982G7Q4.jpg",
+          "language": "en",
+          "published_at": "2025-07-18T15:23:35.000000Z",
+          "source": "thehindubusinessline.com",
+          "relevance_score": 22.39374,
+          "entities": [
+            {
+              "symbol": "RELIANCEPP.BO",
+              "name": "Reliance Industries Ltd",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 29.177927,
+              "sentiment_score": 0.4088,
+              "highlights": [
+                {
+                  "highlight": "<em>Reliance</em> <em>Industries</em> ow[+268 characters]",
+                  "sentiment": 0.8176,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "Published on July 18, 2025\n\nCompanies to[+58 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "c2afa443-95a2-459a-acb6-a359069bd79f",
+          "title": "Reliance Retail Q1 Results: Net Profit Declines 8%, Revenue Falls 5%",
+          "description": "Reliance Retail Ventures Ltd.’s first quarter  net profit declined 7.7% to Rs 3,271crore from Rs 3,545 crore. Revenue for the segment fell 5% to Rs 84,172 crore from Rs 88,637 crore in the previous quarter, missing estimates. Bloomberg analysts had estimated 85,111 crore.",
+          "keywords": "",
+          "snippet": "Reliance Retail Ventures Ltd.’s first quarter net profit declined 7.7% to Rs 3,271 crore from Rs 3,545 crore in the preceding quarter, according to the consol...",
+          "url": "https://www.ndtvprofit.com/quarterly-earnings/reliance-retail-q1-results-net-profit-declines-8-revenue-falls-5",
+          "image_url": "https://media.assettype.com/bloombergquint%2F2025-04-29%2F5nqfo216%2FIMG20250128195841086HDR.jpg?rect=0%2C16%2C3655%2C1919&w=1200&auto=format%2Ccompress&ogImage=true",
+          "language": "en",
+          "published_at": "2025-07-18T14:57:20.000000Z",
+          "source": "bloombergquint.com",
+          "relevance_score": 22.39374,
+          "entities": [
+            {
+              "symbol": "RELIANCEPP.BO",
+              "name": "Reliance Industries Ltd",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 36.240494,
+              "sentiment_score": -0.296,
+              "highlights": [
+                {
+                  "highlight": "The retail arm of <em>Reliance</em> <em>[+224 characters]",
+                  "sentiment": -0.296,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "28d07116-8a16-4eb6-be96-39ae4d65f27c",
+          "title": "Reliance Q1 FY26 net profit jumps 78% to ₹26,994 cr, revenue at ₹2.5 lakh cr",
+          "description": "Reliance Industries Q1 FY26 profit rises 78% to ₹26,994 crore, aided by Asian Paints stake sale. Revenue grows 5.3% YoY; margins also expand.",
+          "keywords": "Reliance Q1 FY26 results, Reliance Industries profit, Asian Paints stake sale, Reliance EBITDA margin, Reliance revenue growth",
+          "snippet": "Reliance Industries reported an over 78 per cent rise in consolidated net profit in the first quarter of FY26, aided by other income due to the sale of stake in...",
+          "url": "https://www.thehindubusinessline.com/companies/ril-posts-26994-cr-profit-in-q1-fy26-buoyed-by-asian-paints-stake-sale/article69828299.ece",
+          "image_url": "https://bl-i.thgim.com/public/todays-paper/tp-news/oimxjz/article69488375.ece/alternates/LANDSCAPE_1200/PREVIEW_-RIL-Q4G2KE9RRTH.4.jpg.jpg",
+          "language": "en",
+          "published_at": "2025-07-18T14:22:21.000000Z",
+          "source": "thehindubusinessline.com",
+          "relevance_score": 22.39374,
+          "entities": [
+            {
+              "symbol": "RELIANCEPP.BO",
+              "name": "Reliance Industries Ltd",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 35.604683,
+              "sentiment_score": 0.35015,
+              "highlights": [
+                {
+                  "highlight": "<em>Reliance</em> <em>Industries</em> re[+233 characters]",
+                  "sentiment": 0.7003,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "Published on July 18, 2025\n\nCompanies to[+58 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "ac74d57a-2a6b-460e-8fb3-d63193e5852b",
+      "title": "Reliance Retail Acquires Kelvinator To Expand Consumer Durables Business In India",
+      "description": "Reliance Retail, a subsidiary of Reliance Industries, has acquired Kelvinator to expand its presence in India’s consumer durables market and boost growth in premium home appliances.",
+      "keywords": "Reliance Industries Ltd.",
+      "snippet": "Reliance Industries Ltd. said on Friday that its subsidiary Reliance Retail acquired home appliance brand Kelvinator in a move aimed at expanding its presence i...",
+      "url": "https://www.ndtvprofit.com/business/reliance-retail-kelvinator-acquisition-consumer-durables-india",
+      "image_url": "https://media.assettype.com/bloombergquint%2F2025-07-18%2F3tk4j7t6%2FWhatsApp-Image-2025-07-18-at-11.17.35dc3ce514.jpg?rect=0%2C84%2C709%2C372&w=1200&auto=format%2Ccompress&ogImage=true",
+      "language": "en",
+      "published_at": "2025-07-18T06:57:49.000000Z",
+      "source": "bloombergquint.com",
+      "relevance_score": 21.76474,
+      "entities": [
+        {
+          "symbol": "RELIANCEPP.BO",
+          "name": "Reliance Industries Ltd",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 33.143356,
+          "sentiment_score": 0.3243,
+          "highlights": [
+            {
+              "highlight": "<em>Reliance</em> <em>Industries</em> <e[+316 characters]",
+              "sentiment": 0.6486,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "The announcement comes ahead of <em>Reli[+220 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": [
+        {
+          "uuid": "3fa386dd-86d7-4aae-9dab-4a9e8ed479bc",
+          "title": "Reliance Retail buys Kelvinator to boost its durables business",
+          "description": "Reliance Retail, led by Isha Ambani, has acquired American appliance manufacturer Kelvinator, aiming to expand its presence in the consumer durables market. This acquisition combines Reliance's extensive retail network with Kelvinator's established brand reputation and legacy of innovation. Reliance Retail intends to leverage Kelvinator's brand equity to enhance its offerings across various appliance categories, targeting growth and deeper consumer engagement.",
+          "keywords": "Reliance Retail, Kelvinator, Isha Ambani, consumer durables, air conditioners, RIL share price, Reliance Retail Ventures Limited, e-commerce platforms, reliance industries",
+          "snippet": "Live Events\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our Economic Times WhatsApp channel\n\nIsha Ambani-led Reliance Retail on Friday announc...",
+          "url": "https://economictimes.indiatimes.com/industry/cons-products/durables/reliance-retail-buys-american-durables-company-kelvinator/articleshow/122732308.cms",
+          "image_url": "https://img.etimg.com/thumb/msid-122732673,width-1200,height-630,imgsize-93160,overlay-economictimes/articleshow.jpg",
+          "language": "en",
+          "published_at": "2025-07-18T05:35:35.000000Z",
+          "source": "economictimes.indiatimes.com",
+          "relevance_score": 21.76474,
+          "entities": [
+            {
+              "symbol": "RELIANCE.BO",
+              "name": "Reliance Industries Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Energy",
+              "match_score": 20.059368,
+              "sentiment_score": 0.3818,
+              "highlights": [
+                {
+                  "highlight": "<em>Reliance</em> <em>Industries</em> sh[+311 characters]",
+                  "sentiment": 0.3818,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "RELIANCEPP.BO",
+              "name": "Reliance Industries Ltd",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 20.059185,
+              "sentiment_score": 0.3818,
+              "highlights": [
+                {
+                  "highlight": "<em>Reliance</em> <em>Industries</em> sh[+311 characters]",
+                  "sentiment": 0.3818,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 85,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "2ceb63ce-0681-48ab-b9d4-019f504678d6",
+      "title": "BIG relief for Anil Ambani's Reliance Power subsidiary company, Delhi HC restrains...",
+      "description": "The Delhi High Court asked parties to maintain the status quo and posted the matter for further hearing on September 17.",
+      "keywords": "Anil Ambani, Reliance Power subsidiary, Reliance NU Suntech Pvt ltd, Delhi HC, SECI, anil ambani news",
+      "snippet": "The Delhi High Court asked parties to maintain the status quo and posted the matter for further hearing on September 17.\n\nAnil Ambani-owned Reliance Power's sub...",
+      "url": "https://www.dnaindia.com/business/report-big-relief-for-anil-ambanis-reliance-power-subsidiary-company-reliance-nu-suntech-pvt-ltd-delhi-hc-restrains-seci-3167179",
+      "image_url": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2025/07/09/2709858-anil-5.jpg",
+      "language": "en",
+      "published_at": "2025-07-09T14:25:06.000000Z",
+      "source": "dnaindia.com",
+      "relevance_score": 21.514328,
+      "entities": [
+        {
+          "symbol": "SBKFF",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "us",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 28.558184,
+          "sentiment_score": -0.8,
+          "highlights": [
+            {
+              "highlight": "Reliance Power on SBI action\n\nThe firm r[+328 characters]",
+              "sentiment": -0.8,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SBIN.NS",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 28.559444,
+          "sentiment_score": -0.8,
+          "highlights": [
+            {
+              "highlight": "Reliance Power on SBI action\n\nThe firm r[+328 characters]",
+              "sentiment": -0.8,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RCOM.NS",
+          "name": "Reliance Communications Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Communication Services",
+          "match_score": 30.177597,
+          "sentiment_score": -0.7402,
+          "highlights": [
+            {
+              "highlight": "Reliance Power on SBI action\n\nThe firm r[+319 characters]",
+              "sentiment": -0.7402,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SBIN.BO",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 35.728,
+          "sentiment_score": -0.8,
+          "highlights": [
+            {
+              "highlight": "Reliance Power on SBI action\n\nThe firm r[+328 characters]",
+              "sentiment": -0.8,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RPOWER.BO",
+          "name": "Reliance Power Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 53.290863,
+          "sentiment_score": -0.11085,
+          "highlights": [
+            {
+              "highlight": "What <em>Reliance</em> <em>Power</em> sa[+330 characters]",
+              "sentiment": -0.2732,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Reliance</em> <em>Power</em> on SBI [+328 characters]",
+              "sentiment": -0.8,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Reliance</em> <em>Power</em> share p[+305 characters]",
+              "sentiment": 0.1531,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "BIG relief for Anil Ambani's <em>Reliance</em> <em>Power</em> subsidiary company, Delhi HC restrains...",
+              "sentiment": 0.4767,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "RCOM.BO",
+          "name": "Reliance Communications Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Communication Services",
+          "match_score": 37.345875,
+          "sentiment_score": -0.7402,
+          "highlights": [
+            {
+              "highlight": "Reliance Power on SBI action\n\nThe firm r[+319 characters]",
+              "sentiment": -0.7402,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BANKINDIA.BO",
+          "name": "Bank of India Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 18.411364,
+          "sentiment_score": -0.8,
+          "highlights": [
+            {
+              "highlight": "Reliance Power on SBI action\n\nThe firm r[+319 characters]",
+              "sentiment": -0.8,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "1cd57fed-5d3b-41d0-aef7-e8caa5f3f04e",
+      "title": "Adani to rival Reliance with PVC plant by 2028",
+      "description": "Gautam Adani's conglomerate is venturing into the petrochemicals sector with a 1 million tonne per year PVC plant in Mundra, Gujarat, challenging Reliance Industries' dominance. This project aims to reduce India's import dependency amid growing PVC demand driven by agriculture, infrastructure, and housing sectors. The plant, slated for commissioning by fiscal 2028, will utilize acetylene and carbide-based production processes.",
+      "keywords": "Adani PVC plant, Reliance Industries PVC, PVC production in India, petrochemical sector competition, Mundra Gujarat PVC plant, adani, reliance, ambani, sbi, reliance industries ltd",
+      "snippet": "Live Events\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our Economic Times WhatsApp channel\n\nBillionaire Gautam Adani 's conglomerate will bui...",
+      "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/paper-/-wood-/-glass/-plastic/-marbles/adani-to-rival-reliance-with-pvc-plant-by-2028/articleshow/122276290.cms",
+      "image_url": "https://img.etimg.com/thumb/msid-122276302,width-1200,height-630,imgsize-365139,overlay-economictimes/articleshow.jpg",
+      "language": "en",
+      "published_at": "2025-07-06T04:55:12.000000Z",
+      "source": "economictimes.indiatimes.com",
+      "relevance_score": 20.422344,
+      "entities": [
+        {
+          "symbol": "RELIANCEPP.BO",
+          "name": "Reliance Industries Ltd",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 23.53489,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Live Events\n\n\n\n\n\n(You can now subscribe [+345 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "0afcfb49-4a63-48a3-ab87-af829cf7f01b",
+      "title": "India needs to boost its petrochemical output to counter China's dominance, Reliance says",
+      "description": "India's petrochemical industry faces challenges from China's expansion, prompting a shift towards increased production and competitiveness.",
+      "keywords": "India, petrochemical output, China, Reliance, Refiner",
+      "snippet": "India needs to increase its petrochemical production capacity to meet local and global demand and contain China's growing dominance of the sector, a senior Reli...",
+      "url": "https://www.thehindubusinessline.com/economy/india-needs-to-boost-its-petrochemical-output-to-counter-chinas-dominance-reliance-says/article69799562.ece",
+      "image_url": "https://bl-i.thgim.com/public/incoming/c8ycj3/article69799587.ece/alternates/LANDSCAPE_1200/582256640",
+      "language": "en",
+      "published_at": "2025-07-11T08:15:31.000000Z",
+      "source": "thehindubusinessline.com",
+      "relevance_score": 20.073677,
+      "entities": [
+        {
+          "symbol": "RELIANCEPP.BO",
+          "name": "Reliance Industries Ltd",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 34.835655,
+          "sentiment_score": 0.2162,
+          "highlights": [
+            {
+              "highlight": "India needs to increase its petrochemica[+285 characters]",
+              "sentiment": 0.6486,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Vikram Sampat, senior vice-president, st[+281 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Published on July 11, 2025\n\nCompanies to[+58 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    }
+  ]
+}
