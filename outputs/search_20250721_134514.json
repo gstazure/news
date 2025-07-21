@@ -1,0 +1,822 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 27,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "e716470a-9644-48c6-932b-36ec7996caf8",
+      "title": "ICICI Bank warns of more margin pressure as repo cuts bite",
+      "description": "Retail loan growth slowed in the June quarter even as profit surpassed estimates. Analysts have flagged loan moderation as key concern.",
+      "keywords": "ICICI Bank Q1 results, ICICI Bank profit FY26, ICICI net interest margin, ICICI retail loan growth, ICICI Bank loan slowdown, RBI repo rate impact, ICICI Bank NIM outlook, Indian private banks performance, Sandeep Batra ICICI, ICICI Bank EPS growth, ICICI asset quality FY26, ICICI Bank vs Axis Bank, ICICI Bank treasury gains, ICICI Prudential Pension acquisition, ICICI Bank analyst report",
+      "snippet": "Mumbai: ICICI Bank Ltd expects further pressure on its net interest margins (NIMs) in the July-September quarter, as the full impact of the Reserve Bank of Indi...",
+      "url": "https://www.livemint.com/companies/company-results/icici-bank-q1-results-nim-pressure-rbi-rate-cut-loan-growth-slowdown-profit-beats-estimates-11752929450652.html",
+      "image_url": "https://www.livemint.com/lm-img/img/2025/07/19/1600x900/INDIA-ICICI-BANK-3_1729908941936_1752929678100.jpg",
+      "language": "en",
+      "published_at": "2025-07-19T13:38:13.000000Z",
+      "source": "livemint.com",
+      "relevance_score": 24.836884,
+      "entities": [
+        {
+          "symbol": "AXISBANK-BL.NS",
+          "name": "AXIS BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 25.965658,
+          "sentiment_score": 0.5644,
+          "highlights": [
+            {
+              "highlight": "The analysts also drew a contrast with r[+125 characters]",
+              "sentiment": 0.7269,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Axis</em> <em>Bank</em> on 17 July r[+326 characters]",
+              "sentiment": 0.4019,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": [
+        {
+          "uuid": "2648688f-395a-4985-b26a-52537ccd411b",
+          "title": "ICICI Bank, SBI among top picks as banking sector prepares for earnings rebound; Motilal Oswal sees 12-15% upside",
+          "description": "Indias banking sector is adapting to a low interest rate regime, with temporary NIM compression but improving liquidity, falling deposit costs, and resilient asset quality likely to drive margin recovery and earnings rebound from H2 FY26 onward.",
+          "keywords": "sbi, icici bank, india banking sector outlook, net interest margins fy26, icici bank target price, sbi qip 2025, rbi repo rate cut impact, bank deposit rate trends, asset quality banks india, crr liquidity support, public sector bank lending yield, private bank nim strategy., motilal oswal financial services ltd.",
+          "snippet": "Live Events\n\nICICI Bank: Buy| Target Rs 1650| LTP Rs 1427| Upside 15%\n\n\n\nSBI: Buy| Target Rs 925| LTP Rs 823| Upside 12%\n\n\n\n\n\n\n\n(You can now subscribe to our\n\n(...",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/icici-bank-sbi-among-top-picks-as-banking-sector-prepares-for-earnings-rebound-motilal-oswal-sees-12-15-upside/articleshow/122778702.cms",
+          "image_url": "https://img.etimg.com/thumb/msid-122778709,width-1200,height-630,imgsize-62496,overlay-etmarkets/articleshow.jpg",
+          "language": "en",
+          "published_at": "2025-07-19T06:55:05.000000Z",
+          "source": "economictimes.indiatimes.com",
+          "relevance_score": 24.836884,
+          "entities": [
+            {
+              "symbol": "ICICIBANK.NS",
+              "name": "ICICI Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 43.47667,
+              "sentiment_score": 0.33055,
+              "highlights": [
+                {
+                  "highlight": "Live Events\n\n<em>ICICI</em> <em>Bank</em[+333 characters]",
+                  "sentiment": 0.4588,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "<em>ICICI</em> <em>Bank</em>, SBI among top picks as banking sector prepares for earnings rebound; Motilal Oswal sees 12-15% upside",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "title"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "0be7ca23-4589-42c8-bb40-25a69558db8d",
+      "title": "ICICI Bank shares climb 2.53% as Q1 net profit jumps",
+      "description": "ICICI Bank stock rises 2.53% after 15.9% profit jump in June quarter, NSE and BSE see gains.",
+      "keywords": "",
+      "snippet": "Shares of ICICI Bank on Monday morning climbed 2.53 per cent after the firm posted a 15.9 per cent jump in its consolidated net profit for the June quarter.\n\nTh...",
+      "url": "https://www.thehindubusinessline.com/markets/stock-markets/icici-bank-shares-climb-253-as-q1-net-profit-jumps/article69836967.ece",
+      "image_url": "https://bl-i.thgim.com/public/incoming/x299zr/article69836978.ece/alternates/LANDSCAPE_1200/2025-07-21T043229Z_702583605_RC2YI0AH1AMD_RTRMADP_3_INDIA-BANKS-STOCKS.JPG",
+      "language": "en",
+      "published_at": "2025-07-21T05:10:51.000000Z",
+      "source": "thehindubusinessline.com",
+      "relevance_score": 24.488804,
+      "entities": [
+        {
+          "symbol": "ICICIBANK.NS",
+          "name": "ICICI Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 59.404053,
+          "sentiment_score": 0.487525,
+          "highlights": [
+            {
+              "highlight": "Shares of <em>ICICI</em> <em>Bank</em> o[+259 characters]",
+              "sentiment": 0.6249,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>ICICI</em> <em>Bank</em> on Saturday[+334 characters]",
+              "sentiment": 0.7003,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Published on July 21, 2025\n\nCompanies to[+40 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>ICICI</em> <em>Bank</em> shares climb 2.53% as Q1 net profit jumps",
+              "sentiment": 0.6249,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "ICICIBANK.BO",
+          "name": "ICICI Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 58.752068,
+          "sentiment_score": 0.487525,
+          "highlights": [
+            {
+              "highlight": "Shares of <em>ICICI</em> <em>Bank</em> o[+259 characters]",
+              "sentiment": 0.6249,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>ICICI</em> <em>Bank</em> on Saturday[+334 characters]",
+              "sentiment": 0.7003,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Published on July 21, 2025\n\nCompanies to[+40 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>ICICI</em> <em>Bank</em> shares climb 2.53% as Q1 net profit jumps",
+              "sentiment": 0.6249,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "2dcee805-5687-4d2c-907c-1b8cfdb76aeb",
+      "title": "Markets bounce back after falling in early trade driven by buying in ICICI Bank, HDFC Bank",
+      "description": "Equity markets open lower but rebound as blue-chip stocks ICICI Bank and HDFC Bank drive recovery.",
+      "keywords": "Sensex, Nifty, Stock markets rebound after opening lower, ICICI and HDFC Bank drive recovery, BSE, NSE",
+      "snippet": "Equity benchmark indices Sensex and Nifty dropped in early trade on Monday (July 21, 2025), but buying in the blue-chip stocks ICICI Bank and HDFC Bank helped t...",
+      "url": "https://www.thehindu.com/business/markets/equity-markets-on-july-21-2025/article69836933.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/bhooba/article69836948.ece/alternates/LANDSCAPE_1200/2025-05-12T082023Z_888582058_RC27GEAGV1AP_RTRMADP_3_INDIA-STOCKS.JPG",
+      "language": "en",
+      "published_at": "2025-07-21T04:55:24.000000Z",
+      "source": "thehindu.com",
+      "relevance_score": 21.603527,
+      "entities": [
+        {
+          "symbol": "AXISBANK.NS",
+          "name": "Axis Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 18.312294,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, <em>Axis</em> <em>Bank</em>, Re[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ICICIBANK.NS",
+          "name": "ICICI Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 47.33728,
+          "sentiment_score": 0.179675,
+          "highlights": [
+            {
+              "highlight": "Equity benchmark indices Sensex and Nift[+285 characters]",
+              "sentiment": -0.5011,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "From the Sensex firms, <em>ICICI</em> <e[+194 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Weekend Q1 results were good with <em>IC[+313 characters]",
+              "sentiment": 0.9325,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Markets bounce back after falling in early trade driven by buying in <em>ICICI</em> <em>Bank</em>, HDFC Bank",
+              "sentiment": -0.1531,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "BAJFINANCE.NS",
+          "name": "Bajaj Finance Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 19.917503,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Tata Steel, UltraTech Cement, Eternal an[+225 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK.NS",
+          "name": "HDFC Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 46.725525,
+          "sentiment_score": 0.047025,
+          "highlights": [
+            {
+              "highlight": "Equity benchmark indices Sensex and Nift[+285 characters]",
+              "sentiment": -0.5011,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> also climbed[+211 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> also reporte[+268 characters]",
+              "sentiment": 0.4019,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Markets bounce back after falling in early trade driven by buying in ICICI Bank, <em>HDFC</em> <em>Bank</em>",
+              "sentiment": -0.1531,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "TCS.NS",
+          "name": "Tata Consultancy Services Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 24.578178,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+151 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ULTRACEMCO.NS",
+          "name": "UltraTech Cement Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 23.716097,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Tata Steel, <em>UltraTech</em> <em>Cemen[+225 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HCLTECH.NS",
+          "name": "HCL Technologies Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 20.363884,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCE.NS",
+          "name": "Reliance Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 21.55647,
+          "sentiment_score": 0.4172,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, <em>Reliance</em> <e[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "India's most valuable company <em>Relian[+263 characters]",
+              "sentiment": 0.8344,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "INFY.NS",
+          "name": "Infosys Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 15.30463,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+133 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATASTEEL.NS",
+          "name": "Tata Steel Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 19.917065,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "<em>Tata</em> <em>Steel</em>, UltraTech [+225 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TECHM.NS",
+          "name": "Tech Mahindra Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 19.24823,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "AXISBANK-BL.NS",
+          "name": "AXIS BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 29.007362,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, <em>Axis</em> <em>Bank</em>, Re[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATASTEEL-BL.NS",
+          "name": "TATA STEEL LTD",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 19.915497,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "<em>Tata</em> <em>Steel</em>, UltraTech [+225 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HCLTECH-BL.NS",
+          "name": "HCL TECHNOLOGIES",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 33.106552,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDB.BA",
+          "name": "HDFC BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "ar",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 79.21474,
+          "sentiment_score": 0.047025,
+          "highlights": [
+            {
+              "highlight": "Equity benchmark indices Sensex and Nift[+285 characters]",
+              "sentiment": -0.5011,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> also climbed[+211 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> also reporte[+268 characters]",
+              "sentiment": 0.4019,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Markets bounce back after falling in early trade driven by buying in ICICI Bank, <em>HDFC</em> <em>Bank</em>",
+              "sentiment": -0.1531,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "AXISBANK.BO",
+          "name": "Axis Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 20.091042,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, <em>Axis</em> <em>Bank</em>, Re[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK.BO",
+          "name": "HDFC Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 48.498383,
+          "sentiment_score": 0.047025,
+          "highlights": [
+            {
+              "highlight": "Equity benchmark indices Sensex and Nift[+285 characters]",
+              "sentiment": -0.5011,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> also climbed[+211 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> also reporte[+268 characters]",
+              "sentiment": 0.4019,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Markets bounce back after falling in early trade driven by buying in ICICI Bank, <em>HDFC</em> <em>Bank</em>",
+              "sentiment": -0.1531,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "ICICIBANK.BO",
+          "name": "ICICI Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 49.112274,
+          "sentiment_score": 0.179675,
+          "highlights": [
+            {
+              "highlight": "Equity benchmark indices Sensex and Nift[+285 characters]",
+              "sentiment": -0.5011,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "From the Sensex firms, <em>ICICI</em> <e[+194 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Weekend Q1 results were good with <em>IC[+313 characters]",
+              "sentiment": 0.9325,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Markets bounce back after falling in early trade driven by buying in <em>ICICI</em> <em>Bank</em>, HDFC Bank",
+              "sentiment": -0.1531,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "BAJFINANCE.BO",
+          "name": "Bajaj Finance Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.69629,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Tata Steel, UltraTech Cement, Eternal an[+225 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TCS.BO",
+          "name": "Tata Consultancy Services Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 26.35625,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+151 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HCLTECH.BO",
+          "name": "HCL Technologies Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 22.14027,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCE.BO",
+          "name": "Reliance Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 23.33564,
+          "sentiment_score": 0.4172,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, <em>Reliance</em> <e[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "India's most valuable company <em>Relian[+263 characters]",
+              "sentiment": 0.8344,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "INFY.BO",
+          "name": "Infosys Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 17.083942,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+133 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATASTEEL.BO",
+          "name": "Tata Steel Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 21.695248,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "<em>Tata</em> <em>Steel</em>, UltraTech [+225 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TECHM.BO",
+          "name": "Tech Mahindra Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 21.026918,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ULTRACEMCO.BO",
+          "name": "UltraTech Cement Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 25.483648,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Tata Steel, <em>UltraTech</em> <em>Cemen[+225 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCEPP.BO",
+          "name": "Reliance Industries Ltd",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 23.33501,
+          "sentiment_score": 0.4172,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, <em>Reliance</em> <e[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "India's most valuable company <em>Relian[+263 characters]",
+              "sentiment": 0.8344,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": [
+        {
+          "uuid": "9cd53aed-6372-4470-a804-93406112172a",
+          "title": "Stock Picks Today: HDFC Bank, ICICI Bank, RIL, JSW Steel, Bandhan Bank On Brokerage Radar",
+          "description": "HDFC Bank Ltd., ICICI Bank Ltd., Reliance Industries Ltd., and JSW Steel Ltd. are among the top companies on brokerages' radar on Monday. Analysts have shared their views on the June quarter earnings of these companies. Several brokerages have also changed their target price for these stocks based on a fundamental outlook revision.",
+          "keywords": "Reliance Industries Ltd., JSW Steel Ltd., ICICI Bank Ltd., HDFC Bank Ltd.",
+          "snippet": "HDFC Bank Ltd., ICICI Bank Ltd., Reliance Industries Ltd., and JSW Steel Ltd. are among the top companies on brokerages' radar on Monday. Analysts have shared t...",
+          "url": "https://www.ndtvprofit.com/markets/stock-picks-today-hdfc-bank-icici-bank-ril-jsw-steel-on-brokerage-radar",
+          "image_url": "https://media.assettype.com/bloombergquint%2F2025-06-11%2F0k7uzk7e%2Fstock-maarket.jpg?rect=0%2C19%2C1472%2C773&w=1200&auto=format%2Ccompress&ogImage=true",
+          "language": "en",
+          "published_at": "2025-07-21T02:33:41.000000Z",
+          "source": "bloombergquint.com",
+          "relevance_score": 21.603527,
+          "entities": [
+            {
+              "symbol": "HDB.BA",
+              "name": "HDFC BANK",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "ar",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 81.615685,
+              "sentiment_score": 0.24695,
+              "highlights": [
+                {
+                  "highlight": "<em>HDFC</em> <em>Bank</em> Ltd., ICICI [+312 characters]",
+                  "sentiment": 0.4939,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "Stock Picks Today: <em>HDFC</em> <em>Bank</em>, ICICI Bank, RIL, JSW Steel, Bandhan Bank On Brokerage Radar",
+                  "sentiment": 0,
+                  "highlighted_in": "title"
+                }
+              ]
+            },
+            {
+              "symbol": "RELIANCEPP.BO",
+              "name": "Reliance Industries Ltd",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 37.7492,
+              "sentiment_score": 0.4939,
+              "highlights": [
+                {
+                  "highlight": "., <em>Reliance</em> <em>Industries</em>[+291 characters]",
+                  "sentiment": 0.4939,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

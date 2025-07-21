@@ -27,7 +27,7 @@ def index():
                 errors.append('MARKETAUX_API_TOKEN not found in environment variables.')
             else:
                 api_url = 'https://api.marketaux.com/v1/news/all'
-                seven_days_ago = datetime.now() - timedelta(days=7)
+                three_days_ago = datetime.now() - timedelta(days=3)
                 params = {
                     'api_token': api_token,
                     'search': query,
@@ -35,7 +35,7 @@ def index():
                     'language': 'en',
                     'countries': 'in',
                     'limit': 10,
-                    'published_after': seven_days_ago.strftime('%Y-%m-%dT%H:%M:%S')
+                    'published_after': three_days_ago.strftime('%Y-%m-%dT%H:%M:%S')
                 }
                 try:
                     response = requests.get(api_url, params=params)

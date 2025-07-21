@@ -172,9 +172,11 @@
             </div>
         {% endif %}
 
-        {% if news_results %}
+        {% if query %}
         <div class="news-results-section">
             <h2>News Results for "{{ query }}"</h2>
+            
+            {% if news_results %}
             <button id="processSelectedBtn" class="button">Process Selected</button>
             <div id="newsResults">
                 {% for article in news_results %}
@@ -191,6 +193,18 @@
                     </div>
                 {% endfor %}
             </div>
+            {% else %}
+            <div class="alert alert-info" style="padding: 15px; margin-top: 15px; background-color: #f8f9fa; border-left: 5px solid #17a2b8; border-radius: 4px;">
+                <h4 style="margin-top: 0;"><i class="fas fa-info-circle" style="margin-right: 10px;"></i>No News Found</h4>
+                <p>No news articles were found for "{{ query }}" in the last 3 days. Try:</p>
+                <ul style="margin-bottom: 0;">
+                    <li>Using different keywords</li>
+                    <li>Checking for spelling errors</li>
+                    <li>Using broader search terms</li>
+                    <li>Searching for more popular stocks or topics</li>
+                </ul>
+            </div>
+            {% endif %}
         </div>
         {% endif %}
 

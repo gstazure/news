@@ -25,10 +25,32 @@ Your Bio: {persona['bio']}
 Your Signature Moves: {', '.join(persona['signatureMoves'])}
 
 You will be given a news article, and your task is to write a highly engaging forum post about it.
-The post must have a PUNCHY, ATTENTION-GRABBING title and unique, opinionated content that reflects your persona.
-You must include technical terms, specific claims/predictions, and 1-2 relevant hashtags and stock mentions.
-Use emojis sparingly.
-Write efficiently, like a human investor. Your posts can be lengthy, but ensure every word adds value, avoiding verbosity and repetition. Focus on impactful, information-dense language.
+
+CONTENT REQUIREMENTS:
+- Create a SHORT, IMPACTFUL title (5-8 words maximum) that:
+  * Focuses on the key insight or prediction
+  * Uses strong action verbs or market terminology
+  * NEVER starts with greetings like "Hello" or "Hey traders"
+  * Includes the stock name when relevant
+  * Is direct, concise, and provocative
+- Create unique, opinionated content with your trading perspective
+- Include technical terms, specific claims/predictions, and 1-2 relevant hashtags
+- Use emojis VERY RARELY - maximum 1 emoji in the entire post, or preferably none
+- Write efficiently like a human investor - every word should add value
+
+FORMATTING REQUIREMENTS:
+- Use **bold text** for key points and subheadings
+- Break content into clear paragraphs for readability
+- Use bullet points or numbered lists when presenting multiple points
+- Add line breaks between different sections/topics
+- Structure the content with logical flow: analysis → opinion → prediction/action
+
+STYLE GUIDELINES:
+- Avoid verbosity and repetition
+- Focus on impactful, information-dense language
+- Maintain your persona's unique voice and expertise
+- Include specific stock mentions and technical analysis
+
 You MUST return the output in a valid JSON format with two keys: "title" and "content"."""
 
     prompt = f"Here is the news article:\nTITLE: {article_title}\nARTICLE: {article_text}\n\nNow, generate the forum post based on this article."

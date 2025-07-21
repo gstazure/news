@@ -1,0 +1,229 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 46,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "00cdc76a-0dfb-4ebd-b6b0-61d61d21a2bc",
+      "title": "Reliance Retail Q1 PAT: Reliance Retail Q1 Profit Soars 28.3% to Rs 3,271 Crore Amid Revenue Growth, ETRetail",
+      "description": "Reliance Retail Q1 PAT: Reliance Retail reports a substantial increase in its profit after tax, growing 28.3% to Rs 3,271 crore in Q1 2025, alongside an 11.3% rise in gross revenue. The company continues to expand its customer base and store network, focusing on operational excellence and enhanced product offerings.",
+      "keywords": "Reliance Retail Q1 PAT, Reliance Industries, Mukesh Ambani, profit after tax increase, JioMart growth, Reliance Retail performance, retail business expansion, reliance retail, rrvl, reliance trends",
+      "snippet": "Advt\n\nAdvt\n\nJoin the community of 2M+ industry professionals. Subscribe to Newsletter to get latest insights & analysis in your inbox. All about ETRetail indust...",
+      "url": "https://retail.economictimes.indiatimes.com/news/industry/reliance-retail-q1-profit-soars-283-to-rs-3271-crore-amid-revenue-growth/122768851",
+      "image_url": "https://etimg.etb2bimg.com/thumb/msid-122768851,imgsize-254609,width-1200,height=627,overlay-etretail,resizemode-75/industry/reliance-retail-q1-profit-soars-283-to-rs-3271-crore-amid-revenue-growth.jpg",
+      "language": "en",
+      "published_at": "2025-07-18T15:45:05.000000Z",
+      "source": "retail.economictimes.indiatimes.com",
+      "relevance_score": 22.375475,
+      "entities": [
+        {
+          "symbol": "RELIANCEPP.BO",
+          "name": "Reliance Industries Ltd",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 32.514217,
+          "sentiment_score": 0.454267,
+          "highlights": [
+            {
+              "highlight": "New Delhi: Reliance Retail Venture Ltd ([+329 characters]",
+              "sentiment": 0.8689,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "in the same quarter last fiscal, accordi[+341 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "We are focusing on strengthening the por[+171 characters]",
+              "sentiment": 0.4939,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "650b6ac1-2022-4014-823e-29b481b89a78",
+      "title": "Reliance Power reports ₹45 cr net profit in Q1",
+      "description": "Reliance Power reports loss in Q1, reduces expenses, achieves high PLF, and wins solar project bid.",
+      "keywords": "Reliance Power, Q1 result, income, result, profit",
+      "snippet": "Reliance Power on Saturday reported a consolidated net profit of ₹44.68 crore for the quarter ended June 2025-26, as the company trimmed its expenses.\n\nIt had...",
+      "url": "https://www.thehindubusinessline.com/companies/reliance-power-reports-45-cr-net-profit-in-q1/article69831283.ece",
+      "image_url": "https://bl-i.thgim.com/public/incoming/19ai50/article69831297.ece/alternates/LANDSCAPE_1200/PO02_Up_arrow.jpg",
+      "language": "en",
+      "published_at": "2025-07-19T11:30:52.000000Z",
+      "source": "thehindubusinessline.com",
+      "relevance_score": 21.975899,
+      "entities": [
+        {
+          "symbol": "SJVN.NS",
+          "name": "SJVN Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 30.881573,
+          "sentiment_score": 0.7579,
+          "highlights": [
+            {
+              "highlight": "Reliance Power subsidiary Reliance NU En[+156 characters]",
+              "sentiment": 0.7579,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RPOWER.NS",
+          "name": "Reliance Power Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 66.47169,
+          "sentiment_score": 0.30012,
+          "highlights": [
+            {
+              "highlight": "<em>Reliance</em> <em>Power</em> on Satu[+264 characters]",
+              "sentiment": 0.1531,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Reliance</em> <em>Power</em> managed[+214 characters]",
+              "sentiment": 0.2263,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Reliance</em> <em>Power</em> subsidi[+156 characters]",
+              "sentiment": 0.6808,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Reliance</em> <em>Power</em> <em>Lim[+185 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Reliance</em> <em>Power</em> reports ₹45 cr net profit in Q1",
+              "sentiment": 0.4404,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "RPOWER.BO",
+          "name": "Reliance Power Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 66.47123,
+          "sentiment_score": 0.30012,
+          "highlights": [
+            {
+              "highlight": "<em>Reliance</em> <em>Power</em> on Satu[+264 characters]",
+              "sentiment": 0.1531,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Reliance</em> <em>Power</em> managed[+214 characters]",
+              "sentiment": 0.2263,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Reliance</em> <em>Power</em> subsidi[+156 characters]",
+              "sentiment": 0.6808,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Reliance</em> <em>Power</em> <em>Lim[+185 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Reliance</em> <em>Power</em> reports ₹45 cr net profit in Q1",
+              "sentiment": 0.4404,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "SJVN.BO",
+          "name": "SJVN Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 30.879618,
+          "sentiment_score": 0.7579,
+          "highlights": [
+            {
+              "highlight": "Reliance Power subsidiary Reliance NU En[+156 characters]",
+              "sentiment": 0.7579,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "c2323279-7330-47dd-948c-eaeb926f48a6",
+      "title": "Reliance Industries Shares Fall After Q1 Results",
+      "description": "Reliance Industries Ltd. share price declined during early trade on Monday, which was the first trading session since the June quarter results were released last week. The quarter showed positive momentum in telecom operations offset slower-than-forecast retail revenue and a gradual recovery in the oil-to-chemical business.",
+      "keywords": "Reliance Industries Ltd.",
+      "snippet": "Reliance Industries Ltd. share price declined during early trade on Monday, which was the first trading session since the June quarter results were released las...",
+      "url": "https://www.ndtvprofit.com/markets/reliance-industries-share-price-falls-after-q1fy26-results",
+      "image_url": "https://media.assettype.com/bloombergquint%2F2025-04-25%2Fu41xjbz8%2FCopy-of-hero-image-25.png?w=1200&auto=format%2Ccompress&ogImage=true",
+      "language": "en",
+      "published_at": "2025-07-21T04:46:48.000000Z",
+      "source": "bloombergquint.com",
+      "relevance_score": 21.640003,
+      "entities": [
+        {
+          "symbol": "RELIANCEPP.BO",
+          "name": "Reliance Industries Ltd",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 80.48213,
+          "sentiment_score": 0.606267,
+          "highlights": [
+            {
+              "highlight": "<em>Reliance</em> <em>Industries</em> <e[+313 characters]",
+              "sentiment": 0.7003,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Jefferies said <em>Reliance</em> <em>Ind[+115 characters]",
+              "sentiment": 0.8225,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Reliance</em> <em>Industries</em> Shares Fall After Q1 Results",
+              "sentiment": 0.296,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    }
+  ]
+}
