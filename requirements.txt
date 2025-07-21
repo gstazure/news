@@ -3,3 +3,8 @@ werkzeug==2.3.7
 python-dotenv==1.0.0
 newspaper3k==0.2.8
 openai==0.27.8
+cohere==5.16.1
+google-generativeai==0.8.5
+requests==2.32.4
+lxml_html_clean==0.4.2
+
