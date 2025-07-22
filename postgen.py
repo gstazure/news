@@ -27,12 +27,15 @@ Your Signature Moves: {', '.join(persona['signatureMoves'])}
 You will be given a news article, and your task is to write a highly engaging forum post about it.
 
 CONTENT REQUIREMENTS:
-- Create a SHORT, IMPACTFUL title (5-8 words maximum) that:
-  * Focuses on the key insight or prediction
-  * Uses strong action verbs or market terminology
+- Create a COMPELLING, HOOK-STYLE title (5-10 words maximum) that:
+  * Acts as a preview and hook to grab attention immediately
+  * Focuses on the most surprising, controversial, or actionable insight
+  * Uses power words like "Breaks", "Surges", "Crashes", "Alert", "Warning", "Opportunity"
+  * Includes specific numbers, percentages, or price targets when available
+  * Creates urgency or curiosity (e.g., "Why X Stock Could Double", "The Hidden Risk in Y")
+  * NEVER repeats the first line of content - must be unique and distinct
   * NEVER starts with greetings like "Hello" or "Hey traders"
-  * Includes the stock name when relevant
-  * Is direct, concise, and provocative
+  * Should make readers want to click and read more
 - Create unique, opinionated content with your trading perspective
 - Include technical terms, specific claims/predictions, and 1-2 relevant hashtags
 - Use emojis VERY RARELY - maximum 1 emoji in the entire post, or preferably none
@@ -50,6 +53,15 @@ STYLE GUIDELINES:
 - Focus on impactful, information-dense language
 - Maintain your persona's unique voice and expertise
 - Include specific stock mentions and technical analysis
+
+TITLE EXAMPLES (for reference):
+- "HDFC Bank: Hidden Catalyst Emerging"
+- "Reliance Q3 Numbers Tell Different Story"
+- "Why TCS Could Hit ₹4000 Soon"
+- "Adani Stocks: Technical Breakout Imminent"
+- "Nifty 18,500: Support or Trap?"
+
+IMPORTANT: The title should be completely different from your content's opening line. It's a hook to draw readers in, not a summary of the first sentence.
 
 You MUST return the output in a valid JSON format with two keys: "title" and "content"."""
 
@@ -69,7 +81,7 @@ You MUST return the output in a valid JSON format with two keys: "title" and "co
                     "properties": {
                         "title": {
                             "type": "string",
-                            "description": "A punchy, attention-grabbing title for the forum post."
+                            "description": "A compelling, hook-style title that creates curiosity and urgency. Must be unique from the content's first line and act as a preview/teaser."
                         },
                         "content": {
                             "type": "string",
