@@ -1,0 +1,409 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 94,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "795b9fa6-4510-4e6f-8388-8e925d63d980",
+      "title": "ICICI Lombard, ICICI Prudential, Bank Of Maharashtra Q1 Results Review",
+      "description": "ICICI Lombard General Insurance - Profits defy the growth dip: Maintain Buy  Bank of Maharashtra - Strong quarter; Capitalzing on a natural right-to-win, ICICI Prudential Life\nHigher protection mix improves margin profile",
+      "keywords": "Bank Of Maharashtra, ICICI Prudential Life Insurance Company Ltd., ICICI Lombard General Insurance Co Ltd",
+      "snippet": "ICICI Lombard General Insurance reported in-line net earned premium growth at 14% YoY, although PAT witnessed a sharp jump (+29% YoY), ahead of our estimates. B...",
+      "url": "https://www.ndtvprofit.com/research-reports/icici-lombard-icici-prudential-bank-of-maharashtra-q1-results-review-hdfc-securities",
+      "image_url": "https://media.assettype.com/bloombergquint%2F2023-10%2Fc63f8f4f-3148-43a8-b335-eb0d1b810522%2FFPI_stock_market.jpg?rect=0%2C39%2C2047%2C1075&w=1200&auto=format%2Ccompress&ogImage=true",
+      "language": "en",
+      "published_at": "2025-07-16T05:17:53.000000Z",
+      "source": "bloombergquint.com",
+      "relevance_score": 26.207958,
+      "entities": [
+        {
+          "symbol": "MAHABANK.NS",
+          "name": "Bank of Maharashtra",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 109.595146,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "ICICI Lombard, ICICI Prudential, <em>Bank</em> <em>Of</em> <em>Maharashtra</em> Q1 Results Review",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": [
+        {
+          "uuid": "7eba7ad6-2cf3-45a1-81d5-78236a49e962",
+          "title": "Sensex falls over 150 pts, Nifty below 25,150; auto, metal stocks top drags",
+          "description": "Indian equity markets edged lower on Wednesday, mirroring Asian market trends after the US inflation data release. Investors are exercising caution ahead of key corporate earnings reports and developments in US trade talks. Sectorally, auto, metal, and financial services faced declines, while Dixon Technologies surged following an acquisition announcement.",
+          "keywords": "tech mahindra, market today, market opening, stock market news, Nifty today, sensex today, sensex update, IT stocks, tech Mahindra results, Q1 results, tata motors, exide industries, dixon technologies, tata steel, trent, eternal, adani ports, hdfc bank, hdb financial services, infosys, ashok leyland, icici bank",
+          "snippet": "Live Events\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our ETMarkets WhatsApp channel\n\nIndian equity benchmarks opened slightly lower on Wedn...",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/sensex-falls-over-150-pts-nifty-below-25150-auto-metal-stocks-top-drags/articleshow/122551795.cms",
+          "image_url": "https://img.etimg.com/thumb/msid-122551888,width-1200,height-630,imgsize-86810,overlay-etmarkets/articleshow.jpg",
+          "language": "en",
+          "published_at": "2025-07-16T04:03:13.000000Z",
+          "source": "economictimes.indiatimes.com",
+          "relevance_score": 26.207958,
+          "entities": [
+            {
+              "symbol": "^CNXAUTO",
+              "name": "Nifty Auto",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "index",
+              "industry": "N/A",
+              "match_score": 31.398018,
+              "sentiment_score": 0.128,
+              "highlights": [
+                {
+                  "highlight": "On the other hand, Trent Adani Ports , a[+175 characters]",
+                  "sentiment": 0.128,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "^CNXMETAL",
+              "name": "Nifty Metal",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "index",
+              "industry": "N/A",
+              "match_score": 26.433813,
+              "sentiment_score": 0.4019,
+              "highlights": [
+                {
+                  "highlight": "<em>Nifty</em> <em>Metal</em> and Nifty [+262 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "ASHOKLEY.BO",
+              "name": "Ashok Leyland Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Consumer Cyclical",
+              "match_score": 26.066689,
+              "sentiment_score": 0.4939,
+              "highlights": [
+                {
+                  "highlight": "On the other hand, Trent Adani Ports , a[+175 characters]",
+                  "sentiment": 0.4939,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "ICICIBANK.BO",
+              "name": "ICICI Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 19.58973,
+              "sentiment_score": -0.0516,
+              "highlights": [
+                {
+                  "highlight": "Investors also remained cautious ahead o[+322 characters]",
+                  "sentiment": -0.0516,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "TATAMTRDVR.BO",
+              "name": "Tata Motors Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Consumer Cyclical",
+              "match_score": 21.214901,
+              "sentiment_score": -0.0516,
+              "highlights": [
+                {
+                  "highlight": "Investors also remained cautious ahead o[+322 characters]",
+                  "sentiment": -0.0516,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "INFY.BO",
+              "name": "Infosys Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Technology",
+              "match_score": 15.775199,
+              "sentiment_score": 0.4939,
+              "highlights": [
+                {
+                  "highlight": "On the other hand, Trent Adani Ports , a[+166 characters]",
+                  "sentiment": 0.4939,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "TATAMOTORS.BO",
+              "name": "Tata Motors Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Consumer Cyclical",
+              "match_score": 21.2143,
+              "sentiment_score": -0.0516,
+              "highlights": [
+                {
+                  "highlight": "Investors also remained cautious ahead o[+322 characters]",
+                  "sentiment": -0.0516,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "EXIDEIND.BO",
+              "name": "Exide Industries Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Consumer Cyclical",
+              "match_score": 24.016315,
+              "sentiment_score": 0.4939,
+              "highlights": [
+                {
+                  "highlight": "On the other hand, Trent Adani Ports , a[+175 characters]",
+                  "sentiment": 0.4939,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "LTTS.BO",
+              "name": "L&T Technology Services Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Technology",
+              "match_score": 23.691755,
+              "sentiment_score": 0,
+              "highlights": [
+                {
+                  "highlight": "This is down from Rs 582 crore in the sa[+296 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "TRENT.BO",
+              "name": "Trent Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Consumer Cyclical",
+              "match_score": 15.53834,
+              "sentiment_score": 0.4939,
+              "highlights": [
+                {
+                  "highlight": "On the other hand, <em>Trent</em> Adani [+166 characters]",
+                  "sentiment": 0.4939,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "c61f0905-4682-4014-bd4d-0dd8f90921b7",
+      "title": "Q1 2026 ICICI Prudential Life Insurance Company Ltd Earnings Call Transcript",
+      "description": "Jul 15, 2025 / 09:15AM GMTOperator Ladies and gentlemen, good day, and welcome to the ICICI Prudential Life Insurance Company Limited Q1 FY 2026 Earnings Confer",
+      "keywords": "GuruFocus, Article, News, GuruFocus News, BOM:540133",
+      "snippet": "Jul 15, 2025 / 09:15AM GMT\n\nOperator\n\n\n\nLadies and gentlemen, good day, and welcome to the ICICI Prudential Life Insurance Company Limited Q1 FY 2026 Earnings C...",
+      "url": "https://www.gurufocus.com/news/2979880/q1-2026-icici-prudential-life-insurance-company-ltd-earnings-call-transcript",
+      "image_url": "https://static.gurufocus.com/images/global_logo_twitter_card.png",
+      "language": "en",
+      "published_at": "2025-07-16T05:00:48.000000Z",
+      "source": "gurufocus.com",
+      "relevance_score": 25.089565,
+      "entities": [
+        {
+          "symbol": "ICICIPRULI.NS",
+          "name": "ICICI Prudential Life Insurance Company Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 175.50864,
+          "sentiment_score": 0.587667,
+          "highlights": [
+            {
+              "highlight": "Jul 15, 2025 / 09:15AM GMT\n\nOperator\n\n\n\n[+414 characters]",
+              "sentiment": 0.891,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Anup Bagchi - <em>ICICI</em> <em>Prudent[+386 characters]",
+              "sentiment": 0.872,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Q1 2026 <em>ICICI</em> <em>Prudential</em> <em>Life</em> <em>Insurance</em> <em>Company</em> Ltd Earnings Call Transcript",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": [
+        {
+          "uuid": "c61f0905-4682-4014-bd4d-0dd8f90921b7",
+          "title": "Q1 2026 ICICI Prudential Life Insurance Company Ltd Earnings Call Transcript",
+          "description": "Jul 15, 2025 / 09:15AM GMTOperator Ladies and gentlemen, good day, and welcome to the ICICI Prudential Life Insurance Company Limited Q1 FY 2026 Earnings Confer",
+          "keywords": "GuruFocus, Article, News, GuruFocus News, BOM:540133",
+          "snippet": "Jul 15, 2025 / 09:15AM GMT\n\nOperator\n\n\n\nLadies and gentlemen, good day, and welcome to the ICICI Prudential Life Insurance Company Limited Q1 FY 2026 Earnings C...",
+          "url": "https://www.gurufocus.com/news/2979880/q1-2026-icici-prudential-life-insurance-company-ltd-earnings-call-transcript",
+          "image_url": "https://static.gurufocus.com/images/global_logo_twitter_card.png",
+          "language": "en",
+          "published_at": "2025-07-16T05:00:48.000000Z",
+          "source": "gurufocus.com",
+          "relevance_score": 25.089565,
+          "entities": [
+            {
+              "symbol": "ICICIPRULI.NS",
+              "name": "ICICI Prudential Life Insurance Company Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 175.50864,
+              "sentiment_score": 0.587667,
+              "highlights": [
+                {
+                  "highlight": "Jul 15, 2025 / 09:15AM GMT\n\nOperator\n\n\n\n[+414 characters]",
+                  "sentiment": 0.891,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "Anup Bagchi - <em>ICICI</em> <em>Prudent[+386 characters]",
+                  "sentiment": 0.872,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "Q1 2026 <em>ICICI</em> <em>Prudential</em> <em>Life</em> <em>Insurance</em> <em>Company</em> Ltd Earnings Call Transcript",
+                  "sentiment": 0,
+                  "highlighted_in": "title"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "e716470a-9644-48c6-932b-36ec7996caf8",
+      "title": "ICICI Bank warns of more margin pressure as repo cuts bite",
+      "description": "Retail loan growth slowed in the June quarter even as profit surpassed estimates. Analysts have flagged loan moderation as key concern.",
+      "keywords": "ICICI Bank Q1 results, ICICI Bank profit FY26, ICICI net interest margin, ICICI retail loan growth, ICICI Bank loan slowdown, RBI repo rate impact, ICICI Bank NIM outlook, Indian private banks performance, Sandeep Batra ICICI, ICICI Bank EPS growth, ICICI asset quality FY26, ICICI Bank vs Axis Bank, ICICI Bank treasury gains, ICICI Prudential Pension acquisition, ICICI Bank analyst report",
+      "snippet": "Mumbai: ICICI Bank Ltd expects further pressure on its net interest margins (NIMs) in the July-September quarter, as the full impact of the Reserve Bank of Indi...",
+      "url": "https://www.livemint.com/companies/company-results/icici-bank-q1-results-nim-pressure-rbi-rate-cut-loan-growth-slowdown-profit-beats-estimates-11752929450652.html",
+      "image_url": "https://www.livemint.com/lm-img/img/2025/07/19/1600x900/INDIA-ICICI-BANK-3_1729908941936_1752929678100.jpg",
+      "language": "en",
+      "published_at": "2025-07-19T13:38:13.000000Z",
+      "source": "livemint.com",
+      "relevance_score": 24.849974,
+      "entities": [
+        {
+          "symbol": "AXISBANK-BL.NS",
+          "name": "AXIS BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 25.965658,
+          "sentiment_score": 0.5644,
+          "highlights": [
+            {
+              "highlight": "The analysts also drew a contrast with r[+125 characters]",
+              "sentiment": 0.7269,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Axis</em> <em>Bank</em> on 17 July r[+326 characters]",
+              "sentiment": 0.4019,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": [
+        {
+          "uuid": "2648688f-395a-4985-b26a-52537ccd411b",
+          "title": "ICICI Bank, SBI among top picks as banking sector prepares for earnings rebound; Motilal Oswal sees 12-15% upside",
+          "description": "Indias banking sector is adapting to a low interest rate regime, with temporary NIM compression but improving liquidity, falling deposit costs, and resilient asset quality likely to drive margin recovery and earnings rebound from H2 FY26 onward.",
+          "keywords": "sbi, icici bank, india banking sector outlook, net interest margins fy26, icici bank target price, sbi qip 2025, rbi repo rate cut impact, bank deposit rate trends, asset quality banks india, crr liquidity support, public sector bank lending yield, private bank nim strategy., motilal oswal financial services ltd.",
+          "snippet": "Live Events\n\nICICI Bank: Buy| Target Rs 1650| LTP Rs 1427| Upside 15%\n\n\n\nSBI: Buy| Target Rs 925| LTP Rs 823| Upside 12%\n\n\n\n\n\n\n\n(You can now subscribe to our\n\n(...",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/icici-bank-sbi-among-top-picks-as-banking-sector-prepares-for-earnings-rebound-motilal-oswal-sees-12-15-upside/articleshow/122778702.cms",
+          "image_url": "https://img.etimg.com/thumb/msid-122778709,width-1200,height-630,imgsize-62496,overlay-etmarkets/articleshow.jpg",
+          "language": "en",
+          "published_at": "2025-07-19T06:55:05.000000Z",
+          "source": "economictimes.indiatimes.com",
+          "relevance_score": 24.849974,
+          "entities": [
+            {
+              "symbol": "ICICIBANK.NS",
+              "name": "ICICI Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 43.47667,
+              "sentiment_score": 0.33055,
+              "highlights": [
+                {
+                  "highlight": "Live Events\n\n<em>ICICI</em> <em>Bank</em[+333 characters]",
+                  "sentiment": 0.4588,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "<em>ICICI</em> <em>Bank</em>, SBI among top picks as banking sector prepares for earnings rebound; Motilal Oswal sees 12-15% upside",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "title"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

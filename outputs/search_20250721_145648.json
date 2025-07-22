@@ -1,0 +1,222 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 7,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "d19a1350-687d-4071-bbb2-ceb4e59581be",
+      "title": "Q1 2026 JSW Steel Ltd Earnings Call Transcript",
+      "description": "Jul 18, 2025 / 12:00PM GMTOperator Ladies and gentlemen, good day, and welcome to the JSW Steel Limited Q1 FY26 earnings conference call. (Operator Instructions",
+      "keywords": "GuruFocus, Article, News, GuruFocus News, BOM:500228",
+      "snippet": "Jul 18, 2025 / 12:00PM GMT\n\nOperator\n\n\n\nLadies and gentlemen, good day, and welcome to the JSW Steel Limited Q1 FY26 earnings conference call.\n\n\n\n(Operator Inst...",
+      "url": "https://www.gurufocus.com/news/2988818/q1-2026-jsw-steel-ltd-earnings-call-transcript",
+      "image_url": "https://static.gurufocus.com/images/global_logo_twitter_card.png",
+      "language": "en",
+      "published_at": "2025-07-19T05:03:44.000000Z",
+      "source": "gurufocus.com",
+      "relevance_score": 48.88987,
+      "entities": [
+        {
+          "symbol": "JSWSTEEL.NS",
+          "name": "JSW Steel Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 88.41307,
+          "sentiment_score": 0.535975,
+          "highlights": [
+            {
+              "highlight": "Jul 18, 2025 / 12:00PM GMT\n\nOperator\n\n\n\n[+330 characters]",
+              "sentiment": 0.9169,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Ashwin Bajaj - <em>JSW</em> <em>Steel</e[+317 characters]",
+              "sentiment": 0.8126,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Jayant Acharya - <em>JSW</em> <em>Steel<[+104 characters]",
+              "sentiment": 0.4144,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Q1 2026 <em>JSW</em> <em>Steel</em> Ltd Earnings Call Transcript",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "JSWSTEEL.BO",
+          "name": "JSW Steel Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 88.41214,
+          "sentiment_score": 0.535975,
+          "highlights": [
+            {
+              "highlight": "Jul 18, 2025 / 12:00PM GMT\n\nOperator\n\n\n\n[+330 characters]",
+              "sentiment": 0.9169,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Ashwin Bajaj - <em>JSW</em> <em>Steel</e[+317 characters]",
+              "sentiment": 0.8126,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Jayant Acharya - <em>JSW</em> <em>Steel<[+104 characters]",
+              "sentiment": 0.4144,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Q1 2026 <em>JSW</em> <em>Steel</em> Ltd Earnings Call Transcript",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "9cd53aed-6372-4470-a804-93406112172a",
+      "title": "Stock Picks Today: HDFC Bank, ICICI Bank, RIL, JSW Steel, Bandhan Bank On Brokerage Radar",
+      "description": "HDFC Bank Ltd., ICICI Bank Ltd., Reliance Industries Ltd., and JSW Steel Ltd. are among the top companies on brokerages' radar on Monday. Analysts have shared their views on the June quarter earnings of these companies. Several brokerages have also changed their target price for these stocks based on a fundamental outlook revision.",
+      "keywords": "Reliance Industries Ltd., JSW Steel Ltd., ICICI Bank Ltd., HDFC Bank Ltd.",
+      "snippet": "HDFC Bank Ltd., ICICI Bank Ltd., Reliance Industries Ltd., and JSW Steel Ltd. are among the top companies on brokerages' radar on Monday. Analysts have shared t...",
+      "url": "https://www.ndtvprofit.com/markets/stock-picks-today-hdfc-bank-icici-bank-ril-jsw-steel-on-brokerage-radar",
+      "image_url": "https://media.assettype.com/bloombergquint%2F2025-06-11%2F0k7uzk7e%2Fstock-maarket.jpg?rect=0%2C19%2C1472%2C773&w=1200&auto=format%2Ccompress&ogImage=true",
+      "language": "en",
+      "published_at": "2025-07-21T02:33:41.000000Z",
+      "source": "bloombergquint.com",
+      "relevance_score": 39.56127,
+      "entities": [
+        {
+          "symbol": "HDB.BA",
+          "name": "HDFC BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "ar",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 81.615685,
+          "sentiment_score": 0.24695,
+          "highlights": [
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> Ltd., ICICI [+312 characters]",
+              "sentiment": 0.4939,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Stock Picks Today: <em>HDFC</em> <em>Bank</em>, ICICI Bank, RIL, JSW Steel, Bandhan Bank On Brokerage Radar",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCEPP.BO",
+          "name": "Reliance Industries Ltd",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 37.7492,
+          "sentiment_score": 0.4939,
+          "highlights": [
+            {
+              "highlight": "., <em>Reliance</em> <em>Industries</em>[+291 characters]",
+              "sentiment": 0.4939,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "4a355307-dcae-4f80-a6d6-fa7826fdbe61",
+      "title": "JSW Cement to Hit Markets in August with ₹ 4,000cr IPO at ₹ 20,000cr valuation",
+      "description": "The company will file an updated red herring prospectus with the market regulator by this month-end, the people added on the condition of anonymity. It had filed a draft RHP last August.",
+      "keywords": "JSW Cement, IPO, public issue, <span class='webrupee'>₹</span>4000 crore, <span class='webrupee'>₹</span>20, 000 crore, valuation, banks, road shows, August, URHP, Seb",
+      "snippet": "MUMBAI : After finishing a slew of meetings with institutional investors in road shows, JSW Cement has finalized plans to launch its ₹4,000-crore initial publ...",
+      "url": "https://www.livemint.com/news/jsw-cement-to-hit-markets-in-august-with-4-000cr-ipo-at-20-000cr-valuation-11752838025514.html",
+      "image_url": "https://www.livemint.com/lm-img/img/2025/07/18/1600x900/HDB_1750740759147_1752846722438.png",
+      "language": "en",
+      "published_at": "2025-07-18T23:30:17.000000Z",
+      "source": "livemint.com",
+      "relevance_score": 32.687862,
+      "entities": [
+        {
+          "symbol": "SBIN.NS",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 22.881832,
+          "sentiment_score": 0.802,
+          "highlights": [
+            {
+              "highlight": "Ltd and Synergy Metals Investments Holdi[+247 characters]",
+              "sentiment": 0.802,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SBIN.BO",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 22.88183,
+          "sentiment_score": 0.802,
+          "highlights": [
+            {
+              "highlight": "Ltd and Synergy Metals Investments Holdi[+247 characters]",
+              "sentiment": 0.802,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SBKFF",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "us",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 22.88189,
+          "sentiment_score": 0.802,
+          "highlights": [
+            {
+              "highlight": "Ltd and Synergy Metals Investments Holdi[+247 characters]",
+              "sentiment": 0.802,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    }
+  ]
+}

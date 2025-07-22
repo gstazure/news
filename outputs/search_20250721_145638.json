@@ -1,0 +1,2553 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 7,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "422705e4-153a-48a9-9dd5-8c85c988cc51",
+      "title": "Stock Market Sectors: Stock market update: Mining stocks up as market rises",
+      "description": "The 30-share BSE Sensex was  up  346.31 points at 82104.04",
+      "keywords": "Stock Market Sectors, Sectors in stock Market, India stock market sectors, Global Stock Market Sectors, S&P 500 Sectors, S&P Sectors",
+      "snippet": "Live Events\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our ETMarkets WhatsApp channel\n\nNEW DELHI: Mining stocks were trading higher on Monday...",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/stock-watch/stock-market-update-mining-stocks-up-as-market-rises/articleshow/122806892.cms",
+      "image_url": "https://img.etimg.com/thumb/msid-83608600,width-1200,height-630,imgsize-23742,overlay-etmarkets/articleshow.jpg",
+      "language": "en",
+      "published_at": "2025-07-21T05:17:39.000000Z",
+      "source": "economictimes.indiatimes.com",
+      "relevance_score": 21.557404,
+      "entities": [
+        {
+          "symbol": "AXISBANK.NS",
+          "name": "Axis Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.353378,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 1.01%), <em>Axis</em> <em>Bank</em[+179 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "AROGRANITE.NS",
+          "name": "Aro Granite Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 34.507053,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 1.68%), <em>Aro</em> <em>Granite</em[+333 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ASHAPURMIN.NS",
+          "name": "Ashapura Minechem Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 34.951538,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(up 5.89%), <em>Ashapura</em> <em>Minech[+274 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "INDUSINDBK.NS",
+          "name": "IndusInd Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 23.150076,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 0.87%) were among the top gainers in[+310 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK.NS",
+          "name": "HDFC Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.644403,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(up 2.5%), <em>HDFC</em> <em>Bank</em> L[+272 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BEL.NS",
+          "name": "Bharat Electronics Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 23.453934,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 1.64%), <em>Bharat</em> <em>Electron[+316 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TCS.NS",
+          "name": "Tata Consultancy Services Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 28.71993,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 0.75%), <em>Tata</em> <em>Consulta[+160 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "COALINDIA.NS",
+          "name": "Coal India Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 24.246174,
+          "sentiment_score": 0.10115,
+          "highlights": [
+            {
+              "highlight": "(down 0.76%), <em>Coal</em> <em>India</e[+315 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "(down 0.66%), <em>Coal</em> <em>India</e[+107 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ULTRACEMCO.NS",
+          "name": "UltraTech Cement Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 27.706415,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 1.08%), <em>UltraTech</em> <em>Cemen[+307 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATACONSUM.NS",
+          "name": "Tata Consumer Products Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Defensive",
+          "match_score": 26.208021,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 1.84%), <em>Tata</em> <em>Consumer[+264 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "GMDCLTD.NS",
+          "name": "Gujarat Mineral Development Corporation Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 33.42904,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 0.87%), <em>Gujarat</em> <em>Mineral[+321 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "EICHERMOT.NS",
+          "name": "Eicher Motors Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 27.016558,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 0.63%) and <em>Eicher</em> <em>Mot[+50 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HCLTECH.NS",
+          "name": "HCL Technologies Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 23.765354,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 1.36%), <em>HCL</em> <em>Technolog[+214 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCLIFE.NS",
+          "name": "HDFC Life Insurance Company Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 30.610714,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 1.05%), <em>HDFC</em> <em>Life</em> [+333 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HINDALCO.NS",
+          "name": "Hindalco Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 25.072855,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 1.08%), <em>Hindalco</em> <em>Indust[+319 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCE.NS",
+          "name": "Reliance Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 20.874292,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 3.09%), <em>Reliance</em> <em>Indu[+317 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "JSWSTEEL.NS",
+          "name": "JSW Steel Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 25.662077,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 0.66%), <em>JSW</em> <em>Steel</em[+78 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "LT.NS",
+          "name": "Larsen & Toubro Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 28.86971,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 0.9%) and <em>Larsen</em> & <em>Toub[+315 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATASTEEL.NS",
+          "name": "Tata Steel Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 23.240047,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 0.99%), <em>Tata</em> <em>Steel</em>[+306 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "NMDC.NS",
+          "name": "NMDC Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 20.635267,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 1.07%), <em>NMDC</em> Ltd.(up 0.87%)[+315 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "20MICRONS.NS",
+          "name": "20 Microns Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 22.772472,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(down 1.46%), <em>20</em> <em>Microns</e[+309 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "MOIL.NS",
+          "name": "MOIL Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 21.644527,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(down 0.65%) and <em>MOIL</em> Ltd.(down[+313 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "WIPRO.NS",
+          "name": "Wipro Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 18.416489,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 2.17%), <em>Wipro</em> Ltd.(down 1[+270 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ORISSAMINE.NS",
+          "name": "The Orissa Minerals Development Company Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 37.55112,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 0.32%) and <em>The</em> <em>Orissa</[+232 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "POKARNA.NS",
+          "name": "Pokarna Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 21.965763,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(down 5.07%), <em>Pokarna</em> Ltd.(down[+302 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "AXISBANK-BL.NS",
+          "name": "AXIS BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 33.927147,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 1.01%), <em>Axis</em> <em>Bank</em[+179 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATASTEEL-BL.NS",
+          "name": "TATA STEEL LTD",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 43.153465,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 0.99%), <em>Tata</em> <em>Steel</em>[+315 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HCLTECH-BL.NS",
+          "name": "HCL TECHNOLOGIES",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 38.746403,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 1.36%), <em>HCL</em> <em>Technolog[+214 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDB.BA",
+          "name": "HDFC BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "ar",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 26.731422,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(up 2.5%), <em>HDFC</em> <em>Bank</em> L[+272 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "AXISBANK.BO",
+          "name": "Axis Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 20.859573,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 1.01%), <em>Axis</em> <em>Bank</em[+179 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ASHAPURMIN.BO",
+          "name": "Ashapura Minechem Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 34.417027,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(up 5.89%), <em>Ashapura</em> <em>Minech[+274 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK.BO",
+          "name": "HDFC Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.14953,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(up 2.5%), <em>HDFC</em> <em>Bank</em> L[+272 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "INDUSINDBK.BO",
+          "name": "IndusInd Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 22.652002,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 0.87%) were among the top gainers in[+310 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BEL.BO",
+          "name": "Bharat Electronics Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 22.960747,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 1.64%), <em>Bharat</em> <em>Electron[+316 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCLIFE.BO",
+          "name": "HDFC Life Insurance Company Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 30.115976,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 1.05%), <em>HDFC</em> <em>Life</em> [+333 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TCS.BO",
+          "name": "Tata Consultancy Services Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 28.225334,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 0.75%), <em>Tata</em> <em>Consulta[+160 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "GMDCLTD.BO",
+          "name": "Gujarat Mineral Development Corporation Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 32.93569,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 0.87%), <em>Gujarat</em> <em>Mineral[+321 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ORISSAMINE.BO",
+          "name": "The Orissa Minerals Development Company Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 37.0549,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 0.32%) and <em>The</em> <em>Orissa</[+232 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "EICHERMOT.BO",
+          "name": "Eicher Motors Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 26.518986,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 0.63%) and <em>Eicher</em> <em>Mot[+50 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HCLTECH.BO",
+          "name": "HCL Technologies Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 23.268768,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 1.36%), <em>HCL</em> <em>Technolog[+214 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HINDALCO.BO",
+          "name": "Hindalco Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 24.57262,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 1.08%), <em>Hindalco</em> <em>Indust[+319 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCE.BO",
+          "name": "Reliance Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 20.38119,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 3.09%), <em>Reliance</em> <em>Indu[+317 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "JSWSTEEL.BO",
+          "name": "JSW Steel Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 25.166054,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 0.66%), <em>JSW</em> <em>Steel</em[+78 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATASTEEL.BO",
+          "name": "Tata Steel Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 22.745697,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 0.99%), <em>Tata</em> <em>Steel</em>[+306 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "LT.BO",
+          "name": "Larsen & Toubro Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 28.3718,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 0.9%) and <em>Larsen</em> & <em>Toub[+315 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "WIPRO.BO",
+          "name": "Wipro Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 17.921299,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 2.17%), <em>Wipro</em> Ltd.(down 1[+270 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ULTRACEMCO.BO",
+          "name": "UltraTech Cement Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 27.199568,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 1.08%), <em>UltraTech</em> <em>Cemen[+307 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCEPP.BO",
+          "name": "Reliance Industries Ltd",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 37.930107,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 3.09%), <em>Reliance</em> <em>Indu[+326 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "COALINDIA.BO",
+          "name": "Coal India Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 23.752716,
+          "sentiment_score": 0.10115,
+          "highlights": [
+            {
+              "highlight": "(down 0.76%), <em>Coal</em> <em>India</e[+315 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "(down 0.66%), <em>Coal</em> <em>India</e[+107 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "POKARNA.BO",
+          "name": "Pokarna Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 21.454704,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(down 5.07%), <em>Pokarna</em> Ltd.(down[+302 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "MOIL.BO",
+          "name": "MOIL Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 21.128746,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(down 0.65%) and <em>MOIL</em> Ltd.(down[+313 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "20MICRONS.BO",
+          "name": "20 Microns Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 22.272392,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(down 1.46%), <em>20</em> <em>Microns</e[+309 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "NMDC.BO",
+          "name": "NMDC Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 20.121607,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 1.07%), <em>NMDC</em> Ltd.(up 0.87%)[+315 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATACONSUM.BO",
+          "name": "TATA CONSUMER PRODUCTS LIMITED",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 25.712957,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 1.84%), <em>Tata</em> <em>Consumer[+264 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "AROGRANITE.BO",
+          "name": "Aro Granite Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 34.006542,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 1.68%), <em>Aro</em> <em>Granite</em[+333 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": [
+        {
+          "uuid": "ccc96f7c-2a7d-4bba-b192-313b8d956710",
+          "title": "Stock Market Sectors: Stock market update: Fertilisers stocks up as market rises",
+          "description": "The 30-share BSE Sensex was  up  313.94 points at 82071.67",
+          "keywords": "Stock Market Sectors, Sectors in stock Market, India stock market sectors, Global Stock Market Sectors, S&P 500 Sectors, S&P Sectors",
+          "snippet": "Live Events\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our ETMarkets WhatsApp channel\n\nNEW DELHI: Fertilisers stocks were trading higher on M...",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-watch/stock-market-update-fertilisers-stocks-up-as-market-rises/articleshow/122806109.cms",
+          "image_url": "https://img.etimg.com/thumb/msid-83771694,width-1200,height-630,imgsize-185726,overlay-etmarkets/articleshow.jpg",
+          "language": "en",
+          "published_at": "2025-07-21T04:34:33.000000Z",
+          "source": "economictimes.indiatimes.com",
+          "relevance_score": 21.557404,
+          "entities": [
+            {
+              "symbol": "AXISBANK.NS",
+              "name": "Axis Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 21.002022,
+              "sentiment_score": 0.4019,
+              "highlights": [
+                {
+                  "highlight": "(down 0.87%), <em>Axis</em> <em>Bank</em[+187 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "BHARTIARTL.NS",
+              "name": "Bharti Airtel Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Communication Services",
+              "match_score": 27.322403,
+              "sentiment_score": 0.7717,
+              "highlights": [
+                {
+                  "highlight": "(up 0.95%), <em>Bharti</em> <em>Airtel</[+295 characters]",
+                  "sentiment": 0.7717,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "BAJAJ-AUTO.NS",
+              "name": "Bajaj Auto Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Consumer Cyclical",
+              "match_score": 22.348343,
+              "sentiment_score": 0.7717,
+              "highlights": [
+                {
+                  "highlight": "(up 0.68%) and <em>Bajaj</em> <em>Auto</[+294 characters]",
+                  "sentiment": 0.7717,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "ZUARI.NS",
+              "name": "Zuari Agro Chemicals Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 38.0916,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(up 0.75%) and <em>Zuari</em> <em>Agro</[+209 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "BAJFINANCE.NS",
+              "name": "Bajaj Finance Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 22.856628,
+              "sentiment_score": 0.7717,
+              "highlights": [
+                {
+                  "highlight": "(up 0.91%), <em>Bajaj</em> <em>Finance</[+306 characters]",
+                  "sentiment": 0.7717,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "INDUSINDBK.NS",
+              "name": "IndusInd Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 22.767704,
+              "sentiment_score": 0.8555,
+              "highlights": [
+                {
+                  "highlight": "(up 0.58%) were among the top gainers in[+318 characters]",
+                  "sentiment": 0.8555,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "HDFCBANK.NS",
+              "name": "HDFC Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 21.288025,
+              "sentiment_score": 0,
+              "highlights": [
+                {
+                  "highlight": "(up 2.44%), <em>HDFC</em> <em>Bank</em> [+250 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "KOTAKBANK.NS",
+              "name": "Kotak Mahindra Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 30.629404,
+              "sentiment_score": 0.7717,
+              "highlights": [
+                {
+                  "highlight": "(up 0.85%), <em>Kotak</em> <em>Mahindra<[+319 characters]",
+                  "sentiment": 0.7717,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "MBAPL.NS",
+              "name": "Madhya Bharat Agro Products Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 37.090454,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(down 1.03%), <em>Madhya</em> <em>Bharat[+341 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "TCS.NS",
+              "name": "Tata Consultancy Services Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Technology",
+              "match_score": 28.241407,
+              "sentiment_score": 0,
+              "highlights": [
+                {
+                  "highlight": "(down 0.75%), <em>Tata</em> <em>Consulta[+114 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "ULTRACEMCO.NS",
+              "name": "UltraTech Cement Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 27.24539,
+              "sentiment_score": 0.7717,
+              "highlights": [
+                {
+                  "highlight": "(up 1.92%), <em>UltraTech</em> <em>Cemen[+317 characters]",
+                  "sentiment": 0.7717,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "TATACONSUM.NS",
+              "name": "Tata Consumer Products Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Consumer Defensive",
+              "match_score": 25.772861,
+              "sentiment_score": 0.4019,
+              "highlights": [
+                {
+                  "highlight": "(down 1.96%), <em>Tata</em> <em>Consumer[+299 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "DRREDDY.NS",
+              "name": "Dr. Reddy's Laboratories Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Healthcare",
+              "match_score": 32.55715,
+              "sentiment_score": 0,
+              "highlights": [
+                {
+                  "highlight": "(down 0.72%) and <em>Dr</em>. <em>Reddy'[+70 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "NFL.NS",
+              "name": "National Fertilizers Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 21.964842,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(down 0.67%) and <em>National</em> <em>F[+328 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "GNFC.NS",
+              "name": "Gujarat Narmada Valley Fertilizers & Chemicals Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 51.175297,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(up 2.00%), <em>Gujarat</em> <em>Narmada[+334 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "HCLTECH.NS",
+              "name": "HCL Technologies Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Technology",
+              "match_score": 23.37236,
+              "sentiment_score": 0.4019,
+              "highlights": [
+                {
+                  "highlight": "(down 1.0%), <em>HCL</em> <em>Technologi[+249 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "HINDALCO.NS",
+              "name": "Hindalco Industries Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 24.657291,
+              "sentiment_score": 0.7717,
+              "highlights": [
+                {
+                  "highlight": "(up 0.73%), <em>Hindalco</em> <em>Indust[+302 characters]",
+                  "sentiment": 0.7717,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "RELIANCE.NS",
+              "name": "Reliance Industries Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Energy",
+              "match_score": 20.531206,
+              "sentiment_score": 0.4019,
+              "highlights": [
+                {
+                  "highlight": "(down 2.35%), <em>Reliance</em> <em>Indu[+328 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "JSWSTEEL.NS",
+              "name": "JSW Steel Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 25.23634,
+              "sentiment_score": 0.4019,
+              "highlights": [
+                {
+                  "highlight": "(down 0.93%), <em>JSW</em> <em>Steel</em[+215 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "KRISHANA.NS",
+              "name": "Krishana Phoschem Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 35.767307,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(down 1.91%), <em>Krishana</em> <em>Phos[+326 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "TATASTEEL.NS",
+              "name": "Tata Steel Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 22.856121,
+              "sentiment_score": 0.7717,
+              "highlights": [
+                {
+                  "highlight": "(up 1.09%), <em>Tata</em> <em>Steel</em>[+322 characters]",
+                  "sentiment": 0.7717,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "MANGCHEFER.NS",
+              "name": "Mangalore Chemicals & Fertilizers Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 36.943478,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(up 2.51%), <em>Mangalore</em> <em>Chemi[+332 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "WIPRO.NS",
+              "name": "Wipro Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Technology",
+              "match_score": 18.115831,
+              "sentiment_score": 0.4019,
+              "highlights": [
+                {
+                  "highlight": "(down 3.11%), <em>Wipro</em> Ltd.(down 2[+306 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "AXISBANK-BL.NS",
+              "name": "AXIS BANK",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 33.358734,
+              "sentiment_score": 0.4019,
+              "highlights": [
+                {
+                  "highlight": "(down 0.87%), <em>Axis</em> <em>Bank</em[+187 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "TATASTEEL-BL.NS",
+              "name": "TATA STEEL LTD",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 42.42578,
+              "sentiment_score": 0.7717,
+              "highlights": [
+                {
+                  "highlight": "(up 1.09%), <em>Tata</em> <em>Steel</em>[+331 characters]",
+                  "sentiment": 0.7717,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "HCLTECH-BL.NS",
+              "name": "HCL TECHNOLOGIES",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 38.094795,
+              "sentiment_score": 0.4019,
+              "highlights": [
+                {
+                  "highlight": "(down 1.0%), <em>HCL</em> <em>Technologi[+249 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "HDB.BA",
+              "name": "HDFC BANK",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "ar",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 26.287228,
+              "sentiment_score": 0,
+              "highlights": [
+                {
+                  "highlight": "(up 2.44%), <em>HDFC</em> <em>Bank</em> [+250 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "BHARTIARTL.BO",
+              "name": "Bharti Airtel Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Communication Services",
+              "match_score": 26.836304,
+              "sentiment_score": 0.7717,
+              "highlights": [
+                {
+                  "highlight": "(up 0.95%), <em>Bharti</em> <em>Airtel</[+295 characters]",
+                  "sentiment": 0.7717,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "AXISBANK.BO",
+              "name": "Axis Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 20.516739,
+              "sentiment_score": 0.4019,
+              "highlights": [
+                {
+                  "highlight": "(down 0.87%), <em>Axis</em> <em>Bank</em[+187 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "BAJAJ-AUTO.BO",
+              "name": "Bajaj Auto Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Consumer Cyclical",
+              "match_score": 21.86314,
+              "sentiment_score": 0.7717,
+              "highlights": [
+                {
+                  "highlight": "(up 0.68%) and <em>Bajaj</em> <em>Auto</[+294 characters]",
+                  "sentiment": 0.7717,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "HDFCBANK.BO",
+              "name": "HDFC Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 20.801691,
+              "sentiment_score": 0,
+              "highlights": [
+                {
+                  "highlight": "(up 2.44%), <em>HDFC</em> <em>Bank</em> [+250 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "BAJFINANCE.BO",
+              "name": "Bajaj Finance Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 22.371387,
+              "sentiment_score": 0.7717,
+              "highlights": [
+                {
+                  "highlight": "(up 0.91%), <em>Bajaj</em> <em>Finance</[+306 characters]",
+                  "sentiment": 0.7717,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "KOTAKBANK.BO",
+              "name": "Kotak Mahindra Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 30.141884,
+              "sentiment_score": 0.7717,
+              "highlights": [
+                {
+                  "highlight": "(up 0.85%), <em>Kotak</em> <em>Mahindra<[+319 characters]",
+                  "sentiment": 0.7717,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "INDUSINDBK.BO",
+              "name": "IndusInd Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 22.278227,
+              "sentiment_score": 0.8555,
+              "highlights": [
+                {
+                  "highlight": "(up 0.58%) were among the top gainers in[+318 characters]",
+                  "sentiment": 0.8555,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "TCS.BO",
+              "name": "Tata Consultancy Services Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Technology",
+              "match_score": 27.75535,
+              "sentiment_score": 0,
+              "highlights": [
+                {
+                  "highlight": "(down 0.75%), <em>Tata</em> <em>Consulta[+114 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "DRREDDY.BO",
+              "name": "Dr. Reddy's Laboratories Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Healthcare",
+              "match_score": 32.069435,
+              "sentiment_score": 0,
+              "highlights": [
+                {
+                  "highlight": "(down 0.72%) and <em>Dr</em>. <em>Reddy'[+70 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "HCLTECH.BO",
+              "name": "HCL Technologies Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Technology",
+              "match_score": 22.884348,
+              "sentiment_score": 0.4019,
+              "highlights": [
+                {
+                  "highlight": "(down 1.0%), <em>HCL</em> <em>Technologi[+249 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "HINDALCO.BO",
+              "name": "Hindalco Industries Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 24.165693,
+              "sentiment_score": 0.7717,
+              "highlights": [
+                {
+                  "highlight": "(up 0.73%), <em>Hindalco</em> <em>Indust[+302 characters]",
+                  "sentiment": 0.7717,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "RELIANCE.BO",
+              "name": "Reliance Industries Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Energy",
+              "match_score": 20.046618,
+              "sentiment_score": 0.4019,
+              "highlights": [
+                {
+                  "highlight": "(down 2.35%), <em>Reliance</em> <em>Indu[+328 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "JSWSTEEL.BO",
+              "name": "JSW Steel Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 24.74888,
+              "sentiment_score": 0.4019,
+              "highlights": [
+                {
+                  "highlight": "(down 0.93%), <em>JSW</em> <em>Steel</em[+215 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "TATASTEEL.BO",
+              "name": "Tata Steel Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 22.370304,
+              "sentiment_score": 0.7717,
+              "highlights": [
+                {
+                  "highlight": "(up 1.09%), <em>Tata</em> <em>Steel</em>[+322 characters]",
+                  "sentiment": 0.7717,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "WIPRO.BO",
+              "name": "Wipro Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Technology",
+              "match_score": 17.62919,
+              "sentiment_score": 0.4019,
+              "highlights": [
+                {
+                  "highlight": "(down 3.11%), <em>Wipro</em> Ltd.(down 2[+306 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "ULTRACEMCO.BO",
+              "name": "UltraTech Cement Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 26.747292,
+              "sentiment_score": 0.7717,
+              "highlights": [
+                {
+                  "highlight": "(up 1.92%), <em>UltraTech</em> <em>Cemen[+317 characters]",
+                  "sentiment": 0.7717,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "RELIANCEPP.BO",
+              "name": "Reliance Industries Ltd",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 37.29259,
+              "sentiment_score": 0.4019,
+              "highlights": [
+                {
+                  "highlight": "(down 2.35%), <em>Reliance</em> <em>Indu[+337 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "ZUARI.BO",
+              "name": "Zuari Agro Chemicals Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 37.563904,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(up 0.75%) and <em>Zuari</em> <em>Agro</[+209 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "NFL.BO",
+              "name": "National Fertilizers Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 21.478264,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(down 0.67%) and <em>National</em> <em>F[+328 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "RAMAPHO.BO",
+              "name": "Rama Phosphates Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 28.261993,
+              "sentiment_score": 0,
+              "highlights": [
+                {
+                  "highlight": "(up 6.02%), <em>Rama</em> <em>Phosphates[+301 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "TATACONSUM.BO",
+              "name": "TATA CONSUMER PRODUCTS LIMITED",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 25.286339,
+              "sentiment_score": 0.4019,
+              "highlights": [
+                {
+                  "highlight": "(down 1.96%), <em>Tata</em> <em>Consumer[+299 characters]",
+                  "sentiment": 0.4019,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "2dcee805-5687-4d2c-907c-1b8cfdb76aeb",
+      "title": "Markets bounce back after falling in early trade driven by buying in ICICI Bank, HDFC Bank",
+      "description": "Equity markets open lower but rebound as blue-chip stocks ICICI Bank and HDFC Bank drive recovery.",
+      "keywords": "Sensex, Nifty, Stock markets rebound after opening lower, ICICI and HDFC Bank drive recovery, BSE, NSE",
+      "snippet": "Equity benchmark indices Sensex and Nifty dropped in early trade on Monday (July 21, 2025), but buying in the blue-chip stocks ICICI Bank and HDFC Bank helped t...",
+      "url": "https://www.thehindu.com/business/markets/equity-markets-on-july-21-2025/article69836933.ece",
+      "image_url": "https://th-i.thgim.com/public/incoming/bhooba/article69836948.ece/alternates/LANDSCAPE_1200/2025-05-12T082023Z_888582058_RC27GEAGV1AP_RTRMADP_3_INDIA-STOCKS.JPG",
+      "language": "en",
+      "published_at": "2025-07-21T04:55:24.000000Z",
+      "source": "thehindu.com",
+      "relevance_score": 16.601343,
+      "entities": [
+        {
+          "symbol": "AXISBANK.NS",
+          "name": "Axis Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 18.312294,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, <em>Axis</em> <em>Bank</em>, Re[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ICICIBANK.NS",
+          "name": "ICICI Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 47.33728,
+          "sentiment_score": 0.179675,
+          "highlights": [
+            {
+              "highlight": "Equity benchmark indices Sensex and Nift[+285 characters]",
+              "sentiment": -0.5011,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "From the Sensex firms, <em>ICICI</em> <e[+194 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Weekend Q1 results were good with <em>IC[+313 characters]",
+              "sentiment": 0.9325,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Markets bounce back after falling in early trade driven by buying in <em>ICICI</em> <em>Bank</em>, HDFC Bank",
+              "sentiment": -0.1531,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "BAJFINANCE.NS",
+          "name": "Bajaj Finance Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 19.917503,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Tata Steel, UltraTech Cement, Eternal an[+225 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK.NS",
+          "name": "HDFC Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 46.725525,
+          "sentiment_score": 0.047025,
+          "highlights": [
+            {
+              "highlight": "Equity benchmark indices Sensex and Nift[+285 characters]",
+              "sentiment": -0.5011,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> also climbed[+211 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> also reporte[+268 characters]",
+              "sentiment": 0.4019,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Markets bounce back after falling in early trade driven by buying in ICICI Bank, <em>HDFC</em> <em>Bank</em>",
+              "sentiment": -0.1531,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "TCS.NS",
+          "name": "Tata Consultancy Services Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 24.578178,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+151 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ULTRACEMCO.NS",
+          "name": "UltraTech Cement Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 23.716097,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Tata Steel, <em>UltraTech</em> <em>Cemen[+225 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HCLTECH.NS",
+          "name": "HCL Technologies Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 20.363884,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCE.NS",
+          "name": "Reliance Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 21.55647,
+          "sentiment_score": 0.4172,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, <em>Reliance</em> <e[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "India's most valuable company <em>Relian[+263 characters]",
+              "sentiment": 0.8344,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "INFY.NS",
+          "name": "Infosys Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 15.30463,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+133 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATASTEEL.NS",
+          "name": "Tata Steel Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 19.917065,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "<em>Tata</em> <em>Steel</em>, UltraTech [+225 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TECHM.NS",
+          "name": "Tech Mahindra Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 19.24823,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "AXISBANK-BL.NS",
+          "name": "AXIS BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 29.007362,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, <em>Axis</em> <em>Bank</em>, Re[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATASTEEL-BL.NS",
+          "name": "TATA STEEL LTD",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 19.915497,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "<em>Tata</em> <em>Steel</em>, UltraTech [+225 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HCLTECH-BL.NS",
+          "name": "HCL TECHNOLOGIES",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 33.106552,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDB.BA",
+          "name": "HDFC BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "ar",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 79.21474,
+          "sentiment_score": 0.047025,
+          "highlights": [
+            {
+              "highlight": "Equity benchmark indices Sensex and Nift[+285 characters]",
+              "sentiment": -0.5011,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> also climbed[+211 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> also reporte[+268 characters]",
+              "sentiment": 0.4019,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Markets bounce back after falling in early trade driven by buying in ICICI Bank, <em>HDFC</em> <em>Bank</em>",
+              "sentiment": -0.1531,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "AXISBANK.BO",
+          "name": "Axis Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 20.091042,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, <em>Axis</em> <em>Bank</em>, Re[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK.BO",
+          "name": "HDFC Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 48.498383,
+          "sentiment_score": 0.047025,
+          "highlights": [
+            {
+              "highlight": "Equity benchmark indices Sensex and Nift[+285 characters]",
+              "sentiment": -0.5011,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> also climbed[+211 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> also reporte[+268 characters]",
+              "sentiment": 0.4019,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Markets bounce back after falling in early trade driven by buying in ICICI Bank, <em>HDFC</em> <em>Bank</em>",
+              "sentiment": -0.1531,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "ICICIBANK.BO",
+          "name": "ICICI Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 49.112274,
+          "sentiment_score": 0.179675,
+          "highlights": [
+            {
+              "highlight": "Equity benchmark indices Sensex and Nift[+285 characters]",
+              "sentiment": -0.5011,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "From the Sensex firms, <em>ICICI</em> <e[+194 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Weekend Q1 results were good with <em>IC[+313 characters]",
+              "sentiment": 0.9325,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Markets bounce back after falling in early trade driven by buying in <em>ICICI</em> <em>Bank</em>, HDFC Bank",
+              "sentiment": -0.1531,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "BAJFINANCE.BO",
+          "name": "Bajaj Finance Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.69629,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Tata Steel, UltraTech Cement, Eternal an[+225 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TCS.BO",
+          "name": "Tata Consultancy Services Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 26.35625,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+151 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HCLTECH.BO",
+          "name": "HCL Technologies Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 22.14027,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCE.BO",
+          "name": "Reliance Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 23.33564,
+          "sentiment_score": 0.4172,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, <em>Reliance</em> <e[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "India's most valuable company <em>Relian[+263 characters]",
+              "sentiment": 0.8344,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "INFY.BO",
+          "name": "Infosys Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 17.083942,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+133 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATASTEEL.BO",
+          "name": "Tata Steel Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 21.695248,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "<em>Tata</em> <em>Steel</em>, UltraTech [+225 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TECHM.BO",
+          "name": "Tech Mahindra Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 21.026918,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, Reliance Industries,[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ULTRACEMCO.BO",
+          "name": "UltraTech Cement Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 25.483648,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Tata Steel, <em>UltraTech</em> <em>Cemen[+225 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCEPP.BO",
+          "name": "Reliance Industries Ltd",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 23.33501,
+          "sentiment_score": 0.4172,
+          "highlights": [
+            {
+              "highlight": "However, Axis Bank, <em>Reliance</em> <e[+142 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "India's most valuable company <em>Relian[+263 characters]",
+              "sentiment": 0.8344,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "8599c26f-185c-4f7c-ad9c-6d47d7680dcc",
+      "title": "Nifty support levels at 24,900 seen crucial: Analysts",
+      "description": "Nifty is near a key support level of 24,900. A break below could lead to further decline. Analysts suggest short positions in Nifty and select stocks. Profit-booking is advised around 24,500. A rally towards 25,200 presents selling opportunities. Buy-on-dips strategy is ideal. Aggressive longs should be considered above 25,550.",
+      "keywords": "Nifty trading strategies, Nifty support levels, technical analysis Nifty, Nifty market analysis, Nifty psychological levels, Nifty resistance levels",
+      "snippet": "Agencies\n\nLive Events\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our ETMarkets WhatsApp channel\n\nAfter slipping below the psychological 25,00...",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nifty-support-levels-at-24900-seen-crucial-analysts/articleshow/122803576.cms",
+      "image_url": "https://img.etimg.com/thumb/msid-122803581,width-1200,height-630,imgsize-30682,overlay-etmarkets/articleshow.jpg",
+      "language": "en",
+      "published_at": "2025-07-21T00:24:05.000000Z",
+      "source": "economictimes.indiatimes.com",
+      "relevance_score": 16.057411,
+      "entities": [
+        {
+          "symbol": "^CNXINFRA",
+          "name": "Nifty Infrastructure",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "index",
+          "industry": "N/A",
+          "match_score": 19.585247,
+          "sentiment_score": 0.4767,
+          "highlights": [
+            {
+              "highlight": "Shorts can be created in Bank <em>Nifty<[+81 characters]",
+              "sentiment": 0.4767,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "AXISBANK-BL.NS",
+          "name": "AXIS BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 20.731808,
+          "sentiment_score": -0.1779,
+          "highlights": [
+            {
+              "highlight": "Some stocks with a negative bias include[+328 characters]",
+              "sentiment": -0.1779,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    }
+  ]
+}

@@ -1,0 +1,1189 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 7,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "d7c0cfc0-635e-4aa1-9d73-106cc86e7993",
+      "title": "JP Power shares rally 28% in 3 days. Should you buy, sell or hold?",
+      "description": "Jaiprakash Power Ventures surged to a 52-week high amid strong buying interest after reports of Adani Groups top bid for JP Associates. Analysts advise caution near resistance levels due to potential profit booking at elevated prices.",
+      "keywords": "jaiprakash power ventures, jp power share price, adani jp associates bid, jaiprakash power rally, jp associates insolvency, jp power resistance level, adani group news, jp power stock news, technical analysis jp power, jp power 52-week high, jp power trading strategy",
+      "snippet": "Live Events\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our ETMarkets WhatsApp channel\n\nShares of Jaiprakash Power Ventures (JP Power) continu...",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jp-power-shares-rally-28-in-3-days-should-you-buy-sell-or-hold/articleshow/122318505.cms",
+      "image_url": "https://img.etimg.com/thumb/msid-122318489,width-1200,height-630,imgsize-83212,overlay-etmarkets/articleshow.jpg",
+      "language": "en",
+      "published_at": "2025-07-08T10:16:43.000000Z",
+      "source": "economictimes.indiatimes.com",
+      "relevance_score": 15.919778,
+      "entities": [
+        {
+          "symbol": "JPASSOCIAT.BO",
+          "name": "Jaiprakash Associates Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 22.453367,
+          "sentiment_score": 0.6739,
+          "highlights": [
+            {
+              "highlight": "The stock has now surged 27.7% over the [+329 characters]",
+              "sentiment": 0.6739,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "VEDL.BO",
+          "name": "Vedanta Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 15.074732,
+          "sentiment_score": 0.7241,
+          "highlights": [
+            {
+              "highlight": "According to earlier updates, JP Associa[+323 characters]",
+              "sentiment": 0.7241,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "DALBHARAT.BO",
+          "name": "DALMIA BHARAT LIMITED",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 22.297735,
+          "sentiment_score": 0.7241,
+          "highlights": [
+            {
+              "highlight": "According to earlier updates, JP Associa[+332 characters]",
+              "sentiment": 0.7241,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "PNCINFRA.BO",
+          "name": "PNC Infratech Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 24.325947,
+          "sentiment_score": 0.7241,
+          "highlights": [
+            {
+              "highlight": "According to earlier updates, JP Associa[+332 characters]",
+              "sentiment": 0.7241,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "3fb8ce7c-67d9-4d20-b6b5-e0bd91713b01",
+      "title": "JP Associates' shares rise 5% after Adani Group emerges as sole unconditional bidder",
+      "description": "Jaiprakash Associates shares rose 5% after reports said the Adani Group is the only bidder to make an unconditional Rs 12,600 crore offer in its insolvency process. Other bidders, including Dalmia Bharat and Vedanta, have tied their bids to a land dispute pending in the Supreme Court. The CoC has asked all bidders to revise and improve their offers.",
+      "keywords": "dalmia bharat, jaiprakash associates, vedanta, pnc infratech, jp associates, jp associates share price, jp associates stock price, jp associates adani group, JP Associates shares rise, Adani Group bid, insolvency process, Jaiprakash Associates, debt-laden company, Gautam Buddh Nagar Sports City",
+      "snippet": "Live Events\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our ETMarkets WhatsApp channel\n\nShares of Jaiprakash Associates JP Associates ) rose 5...",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jp-associates-shares-rise-5-after-adani-group-emerges-as-sole-unconditional-bidder/articleshow/122312754.cms",
+      "image_url": "https://img.etimg.com/thumb/msid-122312766,width-1200,height-630,imgsize-60608,overlay-etmarkets/articleshow.jpg",
+      "language": "en",
+      "published_at": "2025-07-08T05:54:45.000000Z",
+      "source": "economictimes.indiatimes.com",
+      "relevance_score": 14.377275,
+      "entities": [
+        {
+          "symbol": "JPASSOCIAT.BO",
+          "name": "Jaiprakash Associates Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 27.531816,
+          "sentiment_score": 0.5766,
+          "highlights": [
+            {
+              "highlight": "Live Events\n\n\n\n\n\n(You can now subscribe [+321 characters]",
+              "sentiment": 0.5766,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "VEDL.BO",
+          "name": "Vedanta Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 18.416523,
+          "sentiment_score": -0.1027,
+          "highlights": [
+            {
+              "highlight": "Adani has reportedly submitted a Rs 12,6[+324 characters]",
+              "sentiment": -0.1027,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "DALBHARAT.BO",
+          "name": "DALMIA BHARAT LIMITED",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 33.085888,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Adani has reportedly submitted a Rs 12,6[+333 characters]",
+              "sentiment": -0.1027,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "has attracted five bids, with <em>Dalmia[+98 characters]",
+              "sentiment": 0.1027,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "PNCINFRA.BO",
+          "name": "PNC Infratech Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 36.37248,
+          "sentiment_score": 0.17805,
+          "highlights": [
+            {
+              "highlight": "Adani has reportedly submitted a Rs 12,6[+333 characters]",
+              "sentiment": -0.1027,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "The disputed land is expected to impact [+290 characters]",
+              "sentiment": 0.4588,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "948fb370-c8bc-496d-8e95-4e742078da49",
+      "title": "Stock Market Sectors: Stock market update: Power stocks up as market falls",
+      "description": "The 30-share BSE Sensex was  down  23.26 points at 83419.24",
+      "keywords": "Stock Market Sectors, Sectors in stock Market, India stock market sectors, Global Stock Market Sectors, S&P 500 Sectors, S&P Sectors",
+      "snippet": "Live Events\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our ETMarkets WhatsApp channel\n\nNEW DELHI: Power stocks were trading higher on Tuesday...",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/stock-watch/stock-market-update-power-stocks-up-as-market-falls/articleshow/122312281.cms",
+      "image_url": "https://img.etimg.com/thumb/msid-83791939,width-1200,height-630,imgsize-992893,overlay-etmarkets/articleshow.jpg",
+      "language": "en",
+      "published_at": "2025-07-08T05:32:14.000000Z",
+      "source": "economictimes.indiatimes.com",
+      "relevance_score": 14.377275,
+      "entities": [
+        {
+          "symbol": "ASIANPAINT.NS",
+          "name": "Asian Paints Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 23.45767,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 0.78%), <em>Asian</em> <em>Paints</e[+316 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ADANIENT.NS",
+          "name": "Adani Enterprises Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 23.46396,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 0.44%), <em>Adani</em> <em>Enterpris[+308 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BAJAJ-AUTO.NS",
+          "name": "Bajaj Auto Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 21.993702,
+          "sentiment_score": 0.5574,
+          "highlights": [
+            {
+              "highlight": "(down 1.78%), <em>Bajaj</em> <em>Auto</e[+238 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ICICIBANK.NS",
+          "name": "ICICI Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.337393,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 0.77%), <em>ICICI</em> <em>Bank</em>[+287 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BEL.NS",
+          "name": "Bharat Electronics Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 22.698103,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(up 1.69%), <em>Bharat</em> <em>Electron[+241 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "CIPLA.NS",
+          "name": "Cipla Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Healthcare",
+          "match_score": 18.910555,
+          "sentiment_score": 0.5574,
+          "highlights": [
+            {
+              "highlight": "(down 2.29%), <em>Cipla</em> Ltd.(down 1[+277 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TITAN.NS",
+          "name": "Titan Company Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 19.617414,
+          "sentiment_score": 0.8834,
+          "highlights": [
+            {
+              "highlight": "(up 0.26%) were among the top gainers in[+306 characters]",
+              "sentiment": 0.8834,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "POWERGRID.NS",
+          "name": "Power Grid Corporation of India Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 30.481628,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 1.07%), <em>Power</em> <em>Grid</em>[+338 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "DRREDDY.NS",
+          "name": "Dr. Reddy's Laboratories Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Healthcare",
+          "match_score": 32.038227,
+          "sentiment_score": 0.5574,
+          "highlights": [
+            {
+              "highlight": "(down 5.39%), <em>Dr</em>. <em>Reddy's</[+301 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "DPSCLTD.NS",
+          "name": "India Power Corporation Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 21.954062,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 1.31%), <em>India</em> <em>Power</em[+323 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "GEPIL.NS",
+          "name": "GE Power India Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 25.135818,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 2.40%), <em>GE</em> <em>Power</em> <[+307 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "GRASIM.NS",
+          "name": "Grasim Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 25.006422,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 1.35%), <em>Grasim</em> <em>Industri[+316 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "GIPCL.NS",
+          "name": "Gujarat Industries Power Company Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 28.710308,
+          "sentiment_score": 0.4404,
+          "highlights": [
+            {
+              "highlight": "(up 1.30%), <em>Gujarat</em> <em>Industr[+327 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HCLTECH.NS",
+          "name": "HCL Technologies Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 23.008263,
+          "sentiment_score": 0.5574,
+          "highlights": [
+            {
+              "highlight": "(down 1.17%), <em>HCL</em> <em>Technolog[+161 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HEROMOTOCO.NS",
+          "name": "Hero MotoCorp Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 25.857008,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 1.09%), <em>Hero</em> <em>MotoCorp[+126 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "MARUTI.NS",
+          "name": "Maruti Suzuki India Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 30.50715,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 1.05%), <em>Maruti</em> <em>Suzuki[+103 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "KEC.NS",
+          "name": "KEC International Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 24.397263,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(down 0.50%) and <em>KEC</em> <em>Intern[+320 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "JYOTISTRUC.NS",
+          "name": "Jyoti Structures Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 25.32692,
+          "sentiment_score": 0.7506,
+          "highlights": [
+            {
+              "highlight": "(down 1.87%), <em>Jyoti</em> <em>Structu[+310 characters]",
+              "sentiment": 0.7506,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "JPPOWER.NS",
+          "name": "Jaiprakash Power Ventures Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 31.978119,
+          "sentiment_score": 0.2732,
+          "highlights": [
+            {
+              "highlight": "(up 2.79%), <em>Jaiprakash</em> <em>Powe[+274 characters]",
+              "sentiment": 0.2732,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "KARMAENG.NS",
+          "name": "Karma Energy Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 22.26194,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 2.61%), <em>Karma</em> <em>Energy</e[+327 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "NTPC.NS",
+          "name": "NTPC Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 22.155361,
+          "sentiment_score": 0.646333,
+          "highlights": [
+            {
+              "highlight": "(up 1.15%) and <em>NTPC</em> Ltd.(up 1.1[+319 characters]",
+              "sentiment": 0.7269,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "(down 0.55%), <em>NTPC</em> Green Energy[+313 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "(up 1.35%), <em>NTPC</em> Ltd.(up 1.07%)[+299 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "NHPC.NS",
+          "name": "NHPC Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 20.193016,
+          "sentiment_score": 0.2732,
+          "highlights": [
+            {
+              "highlight": "(up 4.57%), <em>NHPC</em> Ltd.(up 2.79%)[+277 characters]",
+              "sentiment": 0.2732,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SUNPHARMA.NS",
+          "name": "Sun Pharmaceutical Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Healthcare",
+          "match_score": 27.049173,
+          "sentiment_score": 0.5574,
+          "highlights": [
+            {
+              "highlight": "(down 1.58%), <em>Sun</em> <em>Pharmaceu[+218 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TORNTPOWER.NS",
+          "name": "Torrent Power Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 20.171535,
+          "sentiment_score": 0.4404,
+          "highlights": [
+            {
+              "highlight": "(down 0.60%), <em>Torrent</em> <em>Power[+319 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TRENT.NS",
+          "name": "Trent Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 16.984598,
+          "sentiment_score": 0.5574,
+          "highlights": [
+            {
+              "highlight": "(down 1.84%), <em>Trent</em> Ltd.(down 1[+253 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "VOLTAMP.NS",
+          "name": "Voltamp Transformers Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 30.962881,
+          "sentiment_score": 0.6124,
+          "highlights": [
+            {
+              "highlight": "(up 1.23%), <em>Voltamp</em> <em>Transfo[+299 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HCLTECH-BL.NS",
+          "name": "HCL TECHNOLOGIES",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 37.490356,
+          "sentiment_score": 0.5574,
+          "highlights": [
+            {
+              "highlight": "(down 1.17%), <em>HCL</em> <em>Technolog[+161 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SUNPHARMA-BL.NS",
+          "name": "SUN PHARMACEUTICAL",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 34.776936,
+          "sentiment_score": 0.5574,
+          "highlights": [
+            {
+              "highlight": "(down 1.58%), <em>Sun</em> <em>Pharmaceu[+209 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ASIANPAINT.BO",
+          "name": "Asian Paints Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 22.97979,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 0.78%), <em>Asian</em> <em>Paints</e[+316 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BAJAJ-AUTO.BO",
+          "name": "Bajaj Auto Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 21.51509,
+          "sentiment_score": 0.5574,
+          "highlights": [
+            {
+              "highlight": "(down 1.78%), <em>Bajaj</em> <em>Auto</e[+238 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ADANIENT.BO",
+          "name": "Adani Enterprises Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 22.986788,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 0.44%), <em>Adani</em> <em>Enterpris[+308 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ICICIBANK.BO",
+          "name": "ICICI Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 20.85963,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 0.77%), <em>ICICI</em> <em>Bank</em>[+287 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BEL.BO",
+          "name": "Bharat Electronics Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 22.220818,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(up 1.69%), <em>Bharat</em> <em>Electron[+241 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "CIPLA.BO",
+          "name": "Cipla Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Healthcare",
+          "match_score": 18.421993,
+          "sentiment_score": 0.5574,
+          "highlights": [
+            {
+              "highlight": "(down 2.29%), <em>Cipla</em> Ltd.(down 1[+277 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "DRREDDY.BO",
+          "name": "Dr. Reddy's Laboratories Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Healthcare",
+          "match_score": 31.547173,
+          "sentiment_score": 0.5574,
+          "highlights": [
+            {
+              "highlight": "(down 5.39%), <em>Dr</em>. <em>Reddy's</[+301 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "KARMAENG.BO",
+          "name": "Karma Energy Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 21.785444,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 2.61%), <em>Karma</em> <em>Energy</e[+327 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "POWERGRID.BO",
+          "name": "Power Grid Corporation of India Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 30.00532,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 1.07%), <em>Power</em> <em>Grid</em>[+338 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "GIPCL.BO",
+          "name": "Gujarat Industries Power Company Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 28.234375,
+          "sentiment_score": 0.4404,
+          "highlights": [
+            {
+              "highlight": "(up 1.30%), <em>Gujarat</em> <em>Industr[+327 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HCLTECH.BO",
+          "name": "HCL Technologies Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 22.528894,
+          "sentiment_score": 0.5574,
+          "highlights": [
+            {
+              "highlight": "(down 1.17%), <em>HCL</em> <em>Technolog[+161 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HEROMOTOCO.BO",
+          "name": "Hero MotoCorp Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 25.373543,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 1.09%), <em>Hero</em> <em>MotoCorp[+126 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "JYOTI.BO",
+          "name": "Jyoti Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 18.16483,
+          "sentiment_score": 0.7506,
+          "highlights": [
+            {
+              "highlight": "(down 1.87%), <em>Jyoti</em> Structures [+301 characters]",
+              "sentiment": 0.7506,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "JYOTISTRUC.BO",
+          "name": "Jyoti Structures Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 24.849266,
+          "sentiment_score": 0.7506,
+          "highlights": [
+            {
+              "highlight": "(down 1.87%), <em>Jyoti</em> <em>Structu[+310 characters]",
+              "sentiment": 0.7506,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "KEC.BO",
+          "name": "KEC International Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 23.911509,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(down 0.50%) and <em>KEC</em> <em>Intern[+320 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "MARUTI.BO",
+          "name": "Maruti Suzuki India Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 30.024776,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 1.05%), <em>Maruti</em> <em>Suzuki[+103 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TITAN.BO",
+          "name": "Titan Company Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 19.138966,
+          "sentiment_score": 0.8834,
+          "highlights": [
+            {
+              "highlight": "(up 0.26%) were among the top gainers in[+306 characters]",
+              "sentiment": 0.8834,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "VOLTAMP.BO",
+          "name": "Voltamp Transformers Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 30.454395,
+          "sentiment_score": 0.6124,
+          "highlights": [
+            {
+              "highlight": "(up 1.23%), <em>Voltamp</em> <em>Transfo[+299 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELTD.BO",
+          "name": "Ravindra Energy Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 21.82359,
+          "sentiment_score": 0.2732,
+          "highlights": [
+            {
+              "highlight": "(down 0.85%), <em>Ravindra</em> <em>Ener[+119 characters]",
+              "sentiment": 0.2732,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "NTPC.BO",
+          "name": "NTPC Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 21.667757,
+          "sentiment_score": 0.646333,
+          "highlights": [
+            {
+              "highlight": "(up 1.15%) and <em>NTPC</em> Ltd.(up 1.1[+319 characters]",
+              "sentiment": 0.7269,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "(down 0.55%), <em>NTPC</em> Green Energy[+313 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "(up 1.35%), <em>NTPC</em> Ltd.(up 1.07%)[+299 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "NHPC.BO",
+          "name": "NHPC Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 19.702454,
+          "sentiment_score": 0.2732,
+          "highlights": [
+            {
+              "highlight": "(up 4.57%), <em>NHPC</em> Ltd.(up 2.79%)[+277 characters]",
+              "sentiment": 0.2732,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TORNTPOWER.BO",
+          "name": "Torrent Power Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Utilities",
+          "match_score": 19.695387,
+          "sentiment_score": 0.4404,
+          "highlights": [
+            {
+              "highlight": "(down 0.60%), <em>Torrent</em> <em>Power[+319 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "GRASIM.BO",
+          "name": "Grasim Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 24.493475,
+          "sentiment_score": 0.7717,
+          "highlights": [
+            {
+              "highlight": "(up 1.35%), <em>Grasim</em> <em>Industri[+316 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "GEPIL.BO",
+          "name": "GE Power India Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 24.658905,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 2.40%), <em>GE</em> <em>Power</em> <[+307 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TRENT.BO",
+          "name": "Trent Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 16.505142,
+          "sentiment_score": 0.5574,
+          "highlights": [
+            {
+              "highlight": "(down 1.84%), <em>Trent</em> Ltd.(down 1[+253 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    }
+  ]
+}

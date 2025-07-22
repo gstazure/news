@@ -1,0 +1,763 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 7,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "8c587de7-0b15-4e9e-b2e8-f4ef332e58fb",
+      "title": "RBL Bank Q1 Results On July 19 — Check Key Details Here",
+      "description": "RBL Bank Ltd. is set to announce the results for the first quarter of FY 2025-26 this week. The private sector lender has a network of 561 branches and 412 ATMs across the country. It serves more than 1.5 crore customers across India. Here’s everything you need to know about RBL Bank’s Q1FY26 results schedule.",
+      "keywords": "",
+      "snippet": "In an exchange filing dated July 15, RBL Bank said that a meeting of its Board of Directors is scheduled on July 19 to consider and approve the results for Q1FY...",
+      "url": "https://www.ndtvprofit.com/quarterly-earnings/rbl-bank-q1-results-on-july-19-check-key-details-here",
+      "image_url": "https://media.assettype.com/bloombergquint%2F2025-07-18%2F9v5d8tzr%2FRBL-Bank-Ltd.s-branch-in-Nerul-Navi-Mumbai.-Source-Vijay-Sartape-BQ-Prime.jpg?w=1200&auto=format%2Ccompress&ogImage=true",
+      "language": "en",
+      "published_at": "2025-07-18T04:58:26.000000Z",
+      "source": "bloombergquint.com",
+      "relevance_score": 43.894634,
+      "entities": [
+        {
+          "symbol": "RBLBANK.BO",
+          "name": "RBL Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 80.16166,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "In an exchange filing dated July 15, <em[+141 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "\"We hereby inform that the meeting of th[+325 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>RBL</em> <em>Bank</em> Q1 Results On July 19 — Check Key Details Here",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "RBLBANK.NS",
+          "name": "RBL Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 80.153595,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "In an exchange filing dated July 15, <em[+141 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "\"We hereby inform that the meeting of th[+325 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>RBL</em> <em>Bank</em> Q1 Results On July 19 — Check Key Details Here",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "67d2f8dc-00dd-49e0-bd41-7608f16f25a7",
+      "title": "Breakout Stocks: How to trade Biocon, RBL Bank & HDFC AMC that hit fresh 52-week high?",
+      "description": "Indian market closed with a positive bias, as BSE Sensex and Nifty50 saw gains, led by auto, FMCG, realty, and IT sectors. Biocon, RBL Bank, and HDFC AMC hit fresh 52-week highs. Analysts suggest monitoring Biocon for a breakout above 425, RBL Bank for profit-booking, and HDFC AMC's bullish trend with resistance at 5,453.",
+      "keywords": "rbl bank, biocon, hdfc amc, breakout stocks, biocon, rbl bank, hdfc amc, share price",
+      "snippet": "Market Summary\n\nSectoral Summary\n\nBreakout Stocks\n\nAnalyst Call\n\nLive Events\n\nBiocon\n\nETMarkets.com\n\nRBL Bank\n\nETMarkets.com\n\nHDFC AMC\n\nETMarkets.com\n\n\n\n\n\n(You ...",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/breakout-stocks-how-to-trade-biocon-rbl-bank-hdfc-amc-that-hit-fresh-52-week-high/articleshow/122584131.cms",
+      "image_url": "https://img.etimg.com/thumb/msid-122585482,width-1200,height-630,imgsize-26660,overlay-etmarkets/articleshow.jpg",
+      "language": "en",
+      "published_at": "2025-07-16T16:54:09.000000Z",
+      "source": "economictimes.indiatimes.com",
+      "relevance_score": 39.95533,
+      "entities": [
+        {
+          "symbol": "BIOCON.BO",
+          "name": "Biocon Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Healthcare",
+          "match_score": 38.458607,
+          "sentiment_score": 0.466,
+          "highlights": [
+            {
+              "highlight": "Market Summary\n\nSectoral Summary\n\nBreako[+273 characters]",
+              "sentiment": 0.4939,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "The BSE Sensex rose more than 60 points [+330 characters]",
+              "sentiment": 0.5859,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Breakout Stocks: How to trade <em>Biocon</em>, RBL Bank & HDFC AMC that hit fresh 52-week high?",
+              "sentiment": 0.3182,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "RBLBANK.BO",
+          "name": "RBL Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 54.517265,
+          "sentiment_score": 0.562475,
+          "highlights": [
+            {
+              "highlight": "Market Summary\n\nSectoral Summary\n\nBreako[+282 characters]",
+              "sentiment": 0.4939,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "The BSE Sensex rose more than 60 points [+339 characters]",
+              "sentiment": 0.5859,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Ideally, for bulls, it is safer to enter[+193 characters]",
+              "sentiment": 0.8519,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Breakout Stocks: How to trade Biocon, <em>RBL</em> <em>Bank</em> & HDFC AMC that hit fresh 52-week high?",
+              "sentiment": 0.3182,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "545ed61d-685a-45f7-84f4-7f36f977e69f",
+      "title": "Top gainers & losers today 18th July: Sensex trades 560 pts lower, Axis Bank drags banking & financials, Wipro lead gainers, RIL & JSW Steel to announce results today",
+      "description": "Equity indices plummet as traders remain cautious during earnings season, with Axis Bank dragging financial stocks down.",
+      "keywords": "top gainers and top losers, miid day performance, stock market, share market",
+      "snippet": "Equity benchmark indices tanked on Friday’s mid-trading witnessing maximum selling pressure as traders adopted a cautious tone amid the ongoing earnings seaso...",
+      "url": "https://www.thehindubusinessline.com/markets/stock-markets/top-gainers-losers-today-18th-july-sensex-trades-560-pts-lower-axis-bank-drags-banking-financials-wipro-lead-gainers-ril-jsw-steel-to-announce-results-today/article69826755.ece",
+      "image_url": "https://bl-i.thgim.com/public/incoming/nfsfde/article69822869.ece/alternates/LANDSCAPE_1200/PO20_Chart_graph.jpg",
+      "language": "en",
+      "published_at": "2025-07-18T07:52:00.000000Z",
+      "source": "thehindubusinessline.com",
+      "relevance_score": 22.203224,
+      "entities": [
+        {
+          "symbol": "FRBA",
+          "name": "First Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "us",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 12.605325,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "RBL Bank, Kotak Mahindra, HDFC Bank and [+282 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "^NSEI",
+          "name": "Nifty 50",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "index",
+          "industry": "N/A",
+          "match_score": 18.447042,
+          "sentiment_score": 0.34,
+          "highlights": [
+            {
+              "highlight": "<em>Nifty</em> <em>50</em> fell 156.95 p[+259 characters]",
+              "sentiment": 0.34,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "AXISBANK-BL.NS",
+          "name": "AXIS BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 63.341812,
+          "sentiment_score": -0.091775,
+          "highlights": [
+            {
+              "highlight": "On the flip side, <em>Axis</em> <em>Bank[+183 characters]",
+              "sentiment": -0.296,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "RBL Bank, Kotak Mahindra, HDFC Bank and [+282 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In addition to <em>Axis</em> <em>Bank</e[+255 characters]",
+              "sentiment": 0.5994,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Top gainers & losers today 18th July: Sensex trades 560 pts lower, <em>Axis</em> <em>Bank</em> drags banking & financials, Wipro lead gainers, RIL & JSW Steel to announce results today",
+              "sentiment": -0.6705,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "HDB.BA",
+          "name": "HDFC BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "ar",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.674313,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "RBL Bank, Kotak Mahindra, <em>HDFC</em> [+282 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "AXISBANK.BO",
+          "name": "Axis Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 38.021904,
+          "sentiment_score": -0.091775,
+          "highlights": [
+            {
+              "highlight": "On the flip side, <em>Axis</em> <em>Bank[+183 characters]",
+              "sentiment": -0.296,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "RBL Bank, Kotak Mahindra, HDFC Bank and [+282 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In addition to <em>Axis</em> <em>Bank</e[+255 characters]",
+              "sentiment": 0.5994,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Top gainers & losers today 18th July: Sensex trades 560 pts lower, <em>Axis</em> <em>Bank</em> drags banking & financials, Wipro lead gainers, RIL & JSW Steel to announce results today",
+              "sentiment": -0.6705,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "ALOKTEXT.BO",
+          "name": "Alok Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 19.82033,
+          "sentiment_score": 0.765,
+          "highlights": [
+            {
+              "highlight": "Meanwhile, Clean Science, Newgen, <em>Al[+298 characters]",
+              "sentiment": 0.765,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK.BO",
+          "name": "HDFC Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 17.18945,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "RBL Bank, Kotak Mahindra, <em>HDFC</em> [+282 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BIOCON.BO",
+          "name": "Biocon Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Healthcare",
+          "match_score": 16.35929,
+          "sentiment_score": 0.0258,
+          "highlights": [
+            {
+              "highlight": "Anand Rathi, Choice International, Dalmi[+249 characters]",
+              "sentiment": 0.0258,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "INDUSINDBK.BO",
+          "name": "IndusInd Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 18.394472,
+          "sentiment_score": 0.0516,
+          "highlights": [
+            {
+              "highlight": "HCL Tech, ONGC, <em>IndusInd</em> <em>Ba[+254 characters]",
+              "sentiment": 0.0516,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "IDFCFIRSTB.BO",
+          "name": "IDFC FIRST BANK LIMITED",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 21.560472,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "RBL Bank, Kotak Mahindra, HDFC Bank and [+291 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BEL.BO",
+          "name": "Bharat Electronics Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 18.637117,
+          "sentiment_score": -0.25,
+          "highlights": [
+            {
+              "highlight": "Shriram Finance, <em>Bharat</em> <em>Ele[+249 characters]",
+              "sentiment": -0.25,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BDL.BO",
+          "name": "Bharat Dynamics Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 18.522556,
+          "sentiment_score": 0.5574,
+          "highlights": [
+            {
+              "highlight": "Midcap & smallcap movers today\n\nAmong th[+237 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCE.BO",
+          "name": "Reliance Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 16.56718,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Today, Investors eye-out for Q1 results [+107 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "INFY.BO",
+          "name": "Infosys Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 14.110151,
+          "sentiment_score": 0.0516,
+          "highlights": [
+            {
+              "highlight": "HCL Tech, ONGC, IndusInd Bank and <em>In[+245 characters]",
+              "sentiment": 0.0516,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ITC.BO",
+          "name": "ITC Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Defensive",
+          "match_score": 14.63096,
+          "sentiment_score": 0.0258,
+          "highlights": [
+            {
+              "highlight": "Anand Rathi, Choice International, Dalmi[+249 characters]",
+              "sentiment": 0.0258,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "JSWSTEEL.BO",
+          "name": "JSW Steel Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 44.33934,
+          "sentiment_score": -0.33525,
+          "highlights": [
+            {
+              "highlight": "Today, Investors eye-out for Q1 results [+107 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Top gainers & losers today 18th July: Sensex trades 560 pts lower, Axis Bank drags banking & financials, Wipro lead gainers, RIL & <em>JSW</em> <em>Steel</em> to announce results today",
+              "sentiment": -0.6705,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "JINDWORLD.BO",
+          "name": "Jindal Worldwide Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 19.990864,
+          "sentiment_score": 0.0258,
+          "highlights": [
+            {
+              "highlight": "Anand Rathi, Choice International, Dalmi[+258 characters]",
+              "sentiment": 0.0258,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATASTEEL.BO",
+          "name": "Tata Steel Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 18.4668,
+          "sentiment_score": 0.0516,
+          "highlights": [
+            {
+              "highlight": "<em>Tata</em> <em>Steel</em> was up 1 pe[+284 characters]",
+              "sentiment": 0.0516,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "WIPRO.BO",
+          "name": "Wipro Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 27.41999,
+          "sentiment_score": -0.0237,
+          "highlights": [
+            {
+              "highlight": "Top gainers & losers today\n\nAmong the Se[+275 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In addition to Axis Bank and <em>Wipro</[+246 characters]",
+              "sentiment": 0.5994,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Top gainers & losers today 18th July: Sensex trades 560 pts lower, Axis Bank drags banking & financials, <em>Wipro</em> lead gainers, RIL & JSW Steel to announce results today",
+              "sentiment": -0.6705,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "PERSISTENT.BO",
+          "name": "Persistent Systems Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 16.874397,
+          "sentiment_score": 0.6908,
+          "highlights": [
+            {
+              "highlight": "Midcap & smallcap movers today\n\nAmong th[+237 characters]",
+              "sentiment": 0.6908,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATACOMM.BO",
+          "name": "Tata Communications Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Communication Services",
+          "match_score": 17.793056,
+          "sentiment_score": 0.6908,
+          "highlights": [
+            {
+              "highlight": "Midcap & smallcap movers today\n\nAmong th[+237 characters]",
+              "sentiment": 0.6908,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCEPP.BO",
+          "name": "Reliance Industries Ltd",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 16.56718,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Today, Investors eye-out for Q1 results [+107 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "COCHINSHIP.BO",
+          "name": "Cochin Shipyard Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 24.37318,
+          "sentiment_score": 0.6908,
+          "highlights": [
+            {
+              "highlight": "Midcap & smallcap movers today\n\nAmong th[+237 characters]",
+              "sentiment": 0.6908,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "IDFC.BO",
+          "name": "IDFC Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 15.755578,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "RBL Bank, Kotak Mahindra, HDFC Bank and [+273 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "NMDC.BO",
+          "name": "NMDC Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 16.369,
+          "sentiment_score": 0.6908,
+          "highlights": [
+            {
+              "highlight": "Midcap & smallcap movers today\n\nAmong th[+228 characters]",
+              "sentiment": 0.6908,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "DALBHARAT.BO",
+          "name": "DALMIA BHARAT LIMITED",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 22.881586,
+          "sentiment_score": 0.0258,
+          "highlights": [
+            {
+              "highlight": "Anand Rathi, Choice International, <em>D[+258 characters]",
+              "sentiment": 0.0258,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "CHOICEIN.BO",
+          "name": "Choice International Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 14.557396,
+          "sentiment_score": 0.0258,
+          "highlights": [
+            {
+              "highlight": "Anand Rathi, <em>Choice</em> <em>Interna[+258 characters]",
+              "sentiment": 0.0258,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RBLBANK.BO",
+          "name": "RBL Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 19.65045,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "<em>RBL</em> <em>Bank</em>, Kotak Mahind[+282 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BEML.BO",
+          "name": "BEML Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 17.26548,
+          "sentiment_score": 0.3818,
+          "highlights": [
+            {
+              "highlight": "Of the smallcap index, Tribeni Turbine, [+232 characters]",
+              "sentiment": 0.3818,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ELECTHERM.BO",
+          "name": "Electrotherm (India) Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 23.441185,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "<em>Electrotherm</em> (<em>India</em>) a[+138 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 14,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "175610f6-9520-4a05-9f68-e6d0f42fb798",
+      "title": "Q1 2026 Union Bank of India Ltd Earnings Call Transcript",
+      "description": "Jul 19, 2025 / 10:30AM GMTOperator Ladies and gentlemen, good day and welcome to the Union Bank of India earnings conference call for the period June 30th, 2025",
+      "keywords": "GuruFocus, Article, News, GuruFocus News, BOM:532477",
+      "snippet": "Jul 19, 2025 / 10:30AM GMT\n\nOperator\n\n\n\nLadies and gentlemen, good day and welcome to the Union Bank of India earnings conference call for the period June 30th,...",
+      "url": "https://www.gurufocus.com/news/2991360/q1-2026-union-bank-of-india-ltd-earnings-call-transcript",
+      "image_url": "https://static.gurufocus.com/images/global_logo_twitter_card.png",
+      "language": "en",
+      "published_at": "2025-07-21T19:01:36.000000Z",
+      "source": "gurufocus.com",
+      "relevance_score": 30.275677,
+      "entities": [
+        {
+          "symbol": "UNIONBANK.NS",
+          "name": "Union Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 140.2147,
+          "sentiment_score": 0.556533,
+          "highlights": [
+            {
+              "highlight": "Jul 19, 2025 / 10:30AM GMT\n\nOperator\n\n\n\n[+317 characters]",
+              "sentiment": 0.7717,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Ajay Bansal - <em>Union</em> <em>Bank</e[+339 characters]",
+              "sentiment": 0.8979,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Q1 2026 <em>Union</em> <em>Bank</em> <em>of</em> <em>India</em> Ltd Earnings Call Transcript",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "c61c5c48-82a8-441b-b184-a61e3829327d",
+      "title": "Union Bank of India (BOM:532477) Q1 2026 Earnings Call Highlights: Strong Retail Growth Amidst Margin Pressures",
+      "description": "Overall Credit Growth: 6.8% as of June 2025.RAM Segments Growth: 10.3% growth rate.Retail Loan Book Growth: 26% increase.MSME Growth: 18% increase.Bulk Deposit",
+      "keywords": "GuruFocus, Article, News, GuruFocus News, BOM:532477",
+      "snippet": "Release Date: July 19, 2025\n\nFor the complete transcript of the earnings call, please refer to the full earnings call transcript.\n\nPositive Points\n\nUnion Bank o...",
+      "url": "https://www.gurufocus.com/news/2991503/union-bank-of-india-bom532477-q1-2026-earnings-call-highlights-strong-retail-growth-amidst-margin-pressures",
+      "image_url": "https://static.gurufocus.com/logos/0C0000178Y.png?5",
+      "language": "en",
+      "published_at": "2025-07-21T21:00:38.000000Z",
+      "source": "gurufocus.com",
+      "relevance_score": 25.58434,
+      "entities": [
+        {
+          "symbol": "UNIONBANK.NS",
+          "name": "Union Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 112.45311,
+          "sentiment_score": 0.74985,
+          "highlights": [
+            {
+              "highlight": "Positive Points\n\n<em>Union</em> <em>Bank[+328 characters]",
+              "sentiment": 0.9423,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Union</em> <em>Bank</em> <em>of</em> <em>India</em> (BOM:532477) Q1 2026 Earnings Call Highlights: Strong Retail Growth Amidst Margin Pressures",
+              "sentiment": 0.5574,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "605076f8-c8fb-4a00-b7a8-a587ca5fbc1b",
+      "title": "Union Bank of India Is Still A 'Buy' For Anand Rathi Despite Weak Q1 — Check Target Price",
+      "description": "Lower margins and weaker non-interest income led to Union Bank of India’s operating profits degrowth. Yet, its cost/income was below 50%, suggesting decent overall operating performance. \n\nHeadline asset quality and provision coverage ratio improved. Key positives were:\n\nmodest slippages (1% of loans),\n\nlower stress formation (SMA at 0.5% of loans),",
+      "keywords": "Union Bank Of India",
+      "snippet": "Lower margins and weaker non-interest income led to Union Bank of India’s operating profits degrowth. Yet, its cost/income was below 50%, suggesting decent ov...",
+      "url": "https://www.ndtvprofit.com/research-reports/union-bank-of-india-is-still-a-buy-for-anand-rathi-despite-weak-q1-check-target-price",
+      "image_url": "https://media.assettype.com/bloombergquint%2F2025-07-21%2F8cwuk0zk%2FUnion-Bank-of-India-Central-Office-at-Nariman-Point-in-Mumbai.-Photo-Vishal-Patel-Source-NDTV-Profit-28052025.jpg?w=1200&auto=format%2Ccompress&ogImage=true",
+      "language": "en",
+      "published_at": "2025-07-21T11:15:06.000000Z",
+      "source": "bloombergquint.com",
+      "relevance_score": 25.506811,
+      "entities": [
+        {
+          "symbol": "UNIONBANK.NS",
+          "name": "Union Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 112.48244,
+          "sentiment_score": 0.1423,
+          "highlights": [
+            {
+              "highlight": "<em>Union</em> <em>Bank</em> <em>of</em> <em>India</em> Is Still A 'Buy' For Anand Rathi Despite Weak Q1 — Check Target Price",
+              "sentiment": 0.1423,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    }
+  ]
+}

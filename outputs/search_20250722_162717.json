@@ -1,0 +1,1959 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 9,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "03e56aa6-6401-48b1-9407-abad42d4aa2e",
+      "title": "Indices: Stock market update: Nifty Bank index advances 1.19%",
+      "description": "The Nifty Bank index closed 1.19 per cent  up  at 56952.75.",
+      "keywords": "Indices, Indices stocks, Indices news, Indices updates, stock market indices, Global market indices, nifty indices",
+      "snippet": "Live Events\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our ETMarkets WhatsApp channel\n\nNEW DELHI: The Nifty Bank index closed on a positive n...",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/stock-watch/stock-market-update-nifty-bank-index-advances-1-19/articleshow/122814456.cms",
+      "image_url": "https://img.etimg.com/thumb/msid-83772914,width-1200,height-630,imgsize-273990,overlay-etmarkets/articleshow.jpg",
+      "language": "en",
+      "published_at": "2025-07-21T11:06:52.000000Z",
+      "source": "economictimes.indiatimes.com",
+      "relevance_score": 27.203484,
+      "entities": [
+        {
+          "symbol": "FRBA",
+          "name": "First Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "us",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 15.706347,
+          "sentiment_score": 0.6124,
+          "highlights": [
+            {
+              "highlight": "(up 2.21 per cent), IDFC <em>First</em> [+280 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "AUBANK.NS",
+          "name": "AU Small Finance Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 27.590424,
+          "sentiment_score": 0.6124,
+          "highlights": [
+            {
+              "highlight": "(up 0.15 per cent) ended the day as top [+174 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "^NSEBANK",
+          "name": "Nifty Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "index",
+          "industry": "N/A",
+          "match_score": 98.18862,
+          "sentiment_score": 0.1944,
+          "highlights": [
+            {
+              "highlight": "Live Events\n\n\n\n\n\n(You can now subscribe [+295 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "(down 1.3 per cent), Punjab National Ban[+330 characters]",
+              "sentiment": 0.0258,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Indices: Stock market update: <em>Nifty</em> <em>Bank</em> index advances 1.19%",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "ICICIBANK.NS",
+          "name": "ICICI Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 22.407127,
+          "sentiment_score": 0.743,
+          "highlights": [
+            {
+              "highlight": "Live Events\n\n\n\n\n\n(You can now subscribe [+295 characters]",
+              "sentiment": 0.743,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "INDUSINDBK.NS",
+          "name": "IndusInd Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 23.546795,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 5.29 per cent), Canara Bank(down 2[+51 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK.NS",
+          "name": "HDFC Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 22.015713,
+          "sentiment_score": 0.6124,
+          "highlights": [
+            {
+              "highlight": "(up 2.81 per cent), <em>HDFC</em> <em>Ba[+314 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "YESBANK.NS",
+          "name": "Yes Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 19.18492,
+          "sentiment_score": 0.5827,
+          "highlights": [
+            {
+              "highlight": "Baroda(down 0.54 per cent) finished as t[+327 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Bank</em>, JP Power, PC Jeweller and[+323 characters]",
+              "sentiment": 0.7439,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "KOTAKBANK.NS",
+          "name": "Kotak Mahindra Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 31.690186,
+          "sentiment_score": 0.6124,
+          "highlights": [
+            {
+              "highlight": "(up 1.24 per cent), <em>Kotak</em> <em>M[+249 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "PNB.NS",
+          "name": "Punjab National Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 40.786674,
+          "sentiment_score": 0.4215,
+          "highlights": [
+            {
+              "highlight": "(down 1.3 per cent), <em>Punjab</em> <em[+339 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BANKBARODA.NS",
+          "name": "Bank of Baroda",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 41.791122,
+          "sentiment_score": 0.4215,
+          "highlights": [
+            {
+              "highlight": "(down 1.3 per cent), Punjab National Ban[+339 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BORORENEW.NS",
+          "name": "Borosil Renewables Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 32.206264,
+          "sentiment_score": 0.6503,
+          "highlights": [
+            {
+              "highlight": "ended up 122.3 points at 25090.7, while [+329 characters]",
+              "sentiment": 0.8791,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Renewables</em>, Mangalore Chem and [+201 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "IDFCFIRSTB.NS",
+          "name": "IDFC First Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 27.55641,
+          "sentiment_score": 0.6124,
+          "highlights": [
+            {
+              "highlight": "(up 2.21 per cent), <em>IDFC</em> <em>Fi[+289 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "CANBK.NS",
+          "name": "Canara Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 40.33213,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 5.29 per cent), <em>Canara</em> <e[+51 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BOROLTD.NS",
+          "name": "Borosil Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 23.313507,
+          "sentiment_score": 0.8791,
+          "highlights": [
+            {
+              "highlight": "ended up 122.3 points at 25090.7, while [+329 characters]",
+              "sentiment": 0.8791,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SHRIRAMEPC.NS",
+          "name": "Shriram EPC Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 30.008493,
+          "sentiment_score": 0.4976,
+          "highlights": [
+            {
+              "highlight": "index, 31 ended in the green, while 19 c[+326 characters]",
+              "sentiment": 0.8672,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>EPC</em>(PP), Smartworks Coworking, [+81 characters]",
+              "sentiment": 0.128,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "GALLANTT.NS",
+          "name": "Gallantt Metal Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 31.314917,
+          "sentiment_score": 0.6503,
+          "highlights": [
+            {
+              "highlight": "56952.75.Benchmark NSE Nifty50 index end[+330 characters]",
+              "sentiment": 0.8791,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Metal</em>, Paradeep Phosphates, Bor[+237 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "IDEA.NS",
+          "name": "Vodafone Idea Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Communication Services",
+          "match_score": 22.647314,
+          "sentiment_score": 0.64435,
+          "highlights": [
+            {
+              "highlight": "and Bank of Baroda(down 0.54 per cent) f[+329 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Idea</em>, YES Bank, JP Power, PC Je[+320 characters]",
+              "sentiment": 0.8672,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "IDFC.NS",
+          "name": "IDFC Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 20.20088,
+          "sentiment_score": 0.6124,
+          "highlights": [
+            {
+              "highlight": "(up 2.21 per cent), <em>IDFC</em> First [+271 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "PCJEWELLER.NS",
+          "name": "PC Jeweller Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 27.074327,
+          "sentiment_score": 0.7776,
+          "highlights": [
+            {
+              "highlight": ") finished as the top losers of the day.[+321 characters]",
+              "sentiment": 0.8301,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Jeweller</em> and Paradeep Phosphate[+320 characters]",
+              "sentiment": 0.7251,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "LCCINFOTEC.NS",
+          "name": "LCC Infotech Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Defensive",
+          "match_score": 30.91145,
+          "sentiment_score": 0.4976,
+          "highlights": [
+            {
+              "highlight": "Idea, YES Bank, JP Power, PC Jeweller an[+324 characters]",
+              "sentiment": 0.8672,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Infotech</em> hit their fresh 52-wee[+7 characters]",
+              "sentiment": 0.128,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SKIL.NS",
+          "name": "SKIL Infrastructure Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 28.672066,
+          "sentiment_score": 0.4976,
+          "highlights": [
+            {
+              "highlight": "red.Shares of Vodafone Idea, YES Bank, J[+324 characters]",
+              "sentiment": 0.8672,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Infrastructure</em> and LCC Infotech[+30 characters]",
+              "sentiment": 0.128,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDB.BA",
+          "name": "HDFC BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "ar",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 27.1932,
+          "sentiment_score": 0.6124,
+          "highlights": [
+            {
+              "highlight": "(up 2.81 per cent), <em>HDFC</em> <em>Ba[+314 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "AUBANK.BO",
+          "name": "AU Small Finance Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 27.088032,
+          "sentiment_score": 0.6124,
+          "highlights": [
+            {
+              "highlight": "(up 0.15 per cent) ended the day as top [+174 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "YESBANK.BO",
+          "name": "Yes Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 18.682533,
+          "sentiment_score": 0.5827,
+          "highlights": [
+            {
+              "highlight": "Baroda(down 0.54 per cent) finished as t[+327 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Bank</em>, JP Power, PC Jeweller and[+323 characters]",
+              "sentiment": 0.7439,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK.BO",
+          "name": "HDFC Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.511082,
+          "sentiment_score": 0.6124,
+          "highlights": [
+            {
+              "highlight": "(up 2.81 per cent), <em>HDFC</em> <em>Ba[+314 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ICICIBANK.BO",
+          "name": "ICICI Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.901829,
+          "sentiment_score": 0.743,
+          "highlights": [
+            {
+              "highlight": "Live Events\n\n\n\n\n\n(You can now subscribe [+295 characters]",
+              "sentiment": 0.743,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "KOTAKBANK.BO",
+          "name": "Kotak Mahindra Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 31.181522,
+          "sentiment_score": 0.6124,
+          "highlights": [
+            {
+              "highlight": "(up 1.24 per cent), <em>Kotak</em> <em>M[+249 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "INDUSINDBK.BO",
+          "name": "IndusInd Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 23.038029,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 5.29 per cent), Canara Bank(down 2[+51 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "IDFCFIRSTB.BO",
+          "name": "IDFC FIRST BANK LIMITED",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 27.051147,
+          "sentiment_score": 0.6124,
+          "highlights": [
+            {
+              "highlight": "(up 2.21 per cent), <em>IDFC</em> <em>Fi[+289 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "PNB.BO",
+          "name": "Punjab National Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 40.284058,
+          "sentiment_score": 0.4215,
+          "highlights": [
+            {
+              "highlight": "(down 1.3 per cent), <em>Punjab</em> <em[+339 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BOROLTD.BO",
+          "name": "Borosil Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 22.681942,
+          "sentiment_score": 0.8791,
+          "highlights": [
+            {
+              "highlight": "ended up 122.3 points at 25090.7, while [+329 characters]",
+              "sentiment": 0.8791,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "PCJEWELLER.BO",
+          "name": "PC Jeweller Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 26.55276,
+          "sentiment_score": 0.7776,
+          "highlights": [
+            {
+              "highlight": ") finished as the top losers of the day.[+321 characters]",
+              "sentiment": 0.8301,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Jeweller</em> and Paradeep Phosphate[+320 characters]",
+              "sentiment": 0.7251,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "IDEA.BO",
+          "name": "Vodafone Idea Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Communication Services",
+          "match_score": 22.143864,
+          "sentiment_score": 0.64435,
+          "highlights": [
+            {
+              "highlight": "and Bank of Baroda(down 0.54 per cent) f[+329 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Idea</em>, YES Bank, JP Power, PC Je[+320 characters]",
+              "sentiment": 0.8672,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SHRIRAMEPC.BO",
+          "name": "Shriram EPC Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 29.473795,
+          "sentiment_score": 0.4976,
+          "highlights": [
+            {
+              "highlight": "index, 31 ended in the green, while 19 c[+326 characters]",
+              "sentiment": 0.8672,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>EPC</em>(PP), Smartworks Coworking, [+81 characters]",
+              "sentiment": 0.128,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "IDFC.BO",
+          "name": "IDFC Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 19.696093,
+          "sentiment_score": 0.6124,
+          "highlights": [
+            {
+              "highlight": "(up 2.21 per cent), <em>IDFC</em> First [+271 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BORORENEW.BO",
+          "name": "BOROSIL RENEWABLES LIMITED",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 31.497356,
+          "sentiment_score": 0.6503,
+          "highlights": [
+            {
+              "highlight": "ended up 122.3 points at 25090.7, while [+329 characters]",
+              "sentiment": 0.8791,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Renewables</em>, Mangalore Chem and [+201 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SKIL.BO",
+          "name": "SKIL Infrastructure Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 28.05272,
+          "sentiment_score": 0.4976,
+          "highlights": [
+            {
+              "highlight": "red.Shares of Vodafone Idea, YES Bank, J[+324 characters]",
+              "sentiment": 0.8672,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Infrastructure</em> and LCC Infotech[+30 characters]",
+              "sentiment": 0.128,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "GALLANTT.BO",
+          "name": "Gallantt Metal Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 30.241724,
+          "sentiment_score": 0.6503,
+          "highlights": [
+            {
+              "highlight": "56952.75.Benchmark NSE Nifty50 index end[+330 characters]",
+              "sentiment": 0.8791,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Metal</em>, Paradeep Phosphates, Bor[+237 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": [
+        {
+          "uuid": "8f453080-541e-4cdf-943d-b09c799ada46",
+          "title": "Indices: Stock market update: Nifty Bank index advances 0.89% in an upbeat market",
+          "description": "The Nifty Bank index was trading 0.89 per cent  up  at 56783.6.",
+          "keywords": "Indices, Indices stocks, Indices news, Indices updates, stock market indices, Global market indices, nifty indices, vodafone idea, bank of baroda, indusind bank ltd., icici bank ltd., pc jeweller, hdfc bank ltd., federal bank ltd., kotak mahindra bank ltd., yes bank, canara bank, gallantt metal, jp power, soma textiles, paradeep phosphates, reliance comm",
+          "snippet": "Live Events\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our ETMarkets WhatsApp channel\n\nNEW DELHI: The Nifty Bank index traded positive around...",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/stock-watch/stock-market-update-nifty-bank-index-advances-0-89-in-an-upbeat-market/articleshow/122807068.cms",
+          "image_url": "https://img.etimg.com/thumb/msid-83804572,width-1200,height-630,imgsize-297423,overlay-etmarkets/articleshow.jpg",
+          "language": "en",
+          "published_at": "2025-07-21T05:27:50.000000Z",
+          "source": "economictimes.indiatimes.com",
+          "relevance_score": 27.203484,
+          "entities": [
+            {
+              "symbol": "FRBA",
+              "name": "First Bank",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "us",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 15.973199,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(up 0.8 per cent) and IDFC <em>First</em[+241 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "^NSEBANK",
+              "name": "Nifty Bank",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "index",
+              "industry": "N/A",
+              "match_score": 86.84564,
+              "sentiment_score": 0.1944,
+              "highlights": [
+                {
+                  "highlight": "Live Events\n\n\n\n\n\n(You can now subscribe [+316 characters]",
+                  "sentiment": 0.5574,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "(down 0.87 per cent) were the top losers[+335 characters]",
+                  "sentiment": 0.0258,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "Indices: Stock market update: <em>Nifty</em> <em>Bank</em> index advances 0.89% in an upbeat market",
+                  "sentiment": 0,
+                  "highlighted_in": "title"
+                }
+              ]
+            },
+            {
+              "symbol": "INDUSINDBK.NS",
+              "name": "IndusInd Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 23.956593,
+              "sentiment_score": 0,
+              "highlights": [
+                {
+                  "highlight": "(down 5.23 per cent), <em>IndusInd</em> [+127 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "HDFCBANK.NS",
+              "name": "HDFC Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 22.396095,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(up 2.76 per cent), <em>HDFC</em> <em>Ba[+319 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "KOTAKBANK.NS",
+              "name": "Kotak Mahindra Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 32.247673,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(up 1.96 per cent), <em>Kotak</em> <em>M[+294 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "BANKBARODA.NS",
+              "name": "Bank of Baroda",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 42.532043,
+              "sentiment_score": 0,
+              "highlights": [
+                {
+                  "highlight": "(down 3.2 per cent), <em>Bank</em> <em>o[+96 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "IDFCFIRSTB.NS",
+              "name": "IDFC First Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 28.039217,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(up 0.8 per cent) and <em>IDFC</em> <em>[+250 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "CANBK.NS",
+              "name": "Canara Bank",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 41.046135,
+              "sentiment_score": 0,
+              "highlights": [
+                {
+                  "highlight": "(down 3.2 per cent), Bank of Baroda(down[+87 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "GALLANTT.NS",
+              "name": "Gallantt Metal Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 32.262886,
+              "sentiment_score": 0.7506,
+              "highlights": [
+                {
+                  "highlight": "., Paradeep Phosphates <em>Gallantt</em>[+214 characters]",
+                  "sentiment": 0.7506,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "IDEA.NS",
+              "name": "Vodafone Idea Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Communication Services",
+              "match_score": 23.041887,
+              "sentiment_score": 0.63245,
+              "highlights": [
+                {
+                  "highlight": "per cent) were the top losers on the ind[+327 characters]",
+                  "sentiment": 0.4215,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "<em>Idea</em> PC Jeweller and Ola Electr[+319 characters]",
+                  "sentiment": 0.8434,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "IDFC.NS",
+              "name": "IDFC Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 20.552515,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(up 0.8 per cent) and <em>IDFC</em> Firs[+232 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "PCJEWELLER.NS",
+              "name": "PC Jeweller Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Consumer Cyclical",
+              "match_score": 27.563585,
+              "sentiment_score": 0.65345,
+              "highlights": [
+                {
+                  "highlight": "the top losers on the index.The Nifty Ba[+320 characters]",
+                  "sentiment": 0.4215,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "<em>Jeweller</em> and Ola Electric Mobil[+321 characters]",
+                  "sentiment": 0.8854,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "SUPREMEENG.NS",
+              "name": "Supreme Engineering Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 21.915146,
+              "sentiment_score": 0.4215,
+              "highlights": [
+                {
+                  "highlight": "., Paradeep Phosphates Gallantt Metal an[+214 characters]",
+                  "sentiment": 0.4215,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "LCCINFOTEC.NS",
+              "name": "LCC Infotech Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Consumer Defensive",
+              "match_score": 31.471249,
+              "sentiment_score": 0.7506,
+              "highlights": [
+                {
+                  "highlight": "., Paradeep Phosphates Gallantt Metal an[+214 characters]",
+                  "sentiment": 0.7506,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "MARSHALL-SM.NS",
+              "name": "MARSHALL MACHINES",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 40.569466,
+              "sentiment_score": 0.7506,
+              "highlights": [
+                {
+                  "highlight": "., Paradeep Phosphates Gallantt Metal an[+214 characters]",
+                  "sentiment": 0.7506,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "HDB.BA",
+              "name": "HDFC BANK",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "ar",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 27.668339,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(up 2.76 per cent), <em>HDFC</em> <em>Ba[+319 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "HDFCBANK.BO",
+              "name": "HDFC Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 21.883202,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(up 2.76 per cent), <em>HDFC</em> <em>Ba[+319 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "KOTAKBANK.BO",
+              "name": "Kotak Mahindra Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 31.73353,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(up 1.96 per cent), <em>Kotak</em> <em>M[+294 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "INDUSINDBK.BO",
+              "name": "IndusInd Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 23.440382,
+              "sentiment_score": 0,
+              "highlights": [
+                {
+                  "highlight": "(down 5.23 per cent), <em>IndusInd</em> [+127 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "IDFCFIRSTB.BO",
+              "name": "IDFC FIRST BANK LIMITED",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 27.526426,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(up 0.8 per cent) and <em>IDFC</em> <em>[+250 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "PCJEWELLER.BO",
+              "name": "PC Jeweller Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Consumer Cyclical",
+              "match_score": 27.03646,
+              "sentiment_score": 0.65345,
+              "highlights": [
+                {
+                  "highlight": "the top losers on the index.The Nifty Ba[+320 characters]",
+                  "sentiment": 0.4215,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "<em>Jeweller</em> and Ola Electric Mobil[+321 characters]",
+                  "sentiment": 0.8854,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "IDEA.BO",
+              "name": "Vodafone Idea Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Communication Services",
+              "match_score": 22.52987,
+              "sentiment_score": 0.63245,
+              "highlights": [
+                {
+                  "highlight": "per cent) were the top losers on the ind[+327 characters]",
+                  "sentiment": 0.4215,
+                  "highlighted_in": "main_text"
+                },
+                {
+                  "highlight": "<em>Idea</em> PC Jeweller and Ola Electr[+319 characters]",
+                  "sentiment": 0.8434,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "IDFC.BO",
+              "name": "IDFC Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 20.03846,
+              "sentiment_score": 0.2023,
+              "highlights": [
+                {
+                  "highlight": "(up 0.8 per cent) and <em>IDFC</em> Firs[+232 characters]",
+                  "sentiment": 0.2023,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "ISTLTD.BO",
+              "name": "IST Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Consumer Cyclical",
+              "match_score": 12.16049,
+              "sentiment_score": 0.743,
+              "highlights": [
+                {
+                  "highlight": "Live Events\n\n\n\n\n\n(You can now subscribe [+307 characters]",
+                  "sentiment": 0.743,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "GALLANTT.BO",
+              "name": "Gallantt Metal Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Basic Materials",
+              "match_score": 31.31968,
+              "sentiment_score": 0.7506,
+              "highlights": [
+                {
+                  "highlight": "., Paradeep Phosphates <em>Gallantt</em>[+214 characters]",
+                  "sentiment": 0.7506,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "7c9740e1-d1f0-46d3-accf-f70020093f81",
+      "title": "Indices: Stock market update: Nifty Bank index advances 0.27% in an upbeat market",
+      "description": "The Nifty Bank index was trading 0.27 per cent  up  at 57106.2.",
+      "keywords": "Indices, Indices stocks, Indices news, Indices updates, stock market indices, Global market indices, nifty indices",
+      "snippet": "Live Events\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our ETMarkets WhatsApp channel\n\nNEW DELHI: The Nifty Bank index traded positive around...",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/stock-watch/stock-market-update-nifty-bank-index-advances-0-27-in-an-upbeat-market/articleshow/122827649.cms",
+      "image_url": "https://img.etimg.com/thumb/msid-83769615,width-1200,height-630,imgsize-98874,overlay-etmarkets/articleshow.jpg",
+      "language": "en",
+      "published_at": "2025-07-22T04:55:19.000000Z",
+      "source": "economictimes.indiatimes.com",
+      "relevance_score": 26.512314,
+      "entities": [
+        {
+          "symbol": "AXISBANK.NS",
+          "name": "Axis Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 22.099136,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 0.87 per cent), <em>Axis</em> <em>Ba[+241 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "^NSEBANK",
+          "name": "Nifty Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "index",
+          "industry": "N/A",
+          "match_score": 86.86223,
+          "sentiment_score": 0.1944,
+          "highlights": [
+            {
+              "highlight": "Live Events\n\n\n\n\n\n(You can now subscribe [+305 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "(down 1.07 per cent) and Bank of Baroda([+330 characters]",
+              "sentiment": 0.0258,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Indices: Stock market update: <em>Nifty</em> <em>Bank</em> index advances 0.27% in an upbeat market",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK.NS",
+          "name": "HDFC Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 22.405418,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 1.04 per cent), <em>HDFC</em> <em>Ba[+275 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "PNB.NS",
+          "name": "Punjab National Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 41.512337,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 2.75 per cent), Canara Bank(down 2[+104 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BANKBARODA.NS",
+          "name": "Bank of Baroda",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 42.53435,
+          "sentiment_score": 0.4215,
+          "highlights": [
+            {
+              "highlight": "(down 1.07 per cent) and <em>Bank</em> <[+339 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "IDFCFIRSTB.NS",
+          "name": "IDFC First Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 28.046272,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 2.75 per cent), Canara Bank(down 2[+104 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "CANBK.NS",
+          "name": "Canara Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 41.054977,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 2.75 per cent), <em>Canara</em> <e[+95 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "IDEA.NS",
+          "name": "Vodafone Idea Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Communication Services",
+          "match_score": 23.046202,
+          "sentiment_score": 0.60025,
+          "highlights": [
+            {
+              "highlight": ") were the top losers on the index.The N[+327 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Idea</em>, PC Jeweller, Swiggy and J[+317 characters]",
+              "sentiment": 0.779,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "IDFC.NS",
+          "name": "IDFC Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 20.559391,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 2.75 per cent), Canara Bank(down 2[+86 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "PCJEWELLER.NS",
+          "name": "PC Jeweller Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 27.569206,
+          "sentiment_score": 0.5145,
+          "highlights": [
+            {
+              "highlight": "losers on the index.The Nifty Bank index[+321 characters]",
+              "sentiment": 0.25,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Jeweller</em>, Swiggy and JP Power w[+308 characters]",
+              "sentiment": 0.779,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "MASKINVEST.NS",
+          "name": "Mask Investments Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 22.610441,
+          "sentiment_score": 0.4843,
+          "highlights": [
+            {
+              "highlight": "stocks in the Nifty index, 16 were tradi[+328 characters]",
+              "sentiment": 0.8406,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Investments</em>, Gayatri Project, R[+67 characters]",
+              "sentiment": 0.128,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ORTEL.NS",
+          "name": "Ortel Communications Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Communication Services",
+          "match_score": 31.270498,
+          "sentiment_score": 0.4843,
+          "highlights": [
+            {
+              "highlight": "82370.41.Among the 50 stocks in the Nift[+329 characters]",
+              "sentiment": 0.8406,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Communications</em>, Mask Investment[+88 characters]",
+              "sentiment": 0.128,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "VIJIFIN.NS",
+          "name": "Viji Finance Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 29.842049,
+          "sentiment_score": 0.597,
+          "highlights": [
+            {
+              "highlight": "report.Benchmark NSE Nifty50 index was u[+324 characters]",
+              "sentiment": 0.7725,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Finance</em>, Eternal, Sambhv Steel [+204 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "AXISBANK-BL.NS",
+          "name": "AXIS BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 35.13288,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 0.87 per cent), <em>Axis</em> <em>Ba[+241 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDB.BA",
+          "name": "HDFC BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "ar",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 27.681637,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 1.04 per cent), <em>HDFC</em> <em>Ba[+275 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "AXISBANK.BO",
+          "name": "Axis Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.587276,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 0.87 per cent), <em>Axis</em> <em>Ba[+241 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK.BO",
+          "name": "HDFC Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.89288,
+          "sentiment_score": 0.2023,
+          "highlights": [
+            {
+              "highlight": "(up 1.04 per cent), <em>HDFC</em> <em>Ba[+275 characters]",
+              "sentiment": 0.2023,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "IDFCFIRSTB.BO",
+          "name": "IDFC FIRST BANK LIMITED",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 27.533043,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 2.75 per cent), Canara Bank(down 2[+104 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "PNB.BO",
+          "name": "Punjab National Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 41.001118,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 2.75 per cent), Canara Bank(down 2[+104 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "PCJEWELLER.BO",
+          "name": "PC Jeweller Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 27.045876,
+          "sentiment_score": 0.5145,
+          "highlights": [
+            {
+              "highlight": "losers on the index.The Nifty Bank index[+321 characters]",
+              "sentiment": 0.25,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Jeweller</em>, Swiggy and JP Power w[+308 characters]",
+              "sentiment": 0.779,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "IDEA.BO",
+          "name": "Vodafone Idea Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Communication Services",
+          "match_score": 22.53405,
+          "sentiment_score": 0.60025,
+          "highlights": [
+            {
+              "highlight": ") were the top losers on the index.The N[+327 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Idea</em>, PC Jeweller, Swiggy and J[+317 characters]",
+              "sentiment": 0.779,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "IDFC.BO",
+          "name": "IDFC Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 20.04552,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 2.75 per cent), Canara Bank(down 2[+86 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "VFL.BO",
+          "name": "Viji Finance Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 29.239254,
+          "sentiment_score": 0.597,
+          "highlights": [
+            {
+              "highlight": "report.Benchmark NSE Nifty50 index was u[+324 characters]",
+              "sentiment": 0.7725,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Finance</em>, Eternal, Sambhv Steel [+204 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ISTLTD.BO",
+          "name": "IST Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 12.164689,
+          "sentiment_score": 0.743,
+          "highlights": [
+            {
+              "highlight": "Live Events\n\n\n\n\n\n(You can now subscribe [+296 characters]",
+              "sentiment": 0.743,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "FRBA",
+          "name": "First Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "us",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 15.973279,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "(down 2.75 per cent), Canara Bank(down 2[+95 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ORTEL.BO",
+          "name": "Ortel Communications Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Communication Services",
+          "match_score": 30.575983,
+          "sentiment_score": 0.4843,
+          "highlights": [
+            {
+              "highlight": "82370.41.Among the 50 stocks in the Nift[+329 characters]",
+              "sentiment": 0.8406,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Communications</em>, Mask Investment[+88 characters]",
+              "sentiment": 0.128,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RAYMOND.BO",
+          "name": "Raymond Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 16.546406,
+          "sentiment_score": 0.7439,
+          "highlights": [
+            {
+              "highlight": "trading in the green, while 34 were in t[+331 characters]",
+              "sentiment": 0.7439,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "2f17a2a9-62c1-4a50-9aea-a3bdb29c6a1a",
+      "title": "Nifty Bank Prediction today – Jul 22, 2025: Testing a resistance, buy after a breakout",
+      "description": "Nifty Bank index opens with a gap-up, private banks outperforming PSU banks, trade strategy for Nifty Bank futures.",
+      "keywords": "Nifty Bank index today, Nifty Bank futures analysis, Private sector banks performance, Nifty Bank trading strategy, Stock market updates",
+      "snippet": "Nifty Bank index opened today’s session with a gap-up at 57,253 versus yesterday’s close of 56,953. It is currently trading at 57,000, up 0.1 per cent.\n\nThe...",
+      "url": "https://www.thehindubusinessline.com/portfolio/technical-analysis/nifty-bank-prediction-today-jul-22-2025-testing-a-resistance-buy-after-a-breakout/article69841257.ece",
+      "image_url": "https://bl-i.thgim.com/public/todays-paper/tp-others/h0r99e/article67622912.ece/alternates/LANDSCAPE_1200/DSP-Nifty-SmallGPCC4AGA3.5.jpg.jpg",
+      "language": "en",
+      "published_at": "2025-07-22T05:23:05.000000Z",
+      "source": "thehindubusinessline.com",
+      "relevance_score": 25.934624,
+      "entities": [
+        {
+          "symbol": "^NSEBANK",
+          "name": "Nifty Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "index",
+          "industry": "N/A",
+          "match_score": 76.37513,
+          "sentiment_score": 0.27496,
+          "highlights": [
+            {
+              "highlight": "<em>Nifty</em> <em>Bank</em> index opene[+282 characters]",
+              "sentiment": 0.1027,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Nifty</em> <em>Bank</em> futures\n\nTh[+284 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In such a case, <em>Nifty</em> <em>Bank<[+277 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Trade strategy\n\nBuy <em>Nifty</em> <em>B[+262 characters]",
+              "sentiment": 0.6597,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Nifty</em> <em>Bank</em> Prediction today – Jul 22, 2025: Testing a resistance, buy after a breakout",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "CANBK.NS",
+          "name": "Canara Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 31.867636,
+          "sentiment_score": 0.5499,
+          "highlights": [
+            {
+              "highlight": "On the other hand, AU Small Finance Bank[+269 characters]",
+              "sentiment": 0.5499,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "^CNXPSUBANK",
+          "name": "Nifty PSU Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "index",
+          "industry": "N/A",
+          "match_score": 44.823055,
+          "sentiment_score": 0.7783,
+          "highlights": [
+            {
+              "highlight": "Nifty Private Bank has gained nearly 0.3[+335 characters]",
+              "sentiment": 0.7783,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDB.BA",
+          "name": "HDFC BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "ar",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 26.744106,
+          "sentiment_score": 0.6059,
+          "highlights": [
+            {
+              "highlight": "ICICI Bank (up 0.8 per cent) and <em>HDF[+284 characters]",
+              "sentiment": 0.6059,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    }
+  ]
+}

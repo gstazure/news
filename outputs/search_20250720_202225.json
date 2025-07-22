@@ -1,0 +1,196 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 125,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "2af3bfbe-94f3-4bdc-8075-b05320ddf600",
+      "title": "HDFC Bank board mulls bonus issue, special dividend",
+      "description": "HDFC Bank on Wednesday said its board in its meeting on July 19 will decide on issuing bonus shares and special interim dividend.",
+      "keywords": "Business news, business news India, India business news, Indian economy news, Indian financial news",
+      "snippet": "HDFC Bank on Wednesday said its board in its meeting on July 19 will decide on issuing bonus shares and special interim dividend.\n\nPhotograph: Shailesh Andrade/...",
+      "url": "https://www.rediff.com/business/report/hdfc-bank-board-mulls-bonus-issue-special-dividend/20250716.htm",
+      "image_url": "https://im.rediff.com/money/2024/aug/22hdfc1.jpg",
+      "language": "en",
+      "published_at": "2025-07-16T07:45:47.000000Z",
+      "source": "rediff.com",
+      "relevance_score": 25.056568,
+      "entities": [
+        {
+          "symbol": "HDB.BA",
+          "name": "HDFC BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "ar",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 103.318184,
+          "sentiment_score": 0.788075,
+          "highlights": [
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> on Wednesday[+304 characters]",
+              "sentiment": 0.9042,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In a regulatory filing on Wednesday, <em[+260 characters]",
+              "sentiment": 0.9136,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> managing dir[+254 characters]",
+              "sentiment": 0.5994,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> board mulls bonus issue, special dividend",
+              "sentiment": 0.7351,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK.BO",
+          "name": "HDFC Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 59.712452,
+          "sentiment_score": 0.788075,
+          "highlights": [
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> on Wednesday[+304 characters]",
+              "sentiment": 0.9042,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "In a regulatory filing on Wednesday, <em[+260 characters]",
+              "sentiment": 0.9136,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> managing dir[+254 characters]",
+              "sentiment": 0.5994,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>HDFC</em> <em>Bank</em> board mulls bonus issue, special dividend",
+              "sentiment": 0.7351,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "626962d8-191e-4bf3-bc88-100ea8f8b7ce",
+      "title": "Stock to buy today: HDFC Asset Management Company (₹5,288.40) – BUY",
+      "description": "Bullish outlook for HDFC AMC with potential target of ₹5,850, buy at ₹5,288 with stop-loss at ₹4,960.",
+      "keywords": "HDFC Asset Management Company, HDFC AMC stock analysis, bullish outlook, share price target, trading strategy, support and resistance levels",
+      "snippet": "Video Credit: Businessline\n\nThe short-term outlook is bullish for HDFC Asset Management Company (AMC). The stock has been in a strong uptrend since March this y...",
+      "url": "https://www.thehindubusinessline.com/portfolio/technical-analysis/stock-to-buy-today-hdfc-asset-management-company-528840-buy/article69814725.ece",
+      "image_url": "https://bl-i.thgim.com/public/incoming/mpu6w9/article68344655.ece/alternates/LANDSCAPE_1200/IMG_HDFC_AMC_2_1_V08HC1PC.jpg",
+      "language": "en",
+      "published_at": "2025-07-16T01:00:00.000000Z",
+      "source": "thehindubusinessline.com",
+      "relevance_score": 24.130249,
+      "entities": [
+        {
+          "symbol": "HDFCAMC.BO",
+          "name": "HDFC Asset Management Company",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 168.98184,
+          "sentiment_score": 0.42405,
+          "highlights": [
+            {
+              "highlight": "Video Credit: Businessline\n\nThe short-te[+333 characters]",
+              "sentiment": 0.8481,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Stock to buy today: <em>HDFC</em> <em>Asset</em> <em>Management</em> <em>Company</em> (₹5,288.40) – BUY",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "5c9d874d-abc4-4590-a413-397791f865a4",
+      "title": "Q1 2026 HDFC Life Insurance Company Ltd Earnings Call Transcript",
+      "description": "Jul 15, 2025 / 11:45AM GMTOperator Ladies and gentlemen, good day and welcome to the HDFC Life Insurance Q1 FY26 analyst conference call (Operator Instructions)",
+      "keywords": "GuruFocus, Article, News, GuruFocus News, NSE:HDFCLIFE",
+      "snippet": "Jul 15, 2025 / 11:45AM GMT\n\nOperator\n\n\n\nLadies and gentlemen, good day and welcome to the HDFC Life Insurance Q1 FY26 analyst conference call (Operator Instruct...",
+      "url": "https://www.gurufocus.com/news/2979886/q1-2026-hdfc-life-insurance-company-ltd-earnings-call-transcript",
+      "image_url": "https://static.gurufocus.com/images/global_logo_twitter_card.png",
+      "language": "en",
+      "published_at": "2025-07-16T05:00:53.000000Z",
+      "source": "gurufocus.com",
+      "relevance_score": 24.021193,
+      "entities": [
+        {
+          "symbol": "HDFCLIFE.NS",
+          "name": "HDFC Life Insurance Company Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 124.73421,
+          "sentiment_score": 0.3062,
+          "highlights": [
+            {
+              "highlight": "Vibha Padalkar, Managing Director and Ch[+312 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Q1 2026 <em>HDFC</em> <em>Life</em> <em>Insurance</em> <em>Company</em> Ltd Earnings Call Transcript",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCLIFE.BO",
+          "name": "HDFC Life Insurance Company Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 124.73054,
+          "sentiment_score": 0.3062,
+          "highlights": [
+            {
+              "highlight": "Vibha Padalkar, Managing Director and Ch[+312 characters]",
+              "sentiment": 0.6124,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Q1 2026 <em>HDFC</em> <em>Life</em> <em>Insurance</em> <em>Company</em> Ltd Earnings Call Transcript",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    }
+  ]
+}

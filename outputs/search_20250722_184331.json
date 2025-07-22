@@ -1,0 +1,686 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 41,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "1e225739-bf34-4c99-b5b2-1e802ff8bf62",
+      "title": "India's stock benchmarks open higher, led by banks, Eternal rally",
+      "description": "Markets open higher with Nifty 50 up 0.3% and Sensex up 0.4% on post-results rally and strong financials.",
+      "keywords": "markets live, India’s stock benchmarks open higher, Equity benchmarks, HDFC Bank and ICICI Bank",
+      "snippet": "Equity benchmarks opened higher on Tuesday, supported by post-results rally in Eternal and strength in financials on the back of strong earnings from top privat...",
+      "url": "https://www.thehindubusinessline.com/markets/indias-stock-benchmarks-open-higher-led-by-banks-eternal-rally/article69841118.ece",
+      "image_url": "https://bl-i.thgim.com/public/incoming/b1ioa7/article69841121.ece/alternates/LANDSCAPE_1200/PO09_Growth_chart_arrow.jpg",
+      "language": "en",
+      "published_at": "2025-07-22T04:05:34.000000Z",
+      "source": "thehindubusinessline.com",
+      "relevance_score": 25.373585,
+      "entities": [
+        {
+          "symbol": "^NSEI",
+          "name": "Nifty 50",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "index",
+          "industry": "N/A",
+          "match_score": 26.282118,
+          "sentiment_score": 0.8126,
+          "highlights": [
+            {
+              "highlight": "The <em>Nifty</em> <em>50</em> rose 0.3%[+216 characters]",
+              "sentiment": 0.8126,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDB.BA",
+          "name": "HDFC BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "ar",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 30.954187,
+          "sentiment_score": 0.3612,
+          "highlights": [
+            {
+              "highlight": "Financials, which climbed 1.6% on Monday[+286 characters]",
+              "sentiment": 0.3612,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK.BO",
+          "name": "HDFC Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 24.455421,
+          "sentiment_score": 0.3612,
+          "highlights": [
+            {
+              "highlight": "Financials, which climbed 1.6% on Monday[+286 characters]",
+              "sentiment": 0.3612,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ICICIBANK.BO",
+          "name": "ICICI Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 24.90159,
+          "sentiment_score": 0.3612,
+          "highlights": [
+            {
+              "highlight": "Financials, which climbed 1.6% on Monday[+286 characters]",
+              "sentiment": 0.3612,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ISTLTD.BO",
+          "name": "IST Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 13.534052,
+          "sentiment_score": 0.8074,
+          "highlights": [
+            {
+              "highlight": "<em>IST</em>.\n\nEleven of the 13 major se[+252 characters]",
+              "sentiment": 0.8074,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ZOMATO.BO",
+          "name": "Zomato Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 21.312243,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "<em>Zomato</em> parent Eternal jumped 10[+126 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": [
+        {
+          "uuid": "1e225739-bf34-4c99-b5b2-1e802ff8bf62",
+          "title": "India's stock benchmarks open higher, led by banks, Eternal rally",
+          "description": "Markets open higher with Nifty 50 up 0.3% and Sensex up 0.4% on post-results rally and strong financials.",
+          "keywords": "markets live, India’s stock benchmarks open higher, Equity benchmarks, HDFC Bank and ICICI Bank",
+          "snippet": "Equity benchmarks opened higher on Tuesday, supported by post-results rally in Eternal and strength in financials on the back of strong earnings from top privat...",
+          "url": "https://www.thehindubusinessline.com/markets/indias-stock-benchmarks-open-higher-led-by-banks-eternal-rally/article69841118.ece",
+          "image_url": "https://bl-i.thgim.com/public/incoming/b1ioa7/article69841121.ece/alternates/LANDSCAPE_1200/PO09_Growth_chart_arrow.jpg",
+          "language": "en",
+          "published_at": "2025-07-22T04:05:34.000000Z",
+          "source": "thehindubusinessline.com",
+          "relevance_score": 25.373585,
+          "entities": [
+            {
+              "symbol": "^NSEI",
+              "name": "Nifty 50",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "index",
+              "industry": "N/A",
+              "match_score": 26.282118,
+              "sentiment_score": 0.8126,
+              "highlights": [
+                {
+                  "highlight": "The <em>Nifty</em> <em>50</em> rose 0.3%[+216 characters]",
+                  "sentiment": 0.8126,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "HDB.BA",
+              "name": "HDFC BANK",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "ar",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 30.954187,
+              "sentiment_score": 0.3612,
+              "highlights": [
+                {
+                  "highlight": "Financials, which climbed 1.6% on Monday[+286 characters]",
+                  "sentiment": 0.3612,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "HDFCBANK.BO",
+              "name": "HDFC Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 24.455421,
+              "sentiment_score": 0.3612,
+              "highlights": [
+                {
+                  "highlight": "Financials, which climbed 1.6% on Monday[+286 characters]",
+                  "sentiment": 0.3612,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "ICICIBANK.BO",
+              "name": "ICICI Bank Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Financial Services",
+              "match_score": 24.90159,
+              "sentiment_score": 0.3612,
+              "highlights": [
+                {
+                  "highlight": "Financials, which climbed 1.6% on Monday[+286 characters]",
+                  "sentiment": 0.3612,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "ISTLTD.BO",
+              "name": "IST Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "Consumer Cyclical",
+              "match_score": 13.534052,
+              "sentiment_score": 0.8074,
+              "highlights": [
+                {
+                  "highlight": "<em>IST</em>.\n\nEleven of the 13 major se[+252 characters]",
+                  "sentiment": 0.8074,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            },
+            {
+              "symbol": "ZOMATO.BO",
+              "name": "Zomato Limited",
+              "exchange": null,
+              "exchange_long": null,
+              "country": "in",
+              "type": "equity",
+              "industry": "N/A",
+              "match_score": 21.312243,
+              "sentiment_score": 0,
+              "highlights": [
+                {
+                  "highlight": "<em>Zomato</em> parent Eternal jumped 10[+126 characters]",
+                  "sentiment": 0,
+                  "highlighted_in": "main_text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "67c24889-d984-4c10-a4e4-bf626ecca160",
+      "title": "Info Edge’s bet on Eternal now makes up over a third of its market cap",
+      "description": "Info Edge India shares saw a surge following Eternal's earnings report. Eternal, parent company of Zomato and Blinkit, witnessed a rise in share value. This increased the value of Info Edge's stake in Eternal. The stake is now more than a third of Info Edge's market capitalization. Eternal's Q1 report showed a profit decline but revenue growth.",
+      "keywords": "zomato, info edge, eternal, info edge, info edge shares, info edge share price, info edge stock price, info edge eternal, eternal shares, info edge zomato shares, Eternal, Blinkit, Zomato",
+      "snippet": "A seed bet that paid off\n\n\n\nLive Events\n\nEternal's Q1 report\n\n\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our ETMarkets WhatsApp channel\n\nSha...",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/info-edges-bet-on-eternal-now-makes-up-over-a-third-of-its-market-cap/articleshow/122828191.cms",
+      "image_url": "https://img.etimg.com/thumb/msid-122828161,width-1200,height-630,imgsize-9382,overlay-etmarkets/articleshow.jpg",
+      "language": "en",
+      "published_at": "2025-07-22T05:24:03.000000Z",
+      "source": "economictimes.indiatimes.com",
+      "relevance_score": 25.154648,
+      "entities": [
+        {
+          "symbol": "NAUKRI.BO",
+          "name": "Info Edge (India) Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Communication Services",
+          "match_score": 23.128578,
+          "sentiment_score": 0.5574,
+          "highlights": [
+            {
+              "highlight": "A seed bet that paid off\n\n\n\nLive Events\n[+339 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ZOMATO.BO",
+          "name": "Zomato Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 23.647429,
+          "sentiment_score": 0.729775,
+          "highlights": [
+            {
+              "highlight": "A seed bet that paid off\n\n\n\nLive Events\n[+321 characters]",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "15% on Tuesday to a fresh all-time high [+335 characters]",
+              "sentiment": 0.6486,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "The rally in Eternal lifted sentiment ar[+296 characters]",
+              "sentiment": 0.8689,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "Net profit stood at Rs 25 crore, down fr[+320 characters]",
+              "sentiment": 0.8442,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "11efe88e-2754-4c34-8bcc-f765ec7623c4",
+      "title": "Stock markets close flat; Eternal jumps nearly 11%",
+      "description": "Food delivery and quick commerce firm Eternal, which owns the Zomato and Blinkit brands, on Monday reported a consolidated net profit of Rs 25 crore for the June quarter, as continuing investments in quick commerce and going-out businesses weighed on its bottom line.\n\nTitan, Hindustan Unilever, Bharat Electronics, Maruti, ICICI Bank and Mahindra & Mahindra were also among the gainers.\n\nHowever, Tata Motors, Adani Ports, State Bank of India and Reliance Industries were among the laggards.",
+      "keywords": "Business news, business news India, India business news, Indian economy news, Indian financial news",
+      "snippet": "Benchmark stock indices Sensex and Nifty closed almost unchanged in a volatile trade on Tuesday as gains in quick commerce and private banking shares were offse...",
+      "url": "https://www.rediff.com/business/report/stock-markets-close-flat-eternal-jumps-nearly-11/20250722.htm",
+      "image_url": "https://im.rediff.com/money/2024/sep/24mutual-fund-investor1.jpg",
+      "language": "en",
+      "published_at": "2025-07-22T11:13:47.000000Z",
+      "source": "rediff.com",
+      "relevance_score": 24.95823,
+      "entities": [
+        {
+          "symbol": "SBKFF",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "us",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 28.518694,
+          "sentiment_score": 0.34,
+          "highlights": [
+            {
+              "highlight": "However, Tata Motors, Adani Ports, <em>S[+273 characters]",
+              "sentiment": 0.34,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SBIN.NS",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 36.165344,
+          "sentiment_score": 0.34,
+          "highlights": [
+            {
+              "highlight": "However, Tata Motors, Adani Ports, <em>S[+273 characters]",
+              "sentiment": 0.34,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ICICIBANK.NS",
+          "name": "ICICI Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.673176,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Titan, Hindustan Unilever, Bharat Electr[+201 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BEL.NS",
+          "name": "Bharat Electronics Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 23.07273,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Titan, Hindustan Unilever, <em>Bharat</e[+201 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BANKINDIA.NS",
+          "name": "Bank of India Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 18.872198,
+          "sentiment_score": 0.34,
+          "highlights": [
+            {
+              "highlight": "However, Tata Motors, Adani Ports, State[+264 characters]",
+              "sentiment": 0.34,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HINDUNILVR.NS",
+          "name": "Hindustan Unilever Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Defensive",
+          "match_score": 26.602957,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Titan, <em>Hindustan</em> <em>Unilever</[+201 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCE.NS",
+          "name": "Reliance Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 20.53489,
+          "sentiment_score": 0.34,
+          "highlights": [
+            {
+              "highlight": "However, Tata Motors, Adani Ports, State[+255 characters]",
+              "sentiment": 0.34,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATAMOTORS.NS",
+          "name": "Tata Motors Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 23.438915,
+          "sentiment_score": 0.34,
+          "highlights": [
+            {
+              "highlight": "However, <em>Tata</em> <em>Motors</em>, [+255 characters]",
+              "sentiment": 0.34,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATAMTRDVR.NS",
+          "name": "Tata Motors Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 23.438915,
+          "sentiment_score": 0.34,
+          "highlights": [
+            {
+              "highlight": "However, <em>Tata</em> <em>Motors</em>, [+255 characters]",
+              "sentiment": 0.34,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ZOMATO.NS",
+          "name": "Zomato Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 18.640537,
+          "sentiment_score": 0.4404,
+          "highlights": [
+            {
+              "highlight": "Food delivery and quick commerce firm Et[+236 characters]",
+              "sentiment": 0.4404,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SBIN.BO",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 35.680805,
+          "sentiment_score": 0.34,
+          "highlights": [
+            {
+              "highlight": "However, Tata Motors, Adani Ports, <em>S[+273 characters]",
+              "sentiment": 0.34,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ICICIBANK.BO",
+          "name": "ICICI Bank Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.187,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Titan, Hindustan Unilever, Bharat Electr[+201 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BEL.BO",
+          "name": "Bharat Electronics Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Industrials",
+          "match_score": 22.587448,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Titan, Hindustan Unilever, <em>Bharat</e[+201 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATAMTRDVR.BO",
+          "name": "Tata Motors Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 22.954262,
+          "sentiment_score": 0.34,
+          "highlights": [
+            {
+              "highlight": "However, <em>Tata</em> <em>Motors</em>, [+255 characters]",
+              "sentiment": 0.34,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "HINDUNILVR.BO",
+          "name": "Hindustan Unilever Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Defensive",
+          "match_score": 26.115763,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "Titan, <em>Hindustan</em> <em>Unilever</[+201 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCE.BO",
+          "name": "Reliance Industries Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Energy",
+          "match_score": 20.050175,
+          "sentiment_score": 0.34,
+          "highlights": [
+            {
+              "highlight": "However, Tata Motors, Adani Ports, State[+255 characters]",
+              "sentiment": 0.34,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "TATAMOTORS.BO",
+          "name": "Tata Motors Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Cyclical",
+          "match_score": 22.953754,
+          "sentiment_score": 0.34,
+          "highlights": [
+            {
+              "highlight": "However, <em>Tata</em> <em>Motors</em>, [+255 characters]",
+              "sentiment": 0.34,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCEPP.BO",
+          "name": "Reliance Industries Ltd",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 20.049952,
+          "sentiment_score": 0.34,
+          "highlights": [
+            {
+              "highlight": "However, Tata Motors, Adani Ports, State[+255 characters]",
+              "sentiment": 0.34,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BANKINDIA.BO",
+          "name": "Bank of India Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 18.387281,
+          "sentiment_score": 0.34,
+          "highlights": [
+            {
+              "highlight": "However, Tata Motors, Adani Ports, State[+264 characters]",
+              "sentiment": 0.34,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    }
+  ]
+}

@@ -5,7 +5,12 @@ from datetime import datetime, timedelta
 import json
 import os
 import requests
+from dotenv import load_dotenv
 from main import process_article, load_topics
+
+# Load environment variables from .env file
+load_dotenv()
+print("Environment variables loaded from .env file")
 
 app = Flask(__name__)
 
@@ -251,7 +256,10 @@ def get_content():
                             'comments': post.get('comments', []),
                             'filename': filename,
                             'post_index': post_index,
-                            'preview': post.get('content', '')[:200] + '...' if len(post.get('content', '')) > 200 else post.get('content', '')
+                            'preview': post.get('content', '')[:200] + '...' if len(post.get('content', '')) > 200 else post.get('content', ''),
+                            'published': post.get('published', False),
+                            'published_at': post.get('published_at', ''),
+                            'external_id': post.get('external_id', '')
                         }
                         content_list.append(content_item)
             except Exception as e:
@@ -422,5 +430,511 @@ def delete_content():
 
 
 
+
+
+@app.route('/api/test-connection', methods=['GET'])
+@app.route('/api/test-connection/<test_type>', methods=['GET'])
+@app.route('/api/direct-test', methods=['GET'])
+def test_api_connection(test_type=None):
+    """Test the API connection with different authorization formats"""
+    if request.path == '/api/direct-test':
+        return direct_test_connection()
+    try:
+        print(f"Testing API connection... Type: {test_type}")
+        
+        # Import the TickertalkAPI class
+        from external_api import TickertalkAPI
+        
+        # Create API instance
+        api = TickertalkAPI()
+        
+        if test_type == "raw":
+            # Test with raw API key
+            api_key = os.getenv("EXTERNAL_API_KEY")
+            headers = {'Content-Type': 'application/json', 'Authorization': api_key}
+            print(f"Testing with raw API key: {api_key}")
+            response = requests.post(
+                f"{api.base_url}/api/external/bulk-upload-posts-comments",
+                headers=headers,
+                data=json.dumps({"test": True}),
+                timeout=5
+            )
+            return jsonify({
+                'success': True,
+                'message': 'Raw API key test completed',
+                'status': response.status_code,
+                'body': response.text
+            })
+        elif test_type == "bearer":
+            # Test with Bearer token
+            api_key = os.getenv("EXTERNAL_API_KEY")
+            headers = {'Content-Type': 'application/json', 'Authorization': f"Bearer {api_key}"}
+            print(f"Testing with Bearer token: Bearer {api_key}")
+            response = requests.post(
+                f"{api.base_url}/api/external/bulk-upload-posts-comments",
+                headers=headers,
+                data=json.dumps({"test": True}),
+                timeout=5
+            )
+            return jsonify({
+                'success': True,
+                'message': 'Bearer token test completed',
+                'status': response.status_code,
+                'body': response.text
+            })
+        else:
+            # Test connection with all formats
+            results = api.test_api_connection()
+            
+            return jsonify({
+                'success': True,
+                'message': 'API connection test completed',
+                'results': results
+            })
+        
+    except Exception as e:
+        print(f"Error testing API connection: {e}")
+        return jsonify({'error': f'Failed to test API connection: {str(e)}'}), 500
+
+@app.route('/api/publish/<post_id>', methods=['POST'])
+def publish_post(post_id):
+    """Publish a post to the external API"""
+    try:
+        print(f"Publishing post with ID: {post_id}")
+        data = request.get_json()
+        print(f"Request data: {data}")
+        
+        # Check if API key is available
+        api_key = os.getenv("EXTERNAL_API_KEY")
+        if not api_key:
+            print("ERROR: EXTERNAL_API_KEY not found in environment variables")
+            print(f"Available environment variables: {[k for k in os.environ.keys() if not k.startswith('_')]}")
+            return jsonify({
+                'success': False,
+                'error': 'API key not configured',
+                'message': 'EXTERNAL_API_KEY not found in environment variables'
+            }), 400
+        else:
+            print(f"API key found: {api_key[:5]}...{api_key[-5:]}")
+            print(f"API key length: {len(api_key)}")
+            print(f"API key type: {type(api_key)}")
+            print(f"API key contains whitespace: {any(c.isspace() for c in api_key)}")
+            
+            # Direct test from app.py
+            try:
+                import requests
+                import json
+                
+                # Create a session
+                test_session = requests.Session()
+                
+                # Set headers
+                test_headers = {
+                    "Content-Type": "application/json",
+                    "Authorization": f"Bearer {api_key}"
+                }
+                test_session.headers.update(test_headers)
+                
+                # Make a test request
+                test_url = f"{os.getenv('EXTERNAL_API_URL', 'https://www.tickertalk.in')}/api/external/bulk-upload-posts-comments"
+                test_payload = {
+                    "posts": [
+                        {
+                            "temp_post_id": "test_001",
+                            "title": "Test Post",
+                            "content": "This is a test post",
+                            "topic": "GENERAL",
+                            "username": "standardizedquantum",
+                            "created_at": "2025-07-22T12:00:00Z",
+                            "comments": []
+                        }
+                    ]
+                }
+                
+                print(f"App.py direct test - URL: {test_url}")
+                print(f"App.py direct test - Headers: {test_headers}")
+                
+                test_response = test_session.post(
+                    test_url,
+                    data=json.dumps(test_payload),
+                    timeout=10
+                )
+                
+                print(f"App.py direct test - Response status: {test_response.status_code}")
+                print(f"App.py direct test - Response body: {test_response.text}")
+                
+            except Exception as e:
+                print(f"App.py direct test failed: {e}")
+        
+        filename = data.get('filename')
+        post_index = data.get('post_index')
+        
+        if not filename or post_index is None:
+            print(f"Missing parameters: filename={filename}, post_index={post_index}")
+            return jsonify({'error': 'Missing required parameters'}), 400
+            
+        filepath = os.path.join('outputs', filename)
+        if not os.path.exists(filepath):
+            return jsonify({'error': 'File not found'}), 404
+            
+        # Read the post data
+        with open(filepath, 'r', encoding='utf-8') as f:
+            file_data = json.load(f)
+            
+        if post_index >= len(file_data.get('posts', [])):
+            return jsonify({'error': 'Post index out of range'}), 400
+            
+        post_data = file_data['posts'][post_index]
+        
+        # Import the TickertalkAPI class
+        from external_api import TickertalkAPI
+        
+        # Publish the post
+        api = TickertalkAPI()
+        result = api.publish_post(post_data)
+        
+        # Update the post with published status if successful
+        if result.get('success'):
+            post_data['published'] = True
+            post_data['published_at'] = datetime.now().isoformat()
+            post_data['external_id'] = result.get('results', [{}])[0].get('post_id')
+            
+            # Save the updated data
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump(file_data, f, indent=2, ensure_ascii=False)
+            
+            # Check if we're using mock mode
+            use_mock = os.getenv("USE_MOCK_API", "true").lower() == "true"
+            print(f"Mock API mode in app.py: {use_mock}")
+            if use_mock:
+                result['message'] = "Post published successfully (using mock API)"
+                print("Using mock API mode - post marked as published")
+            else:
+                result['message'] = "Post published successfully"
+            
+        return jsonify(result)
+        
+    except Exception as e:
+        print(f"Error publishing post: {e}")
+        return jsonify({'error': f'Failed to publish post: {str(e)}'}), 500
+
+def direct_test_connection():
+    """Test the API connection using urllib directly"""
+    try:
+        import urllib.request
+        import urllib.error
+        import json
+        
+        # Get API key and URL
+        api_key = os.getenv("EXTERNAL_API_KEY")
+        base_url = os.getenv("EXTERNAL_API_URL", "https://tickertalk.in")
+        
+        # Try both with and without trailing slash
+        if base_url.endswith('/'):
+            base_url_no_slash = base_url[:-1]
+            base_url_with_slash = base_url
+        else:
+            base_url_no_slash = base_url
+            base_url_with_slash = base_url + '/'
+            
+        # Try with trailing slash first
+        url = f"{base_url_with_slash}api/external/bulk-upload-posts-comments"
+        print(f"Direct test - Using URL with trailing slash: {url}")
+        print(f"Direct test - Base URL: {base_url}")
+        print(f"Direct test - Full URL: {url}")
+        
+        # Create test payload
+        payload = {
+            "posts": [
+                {
+                    "temp_post_id": "test_001",
+                    "title": "Test Post",
+                    "content": "This is a test post",
+                    "topic": "GENERAL",
+                    "username": "test_user",
+                    "created_at": datetime.now().isoformat(),
+                    "comments": []
+                }
+            ]
+        }
+        
+        # Encode payload
+        data = json.dumps(payload).encode('utf-8')
+        
+        # Create request with explicit headers
+        req = urllib.request.Request(url, data=data, method='POST')
+        req.add_header('Content-Type', 'application/json')
+        req.add_header('Authorization', f'Bearer {api_key}')
+        
+        # Create an opener that handles redirects
+        opener = urllib.request.build_opener(urllib.request.HTTPRedirectHandler())
+        urllib.request.install_opener(opener)
+        
+        print(f"Direct test - Request URL: {url}")
+        print(f"Direct test - API key: {api_key[:10]}...{api_key[-10:]}")
+        print(f"Direct test - Request headers: {req.headers}")
+        print(f"Direct test - Request payload: {json.dumps(payload, indent=2)}")
+        
+        try:
+            # Make the request
+            response = urllib.request.urlopen(req, timeout=10)
+            response_data = response.read().decode('utf-8')
+            response_code = response.getcode()
+            
+            print(f"Direct test - API response status: {response_code}")
+            print(f"Direct test - API response body: {response_data}")
+            
+            # Try to parse JSON response, but handle errors gracefully
+            try:
+                parsed_body = json.loads(response_data) if response_data else None
+            except json.JSONDecodeError:
+                parsed_body = {"raw_text": response_data}
+                
+            return jsonify({
+                'success': True,
+                'message': 'Direct API test completed',
+                'status': response_code,
+                'body': parsed_body
+            })
+        except urllib.error.HTTPError as e:
+            error_body = e.read().decode('utf-8')
+            print(f"Direct test - HTTP Error: {e.code} - {e.reason}")
+            print(f"Direct test - Response body: {error_body}")
+            
+            # Try to parse JSON response, but handle errors gracefully
+            try:
+                parsed_body = json.loads(error_body) if error_body else None
+            except json.JSONDecodeError:
+                parsed_body = {"raw_text": error_body}
+                
+            return jsonify({
+                'success': False,
+                'message': f'Direct API test failed with HTTP error {e.code}',
+                'status': e.code,
+                'error': e.reason,
+                'body': parsed_body
+            })
+    except Exception as e:
+        import traceback
+        error_details = traceback.format_exc()
+        print(f"Error in direct test: {e}")
+        print(f"Error details: {error_details}")
+        return jsonify({
+            'error': f'Failed to perform direct test: {str(e)}',
+            'details': error_details
+        }), 500
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True)@app.r
+oute('/api/ping-test', methods=['GET'])
+def ping_test():
+    """Simple test to check if we can connect to the API server"""
+    try:
+        import urllib.request
+        import urllib.error
+        
+        # Get base URL
+        base_url = os.getenv("EXTERNAL_API_URL", "https://tickertalk.in")
+        
+        # Make sure the base URL doesn't have a trailing slash
+        if base_url.endswith('/'):
+            base_url = base_url[:-1]
+        
+        print(f"Ping test - Base URL: {base_url}")
+        
+        try:
+            # Try to connect to the base URL
+            response = urllib.request.urlopen(base_url, timeout=10)
+            response_data = response.read().decode('utf-8')
+            response_code = response.getcode()
+            
+            print(f"Ping test - Response status: {response_code}")
+            print(f"Ping test - Response length: {len(response_data)} characters")
+            
+            return jsonify({
+                'success': True,
+                'message': f'Successfully connected to {base_url}',
+                'status': response_code
+            })
+        except urllib.error.HTTPError as e:
+            print(f"Ping test - HTTP Error: {e.code} - {e.reason}")
+            
+            return jsonify({
+                'success': False,
+                'message': f'HTTP error when connecting to {base_url}',
+                'status': e.code,
+                'error': e.reason
+            })
+        except urllib.error.URLError as e:
+            print(f"Ping test - URL Error: {e.reason}")
+            
+            return jsonify({
+                'success': False,
+                'message': f'Failed to connect to {base_url}',
+                'error': str(e.reason)
+            })
+    except Exception as e:
+        import traceback
+        error_details = traceback.format_exc()
+        print(f"Error in ping test: {e}")
+        print(f"Error details: {error_details}")
+        
+        return jsonify({
+            'error': f'Failed to perform ping test: {str(e)}',
+            'details': error_details
+        }), 500@app.ro
+ute('/api/requests-test', methods=['GET'])
+def requests_test():
+    """Test the API connection using the requests library with proper redirect handling"""
+    try:
+        import requests
+        import json
+        
+        # Get API key and URL
+        api_key = os.getenv("EXTERNAL_API_KEY")
+        base_url = os.getenv("EXTERNAL_API_URL", "https://tickertalk.in")
+        
+        # Make sure the base URL doesn't have a trailing slash
+        if base_url.endswith('/'):
+            base_url = base_url[:-1]
+            
+        url = f"{base_url}/api/external/bulk-upload-posts-comments"
+        
+        # Create test payload
+        payload = {
+            "posts": [
+                {
+                    "temp_post_id": "test_001",
+                    "title": "Test Post",
+                    "content": "This is a test post",
+                    "topic": "GENERAL",
+                    "username": "test_user",
+                    "created_at": datetime.now().isoformat(),
+                    "comments": []
+                }
+            ]
+        }
+        
+        # Set headers
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}"
+        }
+        
+        print(f"Requests test - URL: {url}")
+        print(f"Requests test - Headers: {headers}")
+        print(f"Requests test - Payload: {json.dumps(payload, indent=2)}")
+        
+        # Make the request with allow_redirects=True
+        response = requests.post(
+            url,
+            headers=headers,
+            json=payload,  # Use json parameter to automatically handle JSON encoding
+            allow_redirects=True,  # Explicitly allow redirects
+            timeout=10
+        )
+        
+        print(f"Requests test - Response status: {response.status_code}")
+        print(f"Requests test - Response body: {response.text}")
+        print(f"Requests test - Response headers: {response.headers}")
+        print(f"Requests test - Request URL: {response.request.url}")  # Final URL after redirects
+        print(f"Requests test - Request headers: {response.request.headers}")
+        
+        # Try to parse JSON response, but handle errors gracefully
+        try:
+            parsed_body = response.json() if response.text else None
+        except json.JSONDecodeError:
+            parsed_body = {"raw_text": response.text}
+            
+        return jsonify({
+            'success': response.status_code == 200,
+            'message': 'Requests API test completed',
+            'status': response.status_code,
+            'body': parsed_body,
+            'final_url': response.request.url,
+            'request_headers': dict(response.request.headers)
+        })
+    except Exception as e:
+        import traceback
+        error_details = traceback.format_exc()
+        print(f"Error in requests test: {e}")
+        print(f"Error details: {error_details}")
+        
+        return jsonify({
+            'error': f'Failed to perform requests test: {str(e)}',
+            'details': error_details
+        }), 500
+
+@app.route('/api-test')
+def api_test_page():
+    """Display a simple form to test the API directly"""
+    api_key = os.getenv("EXTERNAL_API_KEY")
+    api_url = f"{os.getenv('EXTERNAL_API_URL', 'https://www.tickertalk.in')}/api/external/bulk-upload-posts-comments"
+    return render_template('api_test.html', api_key=api_key, api_url=api_url)
+
+@app.route('/api/direct-publish-test', methods=['GET'])
+def direct_publish_test():
+    """Test publishing using the exact same code as the test script"""
+    try:
+        import requests
+        import json
+        import os
+        from dotenv import load_dotenv
+
+        # Load environment variables
+        load_dotenv()
+
+        # Get API key and URL
+        api_key = os.getenv("EXTERNAL_API_KEY")
+        base_url = os.getenv("EXTERNAL_API_URL", "https://www.tickertalk.in")
+        url = f"{base_url}/api/external/bulk-upload-posts-comments"
+
+        # Create test payload
+        payload = {
+            "posts": [
+                {
+                    "temp_post_id": "test_001",
+                    "title": "Test Post",
+                    "content": "This is a test post",
+                    "topic": "GENERAL",
+                    "username": "standardizedquantum",
+                    "created_at": "2025-07-22T12:00:00Z",
+                    "comments": []
+                }
+            ]
+        }
+
+        # Set headers exactly as specified by the client
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}"
+        }
+
+        # Create a session to preserve headers during redirects
+        session = requests.Session()
+        
+        # Configure the session to preserve the Authorization header during redirects
+        session.headers.update(headers)
+        
+        # Make the request
+        response = session.post(
+            url,
+            data=json.dumps(payload),
+            timeout=10
+        )
+        
+        return jsonify({
+            'success': response.status_code == 200,
+            'status': response.status_code,
+            'body': response.json() if response.text else None,
+            'headers': dict(response.request.headers),
+            'url': response.request.url
+        })
+        
+    except Exception as e:
+        import traceback
+        error_details = traceback.format_exc()
+        
+        return jsonify({
+            'error': f'Failed to perform direct publish test: {str(e)}',
+            'details': error_details
+        }), 500

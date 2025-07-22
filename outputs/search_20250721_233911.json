@@ -1,0 +1,251 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 4,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "018735d6-80ac-4d1a-9d4b-6376415b7aac",
+      "title": "Allianz and Jio Financial Services to launch jointly owned reinsurance venture in India",
+      "description": "Jio Financial Services Limited (JFSL) and Allianz Group, through its wholly owned subsidiary, Allianz Europe B.V., have entered into a binding agreement",
+      "keywords": "",
+      "snippet": "Jio Financial Services Limited (JFSL) and Allianz Group, through its wholly owned subsidiary, Allianz Europe B.V., have entered into a binding agreement to form...",
+      "url": "https://www.reinsurancene.ws/allianz-and-jio-financial-services-to-launch-jointly-owned-reinsurance-venture-in-india/",
+      "image_url": "https://www.reinsurancene.ws/wp-content/uploads/2024/03/light-idea.jpeg",
+      "language": "en",
+      "published_at": "2025-07-21T08:00:23.000000Z",
+      "source": "reinsurancene.ws",
+      "relevance_score": 13.997559,
+      "entities": [
+        {
+          "symbol": "ALVN.MX",
+          "name": "Allianz SE",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "mx",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 18.152851,
+          "sentiment_score": 0.8625,
+          "highlights": [
+            {
+              "highlight": "Oliver Bäte, Chief Executive Officer, <[+340 characters]",
+              "sentiment": 0.8625,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ALIZY",
+          "name": "Allianz SE",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "us",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 18.152931,
+          "sentiment_score": 0.8625,
+          "highlights": [
+            {
+              "highlight": "Oliver Bäte, Chief Executive Officer, <[+340 characters]",
+              "sentiment": 0.8625,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ALIZF",
+          "name": "Allianz SE",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "us",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 18.152975,
+          "sentiment_score": 0.8625,
+          "highlights": [
+            {
+              "highlight": "Oliver Bäte, Chief Executive Officer, <[+340 characters]",
+              "sentiment": 0.8625,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ALV.MI",
+          "name": "Allianz SE",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "it",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 18.153664,
+          "sentiment_score": 0.8625,
+          "highlights": [
+            {
+              "highlight": "Oliver Bäte, Chief Executive Officer, <[+340 characters]",
+              "sentiment": 0.8625,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "GICRE.NS",
+          "name": "General Insurance Corporation of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 36.48058,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "This new venture is expected to disrupt [+211 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "GICRE.BO",
+          "name": "General Insurance Corporation of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 36.480743,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "This new venture is expected to disrupt [+211 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "ALV.DE",
+          "name": "Allianz SE",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "de",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 18.153498,
+          "sentiment_score": 0.8625,
+          "highlights": [
+            {
+              "highlight": "Oliver Bäte, Chief Executive Officer, <[+340 characters]",
+              "sentiment": 0.8625,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "e190b79b-9387-4075-a225-452b2c3388df",
+      "title": "Rupee weakens slightly, broad dollar softness cushions pressure",
+      "description": "The Indian rupee logged a modest decline on Monday, pressured by dollar bids from foreign and local private banks, though broad-based weakness in the greenback helped the local currency limit further losses.",
+      "keywords": "Bank, Equity, Indian rupee decline, Rupee weakness, forex market India, USD/INR exchange rate",
+      "snippet": "Live Events\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our ETMarkets WhatsApp channel\n\nThe Indian rupee logged a modest decline on Monday, pr...",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-weakens-slightly-broad-dollar-softness-cushions-pressure/articleshow/122813746.cms",
+      "image_url": "https://img.etimg.com/thumb/msid-122813770,width-1200,height-630,imgsize-869028,overlay-etmarkets/articleshow.jpg",
+      "language": "en",
+      "published_at": "2025-07-21T10:36:26.000000Z",
+      "source": "economictimes.indiatimes.com",
+      "relevance_score": 13.487363,
+      "entities": [
+        {
+          "symbol": "^NSEI",
+          "name": "Nifty 50",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "index",
+          "industry": "N/A",
+          "match_score": 21.986475,
+          "sentiment_score": -0.33655,
+          "highlights": [
+            {
+              "highlight": "Bank of India are among the reasons cite[+323 characters]",
+              "sentiment": -0.1901,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>50</em>, closed higher by about 0.5%[+243 characters]",
+              "sentiment": -0.483,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BANKINDIA.BO",
+          "name": "Bank of India Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 18.087818,
+          "sentiment_score": 0.1218,
+          "highlights": [
+            {
+              "highlight": "nearly 0.2% to 98.2.The Indian rupee and[+328 characters]",
+              "sentiment": -0.1779,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>of</em> <em>India</em> are among the[+327 characters]",
+              "sentiment": 0.4215,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "6848e1c7-8b33-4596-9977-583f4988537b",
+      "title": "How will the Indian banking scene be five years down the line? Dinesh Kumar Khara explains",
+      "description": "Dinesh Kumar Khara envisions a future where Indian banking prioritizes customer centricity through personalized services and diverse channels. Technology will drive cost reduction and support corporate ecosystems. Post-COVID digital adoption has reshaped payment systems and retail growth, fostering responsible borrowing and the financialization of savings through mutual funds and alternative investments.",
+      "keywords": "Dinesh Kumar Khara, banking sector outlook, Indian banking, Post-COVID digital adoption, banking system, credit growth, financialization of savings, expert view | ET Now",
+      "snippet": "Live Events\n\nYou Might Also Like: HDFC merger continues to remain a drag on bank credit growth\n\nYou Might Also Like: Low earnings growth may prompt investors to...",
+      "url": "https://economictimes.indiatimes.com/markets/expert-view/how-will-the-indian-banking-scene-be-five-years-down-the-line-dinesh-kumar-khara-explains/articleshow/122812804.cms",
+      "image_url": "https://img.etimg.com/thumb/msid-122812843,width-1200,height-630,imgsize-33000,overlay-etmarkets/articleshow.jpg",
+      "language": "en",
+      "published_at": "2025-07-21T10:05:53.000000Z",
+      "source": "economictimes.indiatimes.com",
+      "relevance_score": 12.897154,
+      "entities": [
+        {
+          "symbol": "SETFSN50.BO",
+          "name": "SBI Mutual Fund",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 13.090721,
+          "sentiment_score": 0.749,
+          "highlights": [
+            {
+              "highlight": "At a point of time, because 2013-2016 wa[+314 characters]",
+              "sentiment": 0.749,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    }
+  ]
+}
