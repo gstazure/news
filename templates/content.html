@@ -105,6 +105,9 @@
     </nav>
 
     <div class="container mt-4">
+        <!-- Global alert container for page-level notifications -->
+        <div id="global-alert-container" class="mb-3"></div>
+        
         <div class="row">
             <div class="col-12">
                 <div class="d-flex justify-content-between align-items-center mb-4">
@@ -196,10 +199,11 @@
             
             const topicColor = getTopicColor(item.topic);
             const timeAgo = getTimeAgo(item.created_at);
+            const isPublished = item.published ? true : false;
             
             col.innerHTML = `
-                <div class="card content-card h-100" onclick="openDrawer(${index})">
-                    <div class="card-body">
+                <div class="card h-100">
+                    <div class="card-body" style="cursor: pointer;" onclick="openDrawer(${index})">
                         <div class="d-flex justify-content-between align-items-start mb-2">
                             <span class="badge ${topicColor} topic-badge">${item.topic}</span>
                             <small class="text-muted">${timeAgo}</small>
@@ -214,6 +218,13 @@
                                 <i class="fas fa-comments me-1"></i>${item.comments.length} replies
                             </small>
                         </div>
+                    </div>
+                    <div class="card-footer bg-transparent d-flex justify-content-end">
+                        <button class="btn btn-sm ${isPublished ? 'btn-success disabled' : 'btn-primary'}" 
+                                onclick="publishPost(event, ${index})" ${isPublished ? 'disabled' : ''}>
+                            <i class="fas fa-${isPublished ? 'check-circle' : 'cloud-upload-alt'} me-1"></i>
+                            ${isPublished ? 'Published' : 'Publish'}
+                        </button>
                     </div>
                 </div>
             `;
@@ -239,7 +250,8 @@
                 `;
                 item.comments.forEach((comment, commentIndex) => {
                     const commentTime = getTimeAgo(comment.created_at);
-                    const commentBody = comment.body || 'No content';
+                    // Check both body and content fields since some comments might use different field names
+                    const commentBody = comment.body || comment.content || 'No content';
                     commentsHtml += `
                         <div class="comment-item" id="comment-${commentIndex}">
                             <div class="comment-actions">
@@ -369,20 +381,48 @@
             return `${Math.floor(diffInSeconds / 86400)}d ago`;
         }
 
-        function showAlert(message, type = 'success') {
-            const alertContainer = document.getElementById('alert-container');
-            const alertClass = type === 'success' ? 'alert-success' : 'alert-danger';
-            alertContainer.innerHTML = `
+        function showAlert(message, type = 'success', global = true) {
+            // Create alert HTML
+            const alertClass = type === 'success' ? 'alert-success' : 
+                              type === 'danger' ? 'alert-danger' : 
+                              type === 'info' ? 'alert-info' : 'alert-warning';
+            
+            const alertHtml = `
                 <div class="alert ${alertClass} alert-dismissible fade show" role="alert">
                     ${message}
                     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                 </div>
             `;
             
-            setTimeout(() => {
-                const alert = alertContainer.querySelector('.alert');
-                if (alert) alert.remove();
-            }, 5000);
+            // Show in drawer if it's open
+            const drawerAlertContainer = document.getElementById('alert-container');
+            if (drawerAlertContainer) {
+                drawerAlertContainer.innerHTML = alertHtml;
+                
+                setTimeout(() => {
+                    const alert = drawerAlertContainer.querySelector('.alert');
+                    if (alert) alert.remove();
+                }, 5000);
+            }
+            
+            // Also show globally if requested
+            if (global) {
+                const globalAlertContainer = document.getElementById('global-alert-container');
+                if (globalAlertContainer) {
+                    // Create a unique alert element
+                    const alertDiv = document.createElement('div');
+                    alertDiv.innerHTML = alertHtml;
+                    globalAlertContainer.appendChild(alertDiv.firstChild);
+                    
+                    // Auto-dismiss after 5 seconds
+                    setTimeout(() => {
+                        const alerts = globalAlertContainer.querySelectorAll('.alert');
+                        if (alerts.length > 0) {
+                            alerts[0].remove();
+                        }
+                    }, 5000);
+                }
+            }
         }
 
         // Edit and Delete Functions
@@ -567,13 +607,32 @@
             }
         }
         
-        async function publishPost(index) {
+        // Publish post to external API
+        async function publishPost(index, event) {
+            // Stop the click from propagating to the card (which would open the drawer)
+            if (event) event.stopPropagation();
+            
             const item = contentData[index];
             
+            if (item.published) {
+                showAlert('This post has already been published', 'info');
+                return;
+            }
+            
+            if (!confirm(`Are you sure you want to publish "${item.title}" to the external site?`)) {
+                return;
+            }
+            
+            const publishBtn = event.currentTarget;
+            const originalHtml = publishBtn.innerHTML;
+            publishBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Publishing...';
+            publishBtn.disabled = true;
+            
             try {
-                showAlert('Publishing post...', 'info');
+                console.log('Publishing post:', item);
+                console.log('API endpoint:', `/api/publish/${item.temp_post_id || item.id}`);
                 
-                const response = await fetch(`/api/publish/${item.id}`, {
+                const response = await fetch(`/api/publish/${encodeURIComponent(item.temp_post_id || item.id)}`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
@@ -582,23 +641,48 @@
                     })
                 });
                 
+                console.log('Response status:', response.status);
                 const result = await response.json();
+                console.log('API response:', result);
                 
                 if (result.success) {
-                    showAlert('Post published successfully: ' + result.message);
+                    // Show success message with more details
+                    const successMsg = `Post "${item.title}" published successfully!`;
+                    showAlert(successMsg, 'success', true);
+                    
+                    // Update button appearance
+                    publishBtn.classList.remove('btn-primary');
+                    publishBtn.classList.add('btn-success', 'disabled');
+                    publishBtn.innerHTML = '<i class="fas fa-check-circle me-1"></i> Published';
+                    
+                    // Update the local data
                     contentData[index].published = true;
                     contentData[index].published_at = new Date().toISOString();
-                    contentData[index].external_id = result.results?.[0]?.post_id || '';
+                    contentData[index].external_id = result.results?.[0]?.post_id;
                     
-                    // Refresh the drawer to update status
-                    openDrawer(index);
-                    // Refresh the content list
-                    loadContent();
+                    // Scroll to the alert to ensure user sees it
+                    document.getElementById('global-alert-container').scrollIntoView({behavior: 'smooth'});
                 } else {
-                    showAlert('Failed to publish post: ' + (result.message || result.error), 'danger');
+                    // Show detailed error message
+                    const errorDetails = result.error || result.message || 'Unknown error';
+                    const errorMsg = `Failed to publish "${item.title}": ${errorDetails}`;
+                    showAlert(errorMsg, 'danger', true);
+                    
+                    // Reset button
+                    publishBtn.innerHTML = originalHtml;
+                    publishBtn.disabled = false;
+                    
+                    // Scroll to the alert to ensure user sees it
+                    document.getElementById('global-alert-container').scrollIntoView({behavior: 'smooth'});
                 }
             } catch (error) {
-                showAlert('Error publishing post: ' + error.message, 'danger');
+                console.error('Error publishing post:', error);
+                showAlert('Error publishing post: ' + error.message, 'danger', true);
+                publishBtn.innerHTML = originalHtml;
+                publishBtn.disabled = false;
+                
+                // Scroll to the alert to ensure user sees it
+                document.getElementById('global-alert-container').scrollIntoView({behavior: 'smooth'});
             }
         }
 
