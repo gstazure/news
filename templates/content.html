@@ -221,7 +221,7 @@
                     </div>
                     <div class="card-footer bg-transparent d-flex justify-content-end">
                         <button class="btn btn-sm ${isPublished ? 'btn-success disabled' : 'btn-primary'}" 
-                                onclick="publishPost(event, ${index})" ${isPublished ? 'disabled' : ''}>
+                                onclick="publishPost(${index}, event)" ${isPublished ? 'disabled' : ''}>
                             <i class="fas fa-${isPublished ? 'check-circle' : 'cloud-upload-alt'} me-1"></i>
                             ${isPublished ? 'Published' : 'Publish'}
                         </button>
@@ -321,7 +321,7 @@
                     </button>
                     ${item.published ? 
                         `<span class="badge bg-success me-2"><i class="fas fa-check me-1"></i>Published</span>` : 
-                        `<button class="btn btn-success btn-sm" onclick="publishPost(${index})">
+                        `<button class="btn btn-success btn-sm" onclick="publishPost(${index}, event)">
                             <i class="fas fa-cloud-upload-alt me-1"></i>Publish Post
                         </button>`
                     }
