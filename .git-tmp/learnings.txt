@@ -1,0 +1,103 @@
+# API Authentication Debugging: Learnings and Best Practices
+
+## Problem Summary
+We encountered a 401 Unauthorized error with the message "Valid API key required" when trying to publish posts to an external API, despite having a valid API key in the .env file.
+
+## Root Causes Identified
+
+1. **URL Redirection Issue**
+   - The API endpoint URL was being redirected from https://tickertalk.in to https://www.tickertalk.in
+   - During this redirection, the Authorization header was being lost
+   - This is a common security feature in HTTP redirects where sensitive headers may not be forwarded
+
+2. **Header Preservation During Redirects**
+   - Standard requests.post() method doesn't automatically preserve all headers during redirects
+   - Authorization headers are especially prone to being dropped during redirects
+
+3. **Request Format Specificity**
+   - The API expected a specific format: data=json.dumps(payload) instead of json=payload
+   - Small differences in how data is sent can cause authentication failures
+
+## Solutions Implemented
+
+1. **Use the Final URL Directly**
+   - Updated EXTERNAL_API_URL=https://www.tickertalk.in in .env file
+   - Eliminated the redirection issue completely
+
+2. **Use a Session to Preserve Headers**
+   ```python
+   # Create a session to preserve headers during redirects
+   session = requests.Session()
+   
+   # Configure the session to preserve the Authorization header
+   session.headers.update(headers)
+   
+   # Make the request using the session
+   response = session.post(url, data=json.dumps(payload), timeout=10)
+   ```
+
+3. **Follow Exact API Request Format**
+   ```python
+   headers = {
+       "Content-Type": "application/json",
+       "Authorization": f"Bearer {api_key}"
+   }
+   
+   response = session.post(
+       url,
+       data=json.dumps(payload),  # Using data=json.dumps() instead of json=
+       timeout=10
+   )
+   ```
+
+## Best Practices for API Authentication
+
+1. **Always Use Final URLs**
+   - Avoid redirects when possible, especially for authenticated requests
+   - Test API endpoints to identify the final URL after any redirects
+
+2. **Use Sessions for API Calls**
+   - requests.Session() provides better control over headers and cookies
+   - Sessions help maintain state across multiple requests
+   - Sessions can be configured to preserve headers during redirects
+
+3. **Follow API Documentation Precisely**
+   - Pay attention to exact header formats
+   - Note whether the API expects data=json.dumps(payload) or json=payload
+   - Check if the API requires specific content types
+
+4. **Implement Proper Error Handling**
+   - Log detailed request and response information
+   - Check for specific error codes and messages
+   - Implement retry logic for transient failures
+
+5. **Create Isolated Test Scripts**
+   - Develop standalone scripts to test API connectivity
+   - Isolate variables to identify the exact cause of issues
+   - Test different approaches to find what works
+
+6. **Monitor HTTP Redirects**
+   - Be aware that redirects can change request behavior
+   - Use tools like curl or Postman to observe redirect behavior
+   - Check if headers are preserved during redirects
+
+7. **Debug with Progressive Detail**
+   - Start with basic connectivity tests
+   - Add authentication headers
+   - Test with minimal payloads before full implementation
+
+## Verification Methods
+
+1. **Observe Status Code Changes**
+   - Success: Moving from 401 (Unauthorized) to 200 (OK)
+   - Progress: Moving from authentication errors to data validation errors
+
+2. **Check Response Body**
+   - Authentication errors vs. business logic errors
+   - The change from "Unauthorized" to "Topic not found" confirmed authentication success
+
+3. **Inspect Request Headers**
+   - Verify Authorization header is present in the actual request
+   - Check for any modifications during transmission
+
+This debugging process demonstrates the importance of understanding HTTP protocol behaviors, particularly around redirects and authentication headers, which are common issues when working with external APIs.
