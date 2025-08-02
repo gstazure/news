@@ -1,0 +1,353 @@
+{
+  "warnings": [
+    "limit is higher than your plan allows"
+  ],
+  "meta": {
+    "found": 3,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
+    {
+      "uuid": "bf92468e-8282-40a7-a395-2a8d5841e516",
+      "title": "Ambuja Cements Q1 results: Profits rise 24% to",
+      "description": "Ambuja Cement reports 24% YoY profit growth, highest ever sales volumes, and strategic acquisition for future growth.",
+      "keywords": "",
+      "snippet": "Record cement sales during the first quarter FY26 drove a 24 per cent year-on-year increase in Ambuja Cement Ltd’s consolidated profit after tax, that stood a...",
+      "url": "https://www.thehindubusinessline.com/companies/ambuja-cements-profits-rise-24-to-970-crore-in-q1-fy26/article69878019.ece",
+      "image_url": "https://bl-i.thgim.com/public/incoming/jdepfn/article69878039.ece/alternates/LANDSCAPE_1200/2024-10-22T042408Z_1349692351_RC2ELV9FBXBW_RTRMADP_3_ORIENT-CEMENT-M-A-AMBUJA-CEMENTS.JPG",
+      "language": "en",
+      "published_at": "2025-07-31T11:11:27.000000Z",
+      "source": "thehindubusinessline.com",
+      "relevance_score": 14.706648,
+      "entities": [
+        {
+          "symbol": "AMBUJACEM.NS",
+          "name": "Ambuja Cements Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 100.98117,
+          "sentiment_score": 0.246933,
+          "highlights": [
+            {
+              "highlight": "Vinod Bahety, Whole Time Director & CEO,[+183 characters]",
+              "sentiment": 0.5267,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "The company also stated that the Nationa[+338 characters]",
+              "sentiment": -0.2263,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Ambuja</em> <em>Cements</em> Q1 results: Profits rise 24% to",
+              "sentiment": 0.4404,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "AMBUJACEM.BO",
+          "name": "Ambuja Cements Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 100.97446,
+          "sentiment_score": 0.246933,
+          "highlights": [
+            {
+              "highlight": "Vinod Bahety, Whole Time Director & CEO,[+183 characters]",
+              "sentiment": 0.5267,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "The company also stated that the Nationa[+338 characters]",
+              "sentiment": -0.2263,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Ambuja</em> <em>Cements</em> Q1 results: Profits rise 24% to",
+              "sentiment": 0.4404,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "c0a7233f-300d-45ae-85fa-0a3da7be28a0",
+      "title": "L&T, Avenue Supermarts, Ultratech Cement among 10 stocks showing RSI Trending Up on July 30 - Bullish Momentum",
+      "description": "Ten stocks from the NSE large-cap pack were highlighted in the RSI Trending Up scan on July 30, based on data from stockedge.com. It is an uptrend signal if the RSI value has crossed above 50 from below. \"RSI trending up\" means that the Relative Strength Index (RSI) values are increasing, suggesting strengthening momentum in the price of the stock. This can indicate potential upward movement and may be used by traders to identify buying opportunities. Bullish Momentum",
+      "keywords": "RSI trending up, bullish momentum stocks, NSE large cap stocks, technical analysis stocks, Relative Strength Index, Larsen & Toubro share, Avenue Supermarts stock, Ultratech Cement stock",
+      "snippet": "Ten stocks from the NSE large-cap pack were highlighted in the RSI Trending Up scan on July 30, based on data from stockedge.com. It is an uptrend signal if the...",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/lt-avenue-supermarts-ultratech-cement-among-10-stocks-showing-rsi-trending-up-on-july-30/slideshow/123009612.cms",
+      "image_url": "https://img.etimg.com/thumb/msid-123009612,width-1070,height-580,overlay-etmarkets/slideshow.jpg",
+      "language": "en",
+      "published_at": "2025-07-31T02:50:28.000000Z",
+      "source": "economictimes.indiatimes.com",
+      "relevance_score": 9.980265,
+      "entities": [
+        {
+          "symbol": "DMART.NS",
+          "name": "Avenue Supermarts Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Consumer Defensive",
+          "match_score": 66.31262,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "L&T, <em>Avenue</em> <em>Supermarts</em>, Ultratech Cement among 10 stocks showing RSI Trending Up on July 30 - Bullish Momentum",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "ULTRACEMCO.NS",
+          "name": "UltraTech Cement Limited",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Basic Materials",
+          "match_score": 62.75412,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "L&T, Avenue Supermarts, <em>Ultratech</em> <em>Cement</em> among 10 stocks showing RSI Trending Up on July 30 - Bullish Momentum",
+              "sentiment": 0,
+              "highlighted_in": "title"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "a2674eb7-db9f-4e0b-bb25-acf1bc0cb5e6",
+      "title": "Nifty Bank rebounds from day’s low as Dalal Street shrugs off Trump’s 25% tariff salvo",
+      "description": "Indian banking stocks rebounded sharply on Thursday, led by ICICI and Kotak Bank, as markets discounted US tariff concerns. Nifty Bank index swung from a 600-point drop to end in positive territory amid hopes of trade negotiations with the US.",
+      "keywords": "kotak mahindra bank, icici bank, banking stocks rebound, icici bank share price, kotak mahindra bank rally, nifty bank intraday recovery, us-india trade tensions, trump tariff on india, indian stock market news, private banks performance, bank nifty gains, us trade delegation india, bank of baroda, punjab national bank, federal bank, axis bank, indusind bank, state bank of india, hdfc bank, canara bank, au small finance bank, emkay global financial services, idfc first bank, geojit financial services",
+      "snippet": "Live Events\n\nMarkets shake off tariff shock\n\nInvestors eye buying opportunity\n\nPath ahead\n\n\n\n\n\n(You can now subscribe to our\n\n(You can now subscribe to our ETMa...",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nifty-bank-rebounds-from-days-low-as-dalal-street-shrugs-off-trumps-25-tariff-salvo/articleshow/123020046.cms",
+      "image_url": "https://img.etimg.com/thumb/msid-123020033,width-1200,height-630,imgsize-18360,overlay-etmarkets/articleshow.jpg",
+      "language": "en",
+      "published_at": "2025-07-31T11:38:15.000000Z",
+      "source": "economictimes.indiatimes.com",
+      "relevance_score": 7.419445,
+      "entities": [
+        {
+          "symbol": "AXISBANK-BL.NS",
+          "name": "AXIS BANK",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "N/A",
+          "match_score": 19.026821,
+          "sentiment_score": 0.55945,
+          "highlights": [
+            {
+              "highlight": "focus back to domestic fundamentals.The [+325 characters]",
+              "sentiment": 0.8689,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Bank</em> and Bank of Baroda also ad[+22 characters]",
+              "sentiment": 0.25,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SBIN.BO",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 19.337276,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "<em>State</em> <em>Bank</em> <em>of</em>[+206 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "PNB.BO",
+          "name": "Punjab National Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.510181,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "State Bank of India AU Small Finance Ban[+197 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "SBKFF",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "us",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 19.336622,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "<em>State</em> <em>Bank</em> <em>of</em>[+206 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "FRBA",
+          "name": "First Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "us",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 10.462225,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "State Bank of India AU Small Finance Ban[+188 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "^NSEBANK",
+          "name": "Nifty Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "index",
+          "industry": "N/A",
+          "match_score": 74.14673,
+          "sentiment_score": -0.408967,
+          "highlights": [
+            {
+              "highlight": "Live Events\n\nMarkets shake off tariff sh[+334 characters]",
+              "sentiment": -0.3818,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "President Donald Trump’s shock announc[+332 characters]",
+              "sentiment": -0.5719,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>Nifty</em> <em>Bank</em> rebounds from day’s low as Dalal Street shrugs off Trump’s 25% tariff salvo",
+              "sentiment": -0.2732,
+              "highlighted_in": "title"
+            }
+          ]
+        },
+        {
+          "symbol": "SBIN.NS",
+          "name": "State Bank of India",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 19.337852,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "<em>State</em> <em>Bank</em> <em>of</em>[+206 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "PNB.NS",
+          "name": "Punjab National Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.511143,
+          "sentiment_score": 0,
+          "highlights": [
+            {
+              "highlight": "State Bank of India AU Small Finance Ban[+197 characters]",
+              "sentiment": 0,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "BANKBARODA.NS",
+          "name": "Bank of Baroda",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 22.154434,
+          "sentiment_score": 0.55945,
+          "highlights": [
+            {
+              "highlight": "domestic fundamentals.The Nifty Bank ind[+325 characters]",
+              "sentiment": 0.8689,
+              "highlighted_in": "main_text"
+            },
+            {
+              "highlight": "<em>of</em> <em>Baroda</em> also advance[+17 characters]",
+              "sentiment": 0.25,
+              "highlighted_in": "main_text"
+            }
+          ]
+        },
+        {
+          "symbol": "CANBK.NS",
+          "name": "Canara Bank",
+          "exchange": null,
+          "exchange_long": null,
+          "country": "in",
+          "type": "equity",
+          "industry": "Financial Services",
+          "match_score": 21.198872,
+          "sentiment_score": 0.1779,
+          "highlights": [
+            {
+              "highlight": "Shares of Federal Bank IndusInd Bank and[+235 characters]",
+              "sentiment": 0.1779,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    }
+  ]
+}
