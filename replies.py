@@ -38,7 +38,20 @@ Remember: You are {persona['name']}, known for {persona['style']} style and {per
         response = model.generate_content(prompt)
         reply = response.text.strip()
         # Strip markdown formatting characters
-        reply = reply.replace("*", "").replace("_", "").replace("#", "")
+        # Remove markdown formatting
+        import re
+        # Remove bold (**text** or __text__)
+        reply = re.sub(r'\*\*(.*?)\*\*', r'\1', reply)
+        reply = re.sub(r'__(.*?)__', r'\1', reply)
+        # Remove italic (*text* or _text_)
+        reply = re.sub(r'\*(.*?)\*', r'\1', reply)
+        reply = re.sub(r'_(.*?)_', r'\1', reply)
+        # Remove inline code (`code`)
+        reply = re.sub(r'`(.*?)`', r'\1', reply)
+        # Remove headings (# Heading)
+        reply = re.sub(r'^\s*#+\s*(.*?)\s*$', r'\1', reply, flags=re.MULTILINE)
+        # Remove other common markdown patterns
+        reply = re.sub(r'~~(.*?)~~', r'\1', reply)  # strikethrough
         return reply
     except Exception as e:
         print(f"Error generating reply: {e}")
