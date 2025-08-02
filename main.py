@@ -132,9 +132,12 @@ def process_article(url, forced_topic=None):
     generated_post = generate_post(article['title'], article['text'], persona)
     
     if not generated_post:
-        print(f"Post generation failed for {url}. Skipping.")
-        return None
-
+        return {
+            "error": "post_generation_failed",
+            "message": "Failed to generate post using OpenRouter API",
+            "url": url
+        }
+    
     # Extract title and content from the generated post
     title = generated_post['title']
     content = generated_post['content']

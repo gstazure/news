@@ -14,6 +14,7 @@ test_persona = {
     "signatureMoves": ["Deep dive into technical implications", "Forward-looking impact analysis"]
 }
 
+print("Starting test...")
 # Generate and print the post
 result = generate_post(test_article_title, test_article_text, test_persona)
 print("\nGenerated Post:\n")

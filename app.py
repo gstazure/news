@@ -117,8 +117,10 @@ def process_selected():
             if post and post.get("posts"):
                 all_posts["posts"].extend(post["posts"])
                 success_count += 1
+            elif post and post.get("error"):
+                errors.append(f"Item {idx}: {post['message']} (URL: {url})")
             else:
-                errors.append(f"Item {idx}: Failed to process article from {url}")
+                errors.append(f"Item {idx}: Failed to process article from {url} (unknown error)")
         except Exception as e:
             # Avoid indexing into non-dict again
             safe_url = url if 'url' in locals() else '<unknown>'
@@ -203,8 +205,10 @@ def process_csv():
                 if post and post.get("posts"):
                     all_posts["posts"].extend(post["posts"])
                     success_count += 1
+                elif post and post.get("error"):
+                    errors.append(f"Row {row_num}: {post['message']} (URL: {row['url']})")
                 else:
-                    errors.append(f"Row {row_num}: Failed to process article from {row['url']}")
+                    errors.append(f"Row {row_num}: Failed to process article from {row['url']} (unknown error)")
             
             except Exception as e:
                 errors.append(f"Row {row_num}: Error - {str(e)}")

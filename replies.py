@@ -30,12 +30,16 @@ Write a reply that:
 5. Adds value through insight or a different perspective
 6. Stays authentic to your character
 7. Avoids simply agreeing or repeating
+8. Uses plain text formatting only - DO NOT use markdown formatting like *bold*, _italic_, or other markup
 
 Remember: You are {persona['name']}, known for {persona['style']} style and {persona['replyTone']} tone.
 """
     try:
         response = model.generate_content(prompt)
-        return response.text.strip()
+        reply = response.text.strip()
+        # Strip markdown formatting characters
+        reply = reply.replace("*", "").replace("_", "").replace("#", "")
+        return reply
     except Exception as e:
         print(f"Error generating reply: {e}")
         return ""

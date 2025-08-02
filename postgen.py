@@ -4,21 +4,30 @@ from dotenv import load_dotenv
 from pathlib import Path
 import requests
 
-# Load environment variables from .env file
-env_path = Path(__file__).parent / '.env'
-load_dotenv(dotenv_path=env_path)
+# Load environment variables early and from project root if available
+# Try current file dir .env, then project root .env
+here = Path(__file__).parent
+root_env = here.parent / '.env'
+file_env = here / '.env'
+if root_env.exists():
+    load_dotenv(dotenv_path=root_env)
+else:
+    load_dotenv(dotenv_path=file_env)
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-if not OPENROUTER_API_KEY:
-    raise ValueError("OPENROUTER_API_KEY not found in environment variables")
+# Masked logging to verify visibility without leaking secret
+print(f"[OpenRouter] Key present: {bool(OPENROUTER_API_KEY)}; "
+      f"len={len(OPENROUTER_API_KEY) if OPENROUTER_API_KEY else 0}; "
+      f"prefix={(OPENROUTER_API_KEY[:4] if OPENROUTER_API_KEY else '')}***")
 
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
-OPENROUTER_MODEL = "deepseek/deepseek-r1-0528-qwen3-8b:free"
+# Prefer a widely available free model; allow override via env
+OPENROUTER_MODEL = os.getenv("OPENROUTER_MODEL", "openrouter/auto")
 
 def generate_post(article_title, article_text, persona):
     """
-    Generates a forum post using OpenRouter (z-ai/glm-4.5-air:free) with JSON output.
-    The output aims for nuanced, insightful market analysis with concrete evidence.
+    Generates a forum post using OpenRouter with JSON output.
+    Hardened with clear diagnostics for 401 and missing-key scenarios.
     """
     # System/preamble content
     preamble = f"""You are a professional trader and forum contributor named {persona['name']}, known for your {persona['style']} style and {persona['postTone']} tone. You're an expert on market analysis, especially {', '.join(persona['focusStocks'])}.
@@ -133,7 +142,7 @@ Return only valid JSON with two keys: "title" and "content" (no code fences)."""
                 "content": (
                     f"{json_schema_tooltip}\n\n"
                     "Respond ONLY with a single JSON object with exactly two keys: "
-                    '{"title": "...", "content": "..."}. '
+                    '{"title": "...", "content": "..."}.\n'
                     "Do not include code fences, explanations, greetings, or any extra text before or after the JSON.\n\n"
                     f"{user_prompt}"
                 )
@@ -143,17 +152,36 @@ Return only valid JSON with two keys: "title" and "content" (no code fences)."""
         "response_format": {"type": "json_object"}
     }
 
+    # Final guard: if key missing, return graceful None with log
+    if not OPENROUTER_API_KEY:
+        print("OpenRouter Config Error: OPENROUTER_API_KEY is not set in environment. "
+              "Ensure .env is loaded or the variable is set in the running terminal.")
+        return None
+
     headers = {
         "Authorization": f"Bearer {OPENROUTER_API_KEY}",
         "Content-Type": "application/json",
-        # Optional routing metadata
-        "HTTP-Referer": "http://localhost",  # update if deployed
-        "X-Title": "Forum Bot Post Generation"
+        # Optional routing metadata recommended by OpenRouter
+        "HTTP-Referer": os.getenv("OPENROUTER_HTTP_REFERER", "http://localhost"),
+        "X-Title": os.getenv("OPENROUTER_X_TITLE", "Forum Bot Post Generation")
     }
 
     try:
         # Fail-fast HTTP timeout: 30s
         resp = requests.post(OPENROUTER_API_URL, headers=headers, data=json.dumps(payload), timeout=30)
+        status = resp.status_code
+        if status == 401:
+            # Print detailed diagnostics to help fix environment/config quickly
+            print("OpenRouter Auth Error 401: Unauthorized")
+            print(f" Diagnostics -> URL: {OPENROUTER_API_URL}")
+            print(f" Diagnostics -> Model: {OPENROUTER_MODEL}")
+            print(f" Diagnostics -> Headers sent: "
+                  f"Auth={'present' if 'Authorization' in headers else 'missing'}, "
+                  f"Referer={headers.get('HTTP-Referer')}, X-Title={headers.get('X-Title')}")
+            print(f" Diagnostics -> Key prefix: {(OPENROUTER_API_KEY[:4] if OPENROUTER_API_KEY else '')}***, "
+                  f"len={len(OPENROUTER_API_KEY) if OPENROUTER_API_KEY else 0}")
+            print(f" Body: {resp.text[:400]}")
+            return None
         resp.raise_for_status()
         data = resp.json()
 
@@ -242,6 +270,14 @@ Return only valid JSON with two keys: "title" and "content" (no code fences)."""
 
     except requests.exceptions.Timeout:
         print("OpenRouter HTTP Error: Request timed out after 30s")
+        return None
+    except requests.exceptions.HTTPError as e:
+        # Surface body for non-401 errors too
+        try:
+            body = e.response.text[:600] if e.response is not None else "<no body>"
+        except Exception:
+            body = "<unavailable>"
+        print(f"OpenRouter HTTP Error: {e} | Body: {body}")
         return None
     except requests.exceptions.RequestException as e:
         print(f"OpenRouter HTTP Error: {e}")
