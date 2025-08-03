@@ -122,6 +122,72 @@
             font-size: 0.8rem;
             margin: 0 2px;
             cursor: pointer;
+        }
+
+        /* Side Drawer Styles - Exact same as content page */
+        .side-drawer {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 50%;
+            height: 100vh;
+            background: white;
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            transition: right 0.3s ease;
+            z-index: 1050;
+            overflow-y: auto;
+        }
+        .side-drawer.open {
+            right: 0;
+        }
+        .drawer-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.5);
+            z-index: 1040;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+        }
+        .drawer-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        .comment-item {
+            border-left: 3px solid #e9ecef;
+            padding-left: 15px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .comment-actions {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .comment-item:hover .comment-actions {
+            opacity: 1;
+        }
+        .post-actions {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e9ecef;
+        }
+        .edit-form {
+            display: none;
+            margin-top: 15px;
+        }
+        @media (max-width: 768px) {
+            .side-drawer {
+                width: 90%;
+            }
+        }
+
+        .action-btn {
             transition: all 0.2s;
         }
 
@@ -432,20 +498,20 @@
         </div>
     </div>
 
-    <!-- Preview Modal -->
-    <div class="modal fade" id="previewModal" tabindex="-1">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Item Preview</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body" id="previewModalBody">
-                    <!-- Dynamically populated -->
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
+
+
+    <!-- Side Drawer -->
+    <div class="drawer-overlay" onclick="closeWorkflowDrawer()"></div>
+    <div class="side-drawer" id="workflowDrawer">
+        <div class="p-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="mb-0">Workflow Item Details</h5>
+                <button class="btn btn-sm btn-outline-secondary" onclick="closeWorkflowDrawer()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="workflow-drawer-content">
+                <!-- Detailed content will be loaded here -->
             </div>
         </div>
     </div>
@@ -1003,7 +1069,7 @@
                 const response = await fetch(`/api/workflow-items/${itemId}/preview`);
                 if (response.ok) {
                     const item = await response.json();
-                    showPreviewModal(item);
+                    openWorkflowDrawer(item);
                 } else {
                     showToast('Error loading preview', 'error');
                 }
@@ -1013,242 +1079,167 @@
             }
         }
 
-        function showPreviewModal(item) {
-            const modalBody = document.getElementById('previewModalBody');
+        function openWorkflowDrawer(item) {
+            const drawer = document.getElementById('workflowDrawer');
+            const overlay = document.querySelector('.drawer-overlay');
+            const content = document.getElementById('workflow-drawer-content');
             
             // Check if item is editable (parsed_news or generated_post)
             const isEditable = item.type === 'parsed_news' || item.type === 'generated_post';
             
-            modalBody.innerHTML = `
-                <div class="row">
-                    <div class="col-md-6">
-                        <h6>Details</h6>
-                        <table class="table table-sm">
-                            <tr><td><strong>Type:</strong></td><td>${formatType(item.type)}</td></tr>
-                            <tr><td><strong>Status:</strong></td><td>${formatStatus(item.status)}</td></tr>
-                            <tr><td><strong>Word Count:</strong></td><td>${item.word_count || '-'}</td></tr>
-                            <tr><td><strong>Created:</strong></td><td>${formatDate(item.created_at)}</td></tr>
-                            ${item.url ? `<tr><td><strong>URL:</strong></td><td><a href="${item.url}" target="_blank">${item.url}</a></td></tr>` : ''}
-                        </table>
-                    </div>
-                    <div class="col-md-6">
-                        <h6>Metadata</h6>
-                        <pre class="small">${JSON.stringify(item.metadata || {}, null, 2)}</pre>
-                    </div>
-                </div>
+            content.innerHTML = `
+                <div id="alert-container"></div>
                 
-                ${item.type === 'generated_post' ? `
-                <div class="mt-3">
-                    <h6>Title ${isEditable ? '<small class="text-muted">(editable)</small>' : ''}</h6>
+                <div class="mb-3">
+                    <span class="badge bg-primary topic-badge mb-2">${formatType(item.type)}</span>
+                    <div id="post-display">
+                        <h4>${item.title || 'No Title'}</h4>
+                        <div class="d-flex justify-content-between text-muted mb-3">
+                            <span><i class="fas fa-clock me-1"></i>${formatDate(item.created_at)}</span>
+                            <span><i class="fas fa-chart-bar me-1"></i>${item.word_count || 0} words</span>
+                        </div>
+                    </div>
                     ${isEditable ? `
-                        <input type="text" class="form-control" id="editTitle" value="${escapeHtml(item.title || '')}" maxlength="150">
-                        <small class="form-text text-muted">Max 150 characters, plain text only</small>
-                    ` : `
-                        <div class="border p-2 bg-light">${item.title || 'No title'}</div>
-                    `}
-                </div>
-                ` : ''}
-                
-                <div class="mt-3">
-                    <h6>Content ${isEditable ? '<small class="text-muted">(editable)</small>' : ''}</h6>
-                    ${isEditable ? `
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <div>
-                                <button class="btn btn-sm btn-outline-secondary" onclick="toggleEditMode('preview')">
-                                    <i class="fas fa-eye"></i> Preview
-                                </button>
-                                <button class="btn btn-sm btn-outline-primary" onclick="toggleEditMode('edit')">
-                                    <i class="fas fa-edit"></i> Edit
-                                </button>
-                            </div>
-                            <div>
-                                <span id="charCount" class="small text-muted">0 characters</span>
-                            </div>
+                    <div id="post-edit-form" class="edit-form">
+                        <div class="mb-3">
+                            <label class="form-label">Title:</label>
+                            <input type="text" class="form-control" id="edit-title" value="${item.title || ''}" maxlength="150">
                         </div>
-                        
-                        <!-- Edit Mode -->
-                        <div id="editMode" style="display: block;">
-                            <textarea class="form-control" id="editContent" rows="15" 
-                                      placeholder="Enter content here...">${escapeHtml(item.content || '')}</textarea>
-                            ${item.type === 'generated_post' ? `
-                                <small class="form-text text-muted">
-                                    <strong>HTML Tips:</strong> Use &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt;, 
-                                    &lt;br&gt; for line breaks, &lt;p&gt;&lt;/p&gt; for paragraphs
-                                </small>
-                            ` : ''}
+                        <div class="mb-3">
+                            <label class="form-label">Content:</label>
+                            <textarea class="form-control" id="edit-content" rows="8">${item.content || ''}</textarea>
                         </div>
-                        
-                        <!-- Preview Mode -->
-                        <div id="previewMode" style="display: none;">
-                            <div class="border p-3 bg-light" style="min-height: 300px; white-space: pre-wrap;">
-                                <div id="contentPreview"></div>
-                            </div>
-                        </div>
-                    ` : `
-                        <div class="border p-3" style="max-height: 400px; overflow-y: auto; white-space: pre-wrap;">
-                            <div class="content-display"></div>
-                        </div>
-                    `}
+                        <button class="btn btn-success me-2" onclick="saveWorkflowItem(${item.id})">Save Changes</button>
+                        <button class="btn btn-secondary" onclick="cancelWorkflowEdit()">Cancel</button>
+                    </div>
+                    ` : ''}
                 </div>
                 
-                ${item.type === 'generated_post' && item.metadata && item.metadata.temp_post_id ? `
-                <div class="mt-3">
-                    <h6>Comments/Replies</h6>
-                    <div id="repliesSection" class="border p-3 bg-light">
-                        <div class="text-center text-muted">
-                            <i class="fas fa-spinner fa-spin"></i> Loading replies...
-                        </div>
+                <div class="mb-4">
+                    <h6>Content:</h6>
+                    <div class="border-start border-3 border-primary ps-3">
+                        <div id="post-content" style="white-space: pre-wrap;">${item.content || 'No content available'}</div>
                     </div>
                 </div>
-                ` : ''}
+                
+                <div class="post-actions">
+                    ${isEditable ? `
+                        <button class="btn btn-outline-primary btn-sm me-2" onclick="editWorkflowItem(${item.id})">
+                            <i class="fas fa-edit me-1"></i>Edit
+                        </button>
+                    ` : ''}
+                    ${item.type === 'generated_post' ? `
+                        <button class="btn btn-success btn-sm" onclick="publishWorkflowItem(${item.id})">
+                            <i class="fas fa-cloud-upload-alt me-1"></i>Publish
+                        </button>
+                    ` : ''}
+                </div>
+                
+                <div id="workflow-replies-section">
+                    <!-- Replies will be loaded here -->
+                </div>
             `;
-
-            // Set content using innerHTML for proper HTML rendering
-            setTimeout(() => {
-                const contentPreview = document.getElementById('contentPreview');
-                const contentDisplay = document.querySelector('.content-display');
-                
-                if (contentPreview) {
-                    contentPreview.innerHTML = item.content || 'No content available';
-                }
-                if (contentDisplay) {
-                    contentDisplay.innerHTML = item.content || 'No content available';
-                }
-            }, 10);
-
+            
             // Load replies if this is a generated post
             if (item.type === 'generated_post' && item.metadata && item.metadata.temp_post_id) {
-                loadRepliesForPost(item.metadata.temp_post_id);
+                loadWorkflowReplies(item.metadata.temp_post_id);
             }
-
-            // Set up character counter if editable
-            if (isEditable) {
-                const textarea = document.getElementById('editContent');
-                const charCount = document.getElementById('charCount');
-                if (textarea && charCount) {
-                    function updateCharCount() {
-                        charCount.textContent = `${textarea.value.length} characters`;
-                    }
-                    textarea.addEventListener('input', updateCharCount);
-                    updateCharCount();
-                }
-            }
-
-            // Update modal footer with action buttons if editable
-            const modalFooter = document.querySelector('#previewModal .modal-footer');
-            if (isEditable) {
-                modalFooter.innerHTML = `
-                    <button type="button" class="btn btn-success" onclick="savePreviewChanges(${item.id})">
-                        <i class="fas fa-save me-2"></i>Save Changes
-                    </button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                `;
-            } else {
-                modalFooter.innerHTML = `
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                `;
-            }
-
-            const modal = new bootstrap.Modal(document.getElementById('previewModal'));
-            modal.show();
-        }
-
-        function escapeHtml(text) {
-            if (!text) return '';
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
-        }
-
-        function toggleEditMode(mode) {
-            const editMode = document.getElementById('editMode');
-            const previewMode = document.getElementById('previewMode');
-            const contentPreview = document.getElementById('contentPreview');
-            const editContent = document.getElementById('editContent');
             
-            if (mode === 'edit') {
-                editMode.style.display = 'block';
-                previewMode.style.display = 'none';
-            } else {
-                editMode.style.display = 'none';
-                previewMode.style.display = 'block';
-                if (contentPreview && editContent) {
-                    contentPreview.innerHTML = editContent.value;
-                }
-            }
+            overlay.classList.add('show');
+            drawer.classList.add('open');
         }
 
-        async function savePreviewChanges(itemId) {
-            const editTitle = document.getElementById('editTitle');
-            const editContent = document.getElementById('editContent');
+        function closeWorkflowDrawer() {
+            const drawer = document.getElementById('workflowDrawer');
+            const overlay = document.querySelector('.drawer-overlay');
             
-            if (!editContent) {
-                showToast('No content to save', 'error');
+            overlay.classList.remove('show');
+            drawer.classList.remove('open');
+        }
+
+        function editWorkflowItem(itemId) {
+            document.getElementById('post-display').style.display = 'none';
+            document.getElementById('post-edit-form').style.display = 'block';
+        }
+
+        function cancelWorkflowEdit() {
+            document.getElementById('post-display').style.display = 'block';
+            document.getElementById('post-edit-form').style.display = 'none';
+        }
+
+        async function saveWorkflowItem(itemId) {
+            const editTitle = document.getElementById('edit-title');
+            const editContent = document.getElementById('edit-content');
+            
+            if (!editTitle || !editContent) {
+                showToast('Error: Edit form not found', 'error');
                 return;
             }
-
-            const updateData = {
-                content: editContent.value
+            
+            const updatedData = {
+                title: editTitle.value.trim(),
+                content: editContent.value.trim()
             };
             
-            // Include title if it exists (for generated posts)
-            if (editTitle) {
-                updateData.title = editTitle.value;
-            }
-
             try {
-                showLoading(true);
                 const response = await fetch(`/api/workflow-items/${itemId}`, {
                     method: 'PATCH',
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify(updateData)
+                    body: JSON.stringify(updatedData)
                 });
-
+                
                 if (response.ok) {
                     showToast('Changes saved successfully', 'success');
-                    // Close modal and refresh data
-                    bootstrap.Modal.getInstance(document.getElementById('previewModal')).hide();
-                    loadWorkflowData();
+                    cancelWorkflowEdit();
+                    loadWorkflowItems(); // Refresh the table
                 } else {
-                    const error = await response.json();
-                    showToast(error.error || 'Failed to save changes', 'error');
+                    const error = await response.text();
+                    showToast(`Error saving changes: ${error}`, 'error');
                 }
             } catch (error) {
                 console.error('Error saving changes:', error);
                 showToast('Error saving changes', 'error');
-            } finally {
-                showLoading(false);
             }
         }
 
-        async function loadRepliesForPost(tempPostId) {
+        async function loadWorkflowReplies(tempPostId) {
             try {
-                // Try to find the post in outputs directory
                 const response = await fetch('/api/content');
                 if (response.ok) {
                     const data = await response.json();
                     const posts = data.posts || [];
                     const post = posts.find(p => p.temp_post_id === tempPostId);
                     
-                    const repliesSection = document.getElementById('repliesSection');
+                    const repliesSection = document.getElementById('workflow-replies-section');
                     if (post && post.comments && post.comments.length > 0) {
-                        repliesSection.innerHTML = `
-                            <h6 class="mb-3">${post.comments.length} Comments</h6>
-                            ${post.comments.map(comment => `
-                                <div class="comment-item border-bottom pb-2 mb-2">
-                                    <div class="d-flex justify-content-between">
-                                        <strong>${comment.username}</strong>
-                                        <small class="text-muted">${formatDate(comment.created_at)}</small>
-                                    </div>
-                                    <div class="mt-1">${comment.content}</div>
-                                </div>
-                            `).join('')}
+                        let commentsHtml = `
+                            <h6 class="mt-4 mb-3">
+                                <i class="fas fa-comments me-2"></i>Replies (${post.comments.length})
+                            </h6>
                         `;
+                        
+                        post.comments.forEach((comment, commentIndex) => {
+                            const commentTime = getTimeAgo(comment.created_at);
+                            const commentBody = comment.body || comment.content || 'No content';
+                            commentsHtml += `
+                                <div class="comment-item">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <strong>${comment.username}</strong>
+                                        <small class="text-muted">${commentTime}</small>
+                                    </div>
+                                    <div class="comment-content">
+                                        <div class="mb-0">${commentBody}</div>
+                                    </div>
+                                </div>
+                            `;
+                        });
+                        
+                        repliesSection.innerHTML = commentsHtml;
                     } else {
                         repliesSection.innerHTML = `
-                            <div class="text-muted text-center">
+                            <div class="text-muted text-center mt-3">
                                 <i class="fas fa-comment-slash"></i> No replies found for this post
                             </div>
                         `;
@@ -1257,16 +1248,62 @@
                     throw new Error('Failed to load posts');
                 }
             } catch (error) {
-                const repliesSection = document.getElementById('repliesSection');
+                const repliesSection = document.getElementById('workflow-replies-section');
                 if (repliesSection) {
                     repliesSection.innerHTML = `
-                        <div class="text-danger text-center">
+                        <div class="text-danger text-center mt-3">
                             <i class="fas fa-exclamation-triangle"></i> Error loading replies
                         </div>
                     `;
                 }
             }
         }
+
+        function getTimeAgo(dateString) {
+            if (!dateString) return 'Unknown';
+            
+            const date = new Date(dateString);
+            const now = new Date();
+            const diffInSeconds = Math.floor((now - date) / 1000);
+            
+            if (diffInSeconds < 60) return 'Just now';
+            if (diffInSeconds < 3600) return `${Math.floor(diffInSeconds / 60)}m ago`;
+            if (diffInSeconds < 86400) return `${Math.floor(diffInSeconds / 3600)}h ago`;
+            return `${Math.floor(diffInSeconds / 86400)}d ago`;
+        }
+
+        async function publishWorkflowItem(itemId) {
+            try {
+                showLoading(true);
+                const response = await fetch(`/api/workflow-items/${itemId}/publish`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    if (result.success) {
+                        showToast('Post published successfully!', 'success');
+                        closeWorkflowDrawer();
+                        loadWorkflowData(); // Refresh the table
+                    } else {
+                        showToast(result.error || 'Failed to publish post', 'error');
+                    }
+                } else {
+                    const error = await response.text();
+                    showToast(`Error publishing post: ${error}`, 'error');
+                }
+            } catch (error) {
+                console.error('Error publishing post:', error);
+                showToast('Error publishing post', 'error');
+            } finally {
+                showLoading(false);
+            }
+        }
+
+
 
         function filterTable() {
             const typeFilter = document.getElementById('typeFilter').value;

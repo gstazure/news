@@ -1,5 +1,6 @@
 import os
 import json
+import time
 from dotenv import load_dotenv
 from pathlib import Path
 import requests
@@ -21,12 +22,94 @@ print(f"[OpenRouter] Key present: {bool(OPENROUTER_API_KEY)}; "
       f"prefix={(OPENROUTER_API_KEY[:4] if OPENROUTER_API_KEY else '')}***")
 
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
-# Prefer a widely available free model; allow override via env
-OPENROUTER_MODEL = os.getenv("OPENROUTER_MODEL", "openrouter/auto")
+
+# Multi-model fallback chain with free models
+MODEL_FALLBACK_CHAIN = [
+    "deepseek/deepseek-chat-v3-0324:free",  # Primary choice - powerful free model
+    "moonshotai/kimi-k2:free",  # Fallback 1 - MoonshotAI Kimi K2 (1T params, MoE)
+    "deepseek/deepseek-r1-0528-qwen3-8b:free",  # Fallback 2 - reliable backup
+    "z-ai/glm-4.5-air:free"  # Fallback 3 - Z.AI GLM-4.5-Air (MoE architecture)
+]
+
+# Allow environment variable to override the fallback chain
+OPENROUTER_MODEL = os.getenv("OPENROUTER_MODEL")
+if OPENROUTER_MODEL:
+    # If custom model is specified, use it as the only option
+    MODEL_FALLBACK_CHAIN = [OPENROUTER_MODEL]
+    print(f"[OpenRouter] Using custom model: {OPENROUTER_MODEL}")
+else:
+    print(f"[OpenRouter] Using fallback chain: {MODEL_FALLBACK_CHAIN}")
+
+def try_model_generation(model, messages, max_retries=1):
+    """
+    Attempt to generate content with a specific model.
+    Returns (success, response_text, error_message)
+    """
+    headers = {
+        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+        "Content-Type": "application/json",
+        "HTTP-Referer": "https://forum-bot-engine.com",
+        "X-Title": "Forum Bot Engine"
+    }
+    
+    data = {
+        "model": model,
+        "messages": messages,
+        "temperature": 0.7,
+        "max_tokens": 2000,
+        "response_format": {"type": "json_object"}
+    }
+    
+    for attempt in range(max_retries + 1):
+        try:
+            print(f"[OpenRouter] Attempting with model: {model} (attempt {attempt + 1})")
+            response = requests.post(
+                OPENROUTER_API_URL, 
+                headers=headers, 
+                json=data, 
+                timeout=60  # Increased timeout for complex generation
+            )
+            
+            if response.status_code == 200:
+                result = response.json()
+                content = result['choices'][0]['message']['content']
+                print(f"[OpenRouter] Success with {model}")
+                return True, content, None
+            elif response.status_code == 401:
+                error_msg = "API key invalid or expired"
+                print(f"[OpenRouter] 401 error with {model}: {error_msg}")
+                return False, None, error_msg
+            elif response.status_code == 429:
+                error_msg = "Rate limit exceeded"
+                print(f"[OpenRouter] 429 error with {model}: {error_msg}")
+                return False, None, error_msg
+            else:
+                error_msg = f"HTTP {response.status_code}: {response.text}"
+                print(f"[OpenRouter] Error with {model}: {error_msg}")
+                return False, None, error_msg
+                
+        except requests.exceptions.Timeout:
+            error_msg = "Request timeout"
+            print(f"[OpenRouter] Timeout with {model}: {error_msg}")
+            return False, None, error_msg
+        except requests.exceptions.RequestException as e:
+            error_msg = f"Request error: {str(e)}"
+            print(f"[OpenRouter] Request error with {model}: {error_msg}")
+            return False, None, error_msg
+        except json.JSONDecodeError as e:
+            error_msg = f"JSON decode error: {str(e)}"
+            print(f"[OpenRouter] JSON error with {model}: {error_msg}")
+            return False, None, error_msg
+        except Exception as e:
+            error_msg = f"Unexpected error: {str(e)}"
+            print(f"[OpenRouter] Unexpected error with {model}: {error_msg}")
+            return False, None, error_msg
+    
+    return False, None, "Max retries exceeded"
 
 def generate_post(article_title, article_text, persona):
     """
-    Generates a forum post using OpenRouter with JSON output.
+    Generates a forum post using OpenRouter with multi-model fallback.
     Hardened with clear diagnostics for 401 and missing-key scenarios.
     """
     # System/preamble content
@@ -98,8 +181,6 @@ TITLE EXAMPLES (for reference):
 - "HDFC Bank: Hidden Catalyst Emerging"
 - "Reliance Q3 Numbers Tell Different Story"
 - "Why TCS Could Hit ₹4000 Soon"
-- "Adani Stocks: Technical Breakout Imminent"
-- "Nifty 18,500: Support or Trap?"
 
 IMPORTANT: The title should be completely different from your content's opening line. It's a hook to draw readers in, not a summary of the first sentence.
 
@@ -133,24 +214,17 @@ Return only valid JSON with two keys: "title" and "content" (no code fences)."""
         "Title must be plain text and <= 150 characters."
     )
 
-    payload = {
-        "model": OPENROUTER_MODEL,
-        "messages": [
-            {"role": "system", "content": preamble},
-            {
-                "role": "user",
-                "content": (
-                    f"{json_schema_tooltip}\n\n"
-                    "Respond ONLY with a single JSON object with exactly two keys: "
-                    '{"title": "...", "content": "..."}.\n'
-                    "Do not include code fences, explanations, greetings, or any extra text before or after the JSON.\n\n"
-                    f"{user_prompt}"
-                )
-            }
-        ],
-        "temperature": 0.8,
-        "response_format": {"type": "json_object"}
-    }
+    # Prepare messages for the model
+    messages = [
+        {"role": "system", "content": preamble},
+        {"role": "user", "content": (
+            f"{json_schema_tooltip}\n\n"
+            "Respond ONLY with a single JSON object with exactly two keys: "
+            '{"title": "...", "content": "..."}.\n'
+            "Do not include code fences, explanations, greetings, or any extra text before or after the JSON.\n\n"
+            f"{user_prompt}"
+        )}
+    ]
 
     # Final guard: if key missing, return graceful None with log
     if not OPENROUTER_API_KEY:
@@ -158,130 +232,88 @@ Return only valid JSON with two keys: "title" and "content" (no code fences)."""
               "Ensure .env is loaded or the variable is set in the running terminal.")
         return None
 
-    headers = {
-        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
-        "Content-Type": "application/json",
-        # Optional routing metadata recommended by OpenRouter
-        "HTTP-Referer": os.getenv("OPENROUTER_HTTP_REFERER", "http://localhost"),
-        "X-Title": os.getenv("OPENROUTER_X_TITLE", "Forum Bot Post Generation")
-    }
-
-    try:
-        # Fail-fast HTTP timeout: 30s
-        resp = requests.post(OPENROUTER_API_URL, headers=headers, data=json.dumps(payload), timeout=30)
-        status = resp.status_code
-        if status == 401:
-            # Print detailed diagnostics to help fix environment/config quickly
-            print("OpenRouter Auth Error 401: Unauthorized")
-            print(f" Diagnostics -> URL: {OPENROUTER_API_URL}")
-            print(f" Diagnostics -> Model: {OPENROUTER_MODEL}")
-            print(f" Diagnostics -> Headers sent: "
-                  f"Auth={'present' if 'Authorization' in headers else 'missing'}, "
-                  f"Referer={headers.get('HTTP-Referer')}, X-Title={headers.get('X-Title')}")
-            print(f" Diagnostics -> Key prefix: {(OPENROUTER_API_KEY[:4] if OPENROUTER_API_KEY else '')}***, "
-                  f"len={len(OPENROUTER_API_KEY) if OPENROUTER_API_KEY else 0}")
-            print(f" Body: {resp.text[:400]}")
-            return None
-        resp.raise_for_status()
-        data = resp.json()
-
-        # Debug: print summarized raw response (avoid dumping extremely large payloads)
-        try:
-            print(f"OpenRouter Debug: model={OPENROUTER_MODEL} top-level keys={list(data.keys()) if isinstance(data, dict) else type(data)}")
-            if isinstance(data, dict) and "choices" in data:
-                print(f"OpenRouter Debug: choices_len={len(data.get('choices', []))}")
-        except Exception:
-            pass
-
-        # Extract the assistant message content
-        raw = ""
-        if isinstance(data, dict) and "choices" in data and len(data["choices"]) > 0:
-            raw = data["choices"][0].get("message", {}).get("content", "") or ""
-        # Enforce JSON-only response: reject obviously non-JSON payloads early
-        if raw and not raw.lstrip().startswith("{"):
-            print(f"OpenRouter Error: Non-JSON response received (starts with): {raw[:80]!r}")
-            return None
-
-        # Explicit empty-content guard with helpful diagnostics
-        if not raw.strip():
-            # If provider returned a telemetry object instead of message content, log a compact preview
-            preview = str(data)[:600] if not isinstance(data, (bytes, bytearray)) else "<bytes>"
-            print(f"OpenRouter Error: Empty assistant content. Preview of resp.json(): {preview}")
-            return None
-
-        # Defensive parsing: try raw as-is, then extract first JSON object
-        def extract_first_json_object(text: str):
-            if not text:
+    # Try models in the fallback chain
+    for i, model in enumerate(MODEL_FALLBACK_CHAIN):
+        if i > 0:  # Add small pause between attempts (except first)
+            time.sleep(1)
+        success, content, error_msg = try_model_generation(model, messages)
+        if success:
+            # Extract the assistant message content
+            raw = content
+            # Enforce JSON-only response: reject obviously non-JSON payloads early
+            if raw and not raw.lstrip().startswith("{"):
+                print(f"OpenRouter Error: Non-JSON response received (starts with): {raw[:80]!r}")
                 return None
-            start = text.find("{")
-            if start == -1:
-                return None
-            depth = 0
-            in_str = False
-            escape = False
-            for i in range(start, len(text)):
-                ch = text[i]
-                if in_str:
-                    if escape:
-                        escape = False
-                    elif ch == "\\":
-                        escape = True
-                    elif ch == '"':
-                        in_str = False
-                    continue
-                else:
-                    if ch == '"':
-                        in_str = True
-                    elif ch == "{":
-                        depth += 1
-                    elif ch == "}":
-                        depth -= 1
-                        if depth == 0:
-                            return text[start:i+1]
-            return None
 
-        parsed = None
-        try:
-            parsed = json.loads(raw) if raw else None
-        except json.JSONDecodeError:
-            sub = extract_first_json_object(raw)
-            if sub:
-                try:
-                    parsed = json.loads(sub)
-                except json.JSONDecodeError as e:
-                    print(f"OpenRouter Error: Extracted JSON failed to parse. Extract: {sub[:500]} Err: {e}")
+            # Explicit empty-content guard with helpful diagnostics
+            if not raw.strip():
+                # If provider returned a telemetry object instead of message content, log a compact preview
+                preview = str(content)[:600] if not isinstance(content, (bytes, bytearray)) else "<bytes>"
+                print(f"OpenRouter Error: Empty assistant content. Preview of resp.json(): {preview}")
+                return None
+
+            # Defensive parsing: try raw as-is, then extract first JSON object
+            def extract_first_json_object(text: str):
+                if not text:
                     return None
-            else:
-                print(f"OpenRouter Error: No JSON object found in response. Raw: {raw[:500]}")
+                start = text.find("{")
+                if start == -1:
+                    return None
+                depth = 0
+                in_str = False
+                escape = False
+                for i in range(start, len(text)):
+                    ch = text[i]
+                    if in_str:
+                        if escape:
+                            escape = False
+                        elif ch == "\\":
+                            escape = True
+                        elif ch == '"':
+                            in_str = False
+                        continue
+                    else:
+                        if ch == '"':
+                            in_str = True
+                        elif ch == "{":
+                            depth += 1
+                        elif ch == "}":
+                            depth -= 1
+                            if depth == 0:
+                                return text[start:i+1]
                 return None
 
-        # Validate fields
-        if not isinstance(parsed, dict) or "title" not in parsed or "content" not in parsed:
-            print(f"OpenRouter Error: JSON output missing required keys. Parsed: {parsed}")
-            return None
+            parsed = None
+            try:
+                parsed = json.loads(raw) if raw else None
+            except json.JSONDecodeError:
+                sub = extract_first_json_object(raw)
+                if sub:
+                    try:
+                        parsed = json.loads(sub)
+                    except json.JSONDecodeError as e:
+                        print(f"OpenRouter Error: Extracted JSON failed to parse. Extract: {sub[:500]} Err: {e}")
+                        return None
+                else:
+                    print(f"OpenRouter Error: No JSON object found in response. Raw: {raw[:500]}")
+                    return None
 
-        title = parsed.get("title")
-        content_body = parsed.get("content")
-        if not isinstance(title, str) or not isinstance(content_body, str) or not title.strip() or not content_body.strip():
-            print(f"OpenRouter Error: Title/content empty or wrong type. Parsed: {parsed}")
-            return None
+            # Validate fields
+            if not isinstance(parsed, dict) or "title" not in parsed or "content" not in parsed:
+                print(f"OpenRouter Error: JSON output missing required keys. Parsed: {parsed}")
+                return None
 
-        return {"title": title, "content": content_body}
+            title = parsed.get("title")
+            content_body = parsed.get("content")
+            if not isinstance(title, str) or not isinstance(content_body, str) or not title.strip() or not content_body.strip():
+                print(f"OpenRouter Error: Title/content empty or wrong type. Parsed: {parsed}")
+                return None
 
-    except requests.exceptions.Timeout:
-        print("OpenRouter HTTP Error: Request timed out after 30s")
-        return None
-    except requests.exceptions.HTTPError as e:
-        # Surface body for non-401 errors too
-        try:
-            body = e.response.text[:600] if e.response is not None else "<no body>"
-        except Exception:
-            body = "<unavailable>"
-        print(f"OpenRouter HTTP Error: {e} | Body: {body}")
-        return None
-    except requests.exceptions.RequestException as e:
-        print(f"OpenRouter HTTP Error: {e}")
-        return None
-    except Exception as e:
-        print(f"OpenRouter API Error: An unexpected error occurred: {e}")
-        return None
+            return {"title": title, "content": content_body}
+        elif error_msg:
+            print(f"[OpenRouter] Model {model} failed with error: {error_msg}")
+        else:
+            print(f"[OpenRouter] Model {model} failed after retries.")
+
+    print("OpenRouter Error: All models failed to generate a valid post.")
+    return None
