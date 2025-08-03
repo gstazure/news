@@ -9,12 +9,34 @@ from dotenv import load_dotenv
 from main import process_article, load_topics
 from database import db
 import re
+import glob
 
 # Load environment variables from .env file
 load_dotenv()
 print("Environment variables loaded from .env file")
 
 app = Flask(__name__)
+
+# Cache busting functionality
+import time
+
+def get_cache_bust_id():
+    """Generate a cache-busting ID based on current timestamp"""
+    return str(int(time.time()))
+
+# Add cache busting to all template renders
+@app.context_processor
+def inject_cache_bust():
+    return {'cache_bust_id': get_cache_bust_id()}
+
+# Add no-cache headers to all responses
+@app.after_request
+def add_no_cache_headers(response):
+    """Add no-cache headers to prevent browser caching"""
+    response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate, max-age=0'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '0'
+    return response
 
 def strip_html_tags(text):
     """Remove HTML tags from text for preview generation"""
