@@ -147,13 +147,77 @@
             background-color: DodgerBlue !important;
             color: #ffffff;
         }
+        
+        /* Button styles */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .button:hover {
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            transform: translateY(-1px);
+        }
+        
+        .button.secondary {
+            background-color: #6c757d;
+        }
+        
+        .button.secondary:hover {
+            background-color: #545b62;
+        }
+        
+        .button.primary {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            font-weight: 600;
+            padding: 12px 24px;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+        }
+        
+        .button.primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(52, 152, 219, 0.4);
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
             <h1>Forum Bot Post Generator</h1>
-            <a href="/content" class="button secondary">View Generated Content</a>
+            <div class="nav-links" style="display: flex; gap: 8px; align-items: center;">
+                <a href="/unified" class="button primary" style="display: flex; align-items: center; gap: 5px;">
+                    <span>📊</span>Unified
+                </a>
+                <a href="/workflow" class="button primary" style="display: flex; align-items: center; gap: 5px;">
+                    <span>🔄</span>Workflow
+                </a>
+                <a href="/content" class="button secondary" style="display: flex; align-items: center; gap: 5px;">
+                    <span>📄</span>Content
+                </a>
+                <a href="/scraped-news" class="button secondary" style="display: flex; align-items: center; gap: 5px;">
+                    <span>📰</span>News
+                </a>
+            </div>
+        </div>
+        
+        <!-- Unified Dashboard Promotion Banner -->
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; text-align: center; box-shadow: 0 8px 32px rgba(0,0,0,0.1);">
+            <h3 style="margin: 0 0 10px 0; font-size: 1.5rem;">✨ Try Our New Unified Dashboard!</h3>
+            <p style="margin: 0 0 15px 0; opacity: 0.9;">Experience the complete workflow in one page: Search → Scrape → Generate → Publish</p>
+            <a href="/unified" style="background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-block; transition: transform 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+                🚀 Open Unified Dashboard
+            </a>
         </div>
         
         <div class="search-section">

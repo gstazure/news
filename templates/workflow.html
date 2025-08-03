@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow Management - Forum Bot Engine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --success-color: #27ae60;
+            --warning-color: #f39c12;
+            --danger-color: #e74c3c;
+            --border-color: #dee2e6;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .main-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .workflow-container {
+            margin-top: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .controls-section {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .workflow-table {
+            margin-bottom: 0;
+        }
+
+        .workflow-table thead th {
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+            font-weight: 600;
+            padding: 15px 10px;
+        }
+
+        .workflow-table tbody td {
+            padding: 12px 10px;
+            vertical-align: middle;
+            border-bottom: 1px solid #eee;
+        }
+
+        .hierarchy-cell {
+            padding-left: 20px;
+        }
+
+        .hierarchy-indent-1 { padding-left: 40px; }
+        .hierarchy-indent-2 { padding-left: 60px; }
+
+        .type-badge {
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .type-search { background: #e3f2fd; color: #1976d2; }
+        .type-parsed { background: #f3e5f5; color: #7b1fa2; }
+        .type-generated { background: #e8f5e8; color: #388e3c; }
+
+        .hierarchy-indent-1 { 
+            padding-left: 40px; 
+            background: #f8f9fa;
+            border-left: 3px solid #dee2e6;
+        }
+        .hierarchy-indent-2 { 
+            padding-left: 60px; 
+            background: #f1f3f4;
+            border-left: 3px solid #adb5bd;
+        }
+
+        .status-badge {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .status-pending { background: #fff3cd; color: #856404; }
+        .status-processing { background: #cce5ff; color: #004085; }
+        .status-completed { background: #d4edda; color: #155724; }
+        .status-failed { background: #f8d7da; color: #721c24; }
+
+        .action-btn {
+            padding: 4px 8px;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin: 0 2px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .btn-parse { background: #17a2b8; color: white; }
+        .btn-generate { background: #28a745; color: white; }
+        .btn-publish { background: #dc3545; color: white; }
+        .btn-preview { background: #6c757d; color: white; }
+
+        .search-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .stats-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .toast-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .hierarchy-icon {
+            margin-right: 8px;
+            color: #666;
+        }
+
+        .word-count {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        .add-search-section {
+            background: #e7f3ff;
+            border: 1px solid #b3d9ff;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .topic-selector {
+            display: none;
+            margin-top: 0.5rem;
+        }
+
+        .topic-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .topic-btn {
+            padding: 4px 8px;
+            border: 1px solid var(--primary-color);
+            background: white;
+            color: var(--primary-color);
+            border-radius: 4px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .topic-btn:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .topic-badge {
+            background-color: #e3f2fd;
+            color: #1976d2;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            border: 1px solid #bbdefb;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .nav-links .btn {
+            white-space: nowrap;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .nav-links .btn:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                justify-content: flex-end;
+                margin-top: 0.5rem;
+            }
+            
+            .nav-links .btn {
+                font-size: 0.8rem;
+                padding: 0.25rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container"></div>
+
+    <!-- Header -->
+    <div class="main-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1><i class="fas fa-project-diagram me-3"></i>Workflow Management</h1>
+                    <p class="mb-0">Hierarchical view of news processing workflow</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <div class="nav-links">
+                        <a href="/" class="btn btn-outline-light btn-sm me-2">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                        <a href="/unified" class="btn btn-outline-light btn-sm me-2">
+                            <i class="fas fa-columns me-1"></i>Unified
+                        </a>
+                        <a href="/content" class="btn btn-outline-light btn-sm me-2">
+                            <i class="fas fa-file-alt me-1"></i>Content
+                        </a>
+                        <a href="/scraped-news" class="btn btn-outline-light btn-sm">
+                            <i class="fas fa-newspaper me-1"></i>News
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <!-- Statistics Cards -->
+        <div class="stats-cards" id="statsCards">
+            <div class="stat-card">
+                <div class="stat-number" id="totalItems">0</div>
+                <div class="stat-label">Total Items</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="searchResults">0</div>
+                <div class="stat-label">Search Results</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="parsedNews">0</div>
+                <div class="stat-label">Parsed News</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="generatedPosts">0</div>
+                <div class="stat-label">Generated Posts</div>
+            </div>
+        </div>
+
+        <!-- Add Search Results Section -->
+        <div class="add-search-section">
+            <h5><i class="fas fa-plus-circle me-2"></i>Add Search Results to Workflow</h5>
+            <div class="row">
+                <div class="col-md-8">
+                    <input type="text" class="form-control" id="searchQuery" placeholder="Enter search terms (e.g., 'Adani Power stock split')">
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-primary" onclick="searchAndAddToWorkflow()">
+                        <i class="fas fa-search me-2"></i>Search & Add
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Workflow Table -->
+        <div class="workflow-container">
+            <div class="controls-section">
+                <div class="search-controls">
+                    <div class="row w-100">
+                        <div class="col-md-4">
+                            <label class="form-label">Filter by Type:</label>
+                            <select class="form-select" id="typeFilter">
+                                <option value="">All Types</option>
+                                <option value="search_result">Search Results</option>
+                                <option value="parsed_news">Parsed News</option>
+                                <option value="generated_post">Generated Posts</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Filter by Status:</label>
+                            <select class="form-select" id="statusFilter">
+                                <option value="">All Status</option>
+                                <option value="pending">Pending</option>
+                                <option value="processing">Processing</option>
+                                <option value="completed">Completed</option>
+                                <option value="failed">Failed</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Search:</label>
+                            <input type="text" class="form-control" id="tableSearch" placeholder="Search titles...">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <button class="btn btn-outline-primary" onclick="refreshWorkflow()">
+                            <i class="fas fa-sync-alt me-2"></i>Refresh
+                        </button>
+                        <button class="btn btn-outline-success" onclick="expandAll()">
+                            <i class="fas fa-expand-alt me-2"></i>Expand All
+                        </button>
+                        <button class="btn btn-outline-secondary" onclick="collapseAll()">
+                            <i class="fas fa-compress-alt me-2"></i>Collapse All
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table class="table workflow-table" id="workflowTable">
+                    <thead>
+                        <tr>
+                            <th style="width: 5%">#</th>
+                            <th style="width: 35%">Title</th>
+                            <th style="width: 10%">Type</th>
+                            <th style="width: 8%">Topic</th>
+                            <th style="width: 8%">Status</th>
+                            <th style="width: 8%">Word Count</th>
+                            <th style="width: 12%">Created</th>
+                            <th style="width: 14%">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="workflowTableBody">
+                        <!-- Dynamically populated -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preview Modal -->
+    <div class="modal fade" id="previewModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Item Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="previewModalBody">
+                    <!-- Dynamically populated -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Topic Selection Modal -->
+    <div class="modal fade" id="topicModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Select Topic for Post Generation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="topic-buttons">
+                        <button class="topic-btn" onclick="generatePostWithTopic('NIFTY')">NIFTY</button>
+                        <button class="topic-btn" onclick="generatePostWithTopic('BANKNIFTY')">BANKNIFTY</button>
+                        <button class="topic-btn" onclick="generatePostWithTopic('STOCKS')">STOCKS</button>
+                        <button class="topic-btn" onclick="generatePostWithTopic('IPO')">IPO</button>
+                        <button class="topic-btn" onclick="generatePostWithTopic('GENERAL')">GENERAL</button>
+                    </div>
+                    <div class="mt-3">
+                        <label for="customTopic" class="form-label">Custom Topic</label>
+                        <input type="text" class="form-control" id="customTopic" 
+                               placeholder="Search or type topic name..." 
+                               list="topicsDatalist"
+                               onkeypress="handleCustomTopicKeypress(event)">
+                        <datalist id="topicsDatalist">
+                            <!-- Populated by loadTopics() -->
+                        </datalist>
+                        <small class="text-muted">Choose from available topics or enter custom</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="generatePostWithCustomTopic()">Generate Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+
+    <script>
+        let workflowData = [];
+        let topics = ['NIFTY', 'BANKNIFTY', 'STOCKS', 'IPO', 'GENERAL']; // Initialize with fallback
+        let currentItemId = null;
+
+        // Initialize page
+        $(document).ready(function() {
+            loadWorkflowData();
+            loadTopics();
+            setupEventListeners();
+        });
+
+        function setupEventListeners() {
+            $('#typeFilter, #statusFilter').change(function() {
+                filterTable();
+            });
+
+            $('#tableSearch').on('input', function() {
+                filterTable();
+            });
+
+            $('#searchQuery').on('keypress', function(e) {
+                if (e.which === 13) {
+                    searchAndAddToWorkflow();
+                }
+            });
+
+            // Event delegation for dynamically created action buttons
+            $(document).on('click', '.action-btn', function(e) {
+                e.preventDefault();
+                const action = $(this).data('action');
+                const itemId = $(this).data('item-id');
+                
+                console.log('Action button clicked:', { action, itemId });
+                
+                switch(action) {
+                    case 'preview':
+                        previewItem(itemId);
+                        break;
+                    case 'parse':
+                        parseItem(itemId);
+                        break;
+                    case 'generate':
+                        showTopicModal(itemId);
+                        break;
+                    case 'publish':
+                        publishPost(itemId);
+                        break;
+                    default:
+                        console.warn('Unknown action:', action);
+                }
+            });
+        }
+
+        async function loadWorkflowData() {
+            console.log('Loading workflow data...');
+            showLoading(true);
+            try {
+                const response = await fetch('/api/workflow-items');
+                console.log('Workflow API response status:', response.status);
+                
+                if (response.ok) {
+                    workflowData = await response.json();
+                    console.log('Workflow data received:', workflowData);
+                    console.log('Number of items:', workflowData.length);
+                    
+                    // Log each item's type and status
+                    workflowData.forEach(item => {
+                        console.log(`Item ${item.id}: type=${item.type}, status=${item.status}, title=${item.title?.substring(0,30)}...`);
+                    });
+                    
+                    renderWorkflowTable();
+                    updateStatistics();
+                } else {
+                    console.error('Failed to load workflow data:', response.status, response.statusText);
+                    showToast('Error loading workflow data', 'error');
+                }
+            } catch (error) {
+                console.error('Error loading workflow data:', error);
+                showToast('Error loading workflow data', 'error');
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        async function loadTopics() {
+            try {
+                const response = await fetch('/api/topics');
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log('Topics API response:', data);
+                    
+                    // Handle different response formats
+                    if (Array.isArray(data)) {
+                        topics = data;
+                    } else if (data.topics && Array.isArray(data.topics)) {
+                        topics = data.topics;
+                    } else if (data.success && Array.isArray(data.data)) {
+                        topics = data.data;
+                    } else {
+                        console.warn('Unexpected topics format, using fallback');
+                        topics = ['NIFTY', 'BANKNIFTY', 'STOCKS', 'IPO', 'GENERAL'];
+                    }
+                    
+                    console.log('Loaded topics:', topics.length, 'items');
+                    populateTopicsDatalist();
+                } else {
+                    console.error('Failed to load topics, using fallback');
+                    topics = ['NIFTY', 'BANKNIFTY', 'STOCKS', 'IPO', 'GENERAL'];
+                    populateTopicsDatalist();
+                }
+            } catch (error) {
+                console.error('Error loading topics:', error);
+                topics = ['NIFTY', 'BANKNIFTY', 'STOCKS', 'IPO', 'GENERAL'];
+                populateTopicsDatalist();
+            }
+        }
+
+        function populateTopicsDatalist() {
+            const datalist = document.getElementById('topicsDatalist');
+            if (datalist && Array.isArray(topics)) {
+                datalist.innerHTML = topics.map(topic => 
+                    `<option value="${topic}"></option>`
+                ).join('');
+                console.log('Populated datalist with', topics.length, 'topics');
+            } else {
+                console.error('Cannot populate datalist - topics is not an array:', topics);
+            }
+        }
+
+        function handleCustomTopicKeypress(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                generatePostWithCustomTopic();
+            }
+        }
+
+        function renderWorkflowTable() {
+            const tbody = document.getElementById('workflowTableBody');
+            tbody.innerHTML = '';
+
+            if (!workflowData || workflowData.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="8" class="text-center text-muted">No workflow items found.</td></tr>';
+                return;
+            }
+
+            // This function recursively flattens the hierarchical data into a simple list
+            const flatten = (items, level = 0) => {
+                let flatList = [];
+                items.forEach(item => {
+                    flatList.push({ ...item, level });
+                    if (item.children && item.children.length > 0) {
+                        flatList = flatList.concat(flatten(item.children, level + 1));
+                    }
+                });
+                return flatList;
+            };
+
+            const flatItems = flatten(workflowData);
+
+            // Now, we just loop through the simple flat list
+            let serialNumber = 1;
+            flatItems.forEach(item => {
+                // We only increment the serial number for top-level items (level 0)
+                const displayNumber = item.level === 0 ? serialNumber++ : '';
+                const row = createTableRow(item, item.level, displayNumber);
+                tbody.appendChild(row);
+            });
+        }
+
+        // The createTableRow and other helper functions remain the same.
+        // This simplified rendering logic is more robust.
+
+        function createTableRow(item, level, serialNumber) {
+            const row = document.createElement('tr');
+            row.setAttribute('data-item-id', item.id);
+            row.setAttribute('data-type', item.type);
+            row.setAttribute('data-status', item.status);
+            row.setAttribute('data-level', level);
+
+            const indent = level > 0 ? `hierarchy-indent-${level}` : '';
+            const hierarchyIcon = getHierarchyIcon(item.type);
+
+            // For child items, show them as part of parent hierarchy
+            const displayNumber = level > 0 ? '' : serialNumber;
+
+            // Extract topic from metadata
+            const topic = getItemTopic(item);
+            
+            row.innerHTML = `
+                <td>${displayNumber}</td>
+                <td class="hierarchy-cell ${indent}">
+                    <i class="${hierarchyIcon} hierarchy-icon"></i>
+                    <span class="item-title">${item.title}</span>
+                    ${item.word_count > 0 ? `<div class="word-count">${item.word_count} words</div>` : ''}
+                </td>
+                <td>${getTypeBadge(item.type)}</td>
+                <td><span class="topic-badge">${topic}</span></td>
+                <td><span class="status-badge status-${item.status}">${formatStatus(item.status)}</span></td>
+                <td>${item.word_count || '-'}</td>
+                <td>${formatDate(item.created_at)}</td>
+                <td>${item.actions_html}</td>
+            `;
+
+            return row;
+        }
+
+        function getHierarchyIcon(type) {
+            const icons = {
+                'search_result': 'fas fa-search',
+                'parsed_news': 'fas fa-newspaper',
+                'generated_post': 'fas fa-edit'
+            };
+            return icons[type] || 'fas fa-circle';
+        }
+
+        function formatType(type) {
+            const types = {
+                'search_result': 'Search Result',
+                'parsed_news': 'Parsed News',
+                'generated_post': 'Generated Post'
+            };
+            return types[type] || type;
+        }
+
+        function formatStatus(status) {
+            return status.charAt(0).toUpperCase() + status.slice(1);
+        }
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString() + ' ' + date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+        }
+
+        function getTypeBadge(type) {
+            const badges = {
+                'search_result': '<span class="badge type-badge type-search">Search Result</span>',
+                'parsed_news': '<span class="badge type-badge type-parsed">Parsed News</span>',
+                'generated_post': '<span class="badge type-badge type-generated">Generated Post</span>'
+            };
+            return badges[type] || `<span class="badge type-badge">${type}</span>`;
+        }
+
+        function getItemTopic(item) {
+            // Only generated posts and sometimes parsed news have topics
+            if (item.type === 'search_result') {
+                return '-';
+            }
+            
+            let metadata = item.metadata || {};
+            
+            // Handle metadata that might be stored as a string
+            if (typeof metadata === 'string') {
+                try {
+                    metadata = JSON.parse(metadata);
+                } catch (e) {
+                    metadata = {};
+                }
+            }
+            
+            const topic = metadata.topic || '-';
+            return topic;
+        }
+
+        async function searchAndAddToWorkflow() {
+            const query = document.getElementById('searchQuery').value.trim();
+            if (!query) {
+                showToast('Please enter search terms', 'warning');
+                return;
+            }
+
+            showLoading(true);
+            try {
+                // First, search for news
+                const searchResponse = await fetch('/api/search-news', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ query })
+                });
+
+                if (searchResponse.ok) {
+                    const searchData = await searchResponse.json();
+                    // Extract results array from the response object
+                    const searchResults = searchData.results || searchData;
+                    
+                    if (searchResults.length > 0) {
+                        // Add search results to workflow
+                        const createResponse = await fetch('/api/workflow-items', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ search_results: searchResults })
+                        });
+
+                        if (createResponse.ok) {
+                            const result = await createResponse.json();
+                            showToast(`Added ${result.created_items.length} items to workflow`, 'success');
+                            document.getElementById('searchQuery').value = '';
+                            loadWorkflowData();
+                        } else {
+                            showToast('Error adding items to workflow', 'error');
+                        }
+                    } else {
+                        showToast('No search results found', 'warning');
+                    }
+                } else {
+                    showToast('Error searching for news', 'error');
+                }
+            } catch (error) {
+                console.error('Error in search and add:', error);
+                showToast('Error in search and add', 'error');
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        async function parseItem(itemId) {
+            showLoading(true);
+            try {
+                const response = await fetch(`/api/workflow-items/${itemId}/parse`, {
+                    method: 'POST'
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    showToast(result.message, 'success');
+                    loadWorkflowData();
+                } else {
+                    const error = await response.json();
+                    showToast(error.error, 'error');
+                }
+            } catch (error) {
+                console.error('Error parsing item:', error);
+                showToast('Error parsing item', 'error');
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        function showTopicModal(itemId) {
+            console.log('showTopicModal called with itemId:', itemId);
+            currentItemId = itemId;
+            
+            // Populate topics datalist when modal opens
+            populateTopicsDatalist();
+            
+            // Clear previous input
+            document.getElementById('customTopic').value = '';
+            
+            const modal = new bootstrap.Modal(document.getElementById('topicModal'));
+            modal.show();
+        }
+
+        async function generatePostWithTopic(topic) {
+            console.log('generatePostWithTopic called with:', { topic, currentItemId });
+            
+            if (!currentItemId) {
+                console.error('No currentItemId set!');
+                showToast('Error: No item selected', 'error');
+                return;
+            }
+
+            const modal = bootstrap.Modal.getInstance(document.getElementById('topicModal'));
+            modal.hide();
+
+            showLoading(true);
+            try {
+                console.log('Making API call to generate post...');
+                const response = await fetch(`/api/workflow-items/${currentItemId}/generate`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ topic })
+                });
+
+                console.log('API response:', response.status, response.statusText);
+
+                if (response.ok) {
+                    const result = await response.json();
+                    console.log('Success result:', result);
+                    showToast(result.message, 'success');
+                    loadWorkflowData();
+                } else {
+                    const error = await response.json();
+                    console.error('API error:', error);
+                    showToast(error.error, 'error');
+                }
+            } catch (error) {
+                console.error('Error generating post:', error);
+                showToast('Error generating post', 'error');
+            } finally {
+                showLoading(false);
+                currentItemId = null;
+            }
+        }
+
+        function generatePostWithCustomTopic() {
+            console.log('generatePostWithCustomTopic called');
+            const customTopic = document.getElementById('customTopic').value.trim().toUpperCase();
+            console.log('Custom topic entered:', customTopic);
+            
+            if (!customTopic) {
+                showToast('Please enter a topic', 'warning');
+                return;
+            }
+            
+            // Validate topic if it's not in our available topics
+            if (Array.isArray(topics) && !topics.includes(customTopic)) {
+                const confirmMessage = `"${customTopic}" is not in the standard topic list. Do you want to proceed anyway?`;
+                if (!confirm(confirmMessage)) {
+                    return;
+                }
+            }
+            
+            generatePostWithTopic(customTopic);
+        }
+
+        async function publishPost(itemId) {
+            if (!confirm('Are you sure you want to publish this post?')) return;
+
+            showLoading(true);
+            try {
+                const response = await fetch(`/api/workflow-items/${itemId}/publish`, {
+                    method: 'POST'
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    console.log('Publish response:', result);
+                    
+                    // Show detailed success message
+                    if (result.success) {
+                        const message = result.message || 'Post published successfully';
+                        showToast(message, 'success');
+                        
+                        // Log additional details if available
+                        if (result.external_id) {
+                            console.log('External post ID:', result.external_id);
+                        }
+                        if (result.results && result.results.length > 0) {
+                            console.log('External API results:', result.results);
+                        }
+                    } else {
+                        showToast(result.error || 'Unknown error occurred', 'error');
+                    }
+                    
+                    loadWorkflowData();
+                } else {
+                    const error = await response.json();
+                    console.error('Publish error response:', error);
+                    showToast(error.error || 'Failed to publish post', 'error');
+                }
+            } catch (error) {
+                console.error('Error publishing post:', error);
+                showToast('Error publishing post', 'error');
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        async function previewItem(itemId) {
+            try {
+                const response = await fetch(`/api/workflow-items/${itemId}/preview`);
+                if (response.ok) {
+                    const item = await response.json();
+                    showPreviewModal(item);
+                } else {
+                    showToast('Error loading preview', 'error');
+                }
+            } catch (error) {
+                console.error('Error loading preview:', error);
+                showToast('Error loading preview', 'error');
+            }
+        }
+
+        function showPreviewModal(item) {
+            const modalBody = document.getElementById('previewModalBody');
+            
+            // Check if item is editable (parsed_news or generated_post)
+            const isEditable = item.type === 'parsed_news' || item.type === 'generated_post';
+            
+            modalBody.innerHTML = `
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Details</h6>
+                        <table class="table table-sm">
+                            <tr><td><strong>Type:</strong></td><td>${formatType(item.type)}</td></tr>
+                            <tr><td><strong>Status:</strong></td><td>${formatStatus(item.status)}</td></tr>
+                            <tr><td><strong>Word Count:</strong></td><td>${item.word_count || '-'}</td></tr>
+                            <tr><td><strong>Created:</strong></td><td>${formatDate(item.created_at)}</td></tr>
+                            ${item.url ? `<tr><td><strong>URL:</strong></td><td><a href="${item.url}" target="_blank">${item.url}</a></td></tr>` : ''}
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Metadata</h6>
+                        <pre class="small">${JSON.stringify(item.metadata || {}, null, 2)}</pre>
+                    </div>
+                </div>
+                
+                ${item.type === 'generated_post' ? `
+                <div class="mt-3">
+                    <h6>Title ${isEditable ? '<small class="text-muted">(editable)</small>' : ''}</h6>
+                    ${isEditable ? `
+                        <input type="text" class="form-control" id="editTitle" value="${escapeHtml(item.title || '')}" maxlength="150">
+                        <small class="form-text text-muted">Max 150 characters, plain text only</small>
+                    ` : `
+                        <div class="border p-2 bg-light">${item.title || 'No title'}</div>
+                    `}
+                </div>
+                ` : ''}
+                
+                <div class="mt-3">
+                    <h6>Content ${isEditable ? '<small class="text-muted">(editable)</small>' : ''}</h6>
+                    ${isEditable ? `
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <div>
+                                <button class="btn btn-sm btn-outline-secondary" onclick="toggleEditMode('preview')">
+                                    <i class="fas fa-eye"></i> Preview
+                                </button>
+                                <button class="btn btn-sm btn-outline-primary" onclick="toggleEditMode('edit')">
+                                    <i class="fas fa-edit"></i> Edit
+                                </button>
+                            </div>
+                            <div>
+                                <span id="charCount" class="small text-muted">0 characters</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Edit Mode -->
+                        <div id="editMode" style="display: block;">
+                            <textarea class="form-control" id="editContent" rows="15" 
+                                      placeholder="Enter content here...">${escapeHtml(item.content || '')}</textarea>
+                            ${item.type === 'generated_post' ? `
+                                <small class="form-text text-muted">
+                                    <strong>HTML Tips:</strong> Use &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt;, 
+                                    &lt;br&gt; for line breaks, &lt;p&gt;&lt;/p&gt; for paragraphs
+                                </small>
+                            ` : ''}
+                        </div>
+                        
+                        <!-- Preview Mode -->
+                        <div id="previewMode" style="display: none;">
+                            <div class="border p-3 bg-light" style="min-height: 300px;">
+                                <div id="contentPreview">${item.content || 'No content available'}</div>
+                            </div>
+                        </div>
+                    ` : `
+                        <div class="border p-3" style="max-height: 400px; overflow-y: auto;">
+                            ${item.type === 'generated_post' ? item.content : (item.content || 'No content available')}
+                        </div>
+                    `}
+                </div>
+                
+                ${item.type === 'generated_post' && item.metadata && item.metadata.temp_post_id ? `
+                <div class="mt-3">
+                    <h6>Comments/Replies</h6>
+                    <div id="repliesSection" class="border p-3 bg-light">
+                        <div class="text-center text-muted">
+                            <i class="fas fa-spinner fa-spin"></i> Loading replies...
+                        </div>
+                    </div>
+                </div>
+                ` : ''}
+            `;
+
+            // Load replies if this is a generated post
+            if (item.type === 'generated_post' && item.metadata && item.metadata.temp_post_id) {
+                loadRepliesForPost(item.metadata.temp_post_id);
+            }
+
+            // Set up character counter if editable
+            if (isEditable) {
+                const textarea = document.getElementById('editContent');
+                const charCount = document.getElementById('charCount');
+                if (textarea && charCount) {
+                    function updateCharCount() {
+                        charCount.textContent = `${textarea.value.length} characters`;
+                    }
+                    textarea.addEventListener('input', updateCharCount);
+                    updateCharCount();
+                }
+            }
+
+            // Update modal footer with action buttons if editable
+            const modalFooter = document.querySelector('#previewModal .modal-footer');
+            if (isEditable) {
+                modalFooter.innerHTML = `
+                    <button type="button" class="btn btn-success" onclick="savePreviewChanges(${item.id})">
+                        <i class="fas fa-save me-2"></i>Save Changes
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                `;
+            } else {
+                modalFooter.innerHTML = `
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                `;
+            }
+
+            const modal = new bootstrap.Modal(document.getElementById('previewModal'));
+            modal.show();
+        }
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function toggleEditMode(mode) {
+            const editMode = document.getElementById('editMode');
+            const previewMode = document.getElementById('previewMode');
+            const contentPreview = document.getElementById('contentPreview');
+            const editContent = document.getElementById('editContent');
+            
+            if (mode === 'edit') {
+                editMode.style.display = 'block';
+                previewMode.style.display = 'none';
+            } else {
+                editMode.style.display = 'none';
+                previewMode.style.display = 'block';
+                if (contentPreview && editContent) {
+                    contentPreview.innerHTML = editContent.value;
+                }
+            }
+        }
+
+        async function savePreviewChanges(itemId) {
+            const editTitle = document.getElementById('editTitle');
+            const editContent = document.getElementById('editContent');
+            
+            if (!editContent) {
+                showToast('No content to save', 'error');
+                return;
+            }
+
+            const updateData = {
+                content: editContent.value
+            };
+            
+            // Include title if it exists (for generated posts)
+            if (editTitle) {
+                updateData.title = editTitle.value;
+            }
+
+            try {
+                showLoading(true);
+                const response = await fetch(`/api/workflow-items/${itemId}`, {
+                    method: 'PATCH',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(updateData)
+                });
+
+                if (response.ok) {
+                    showToast('Changes saved successfully', 'success');
+                    // Close modal and refresh data
+                    bootstrap.Modal.getInstance(document.getElementById('previewModal')).hide();
+                    loadWorkflowData();
+                } else {
+                    const error = await response.json();
+                    showToast(error.error || 'Failed to save changes', 'error');
+                }
+            } catch (error) {
+                console.error('Error saving changes:', error);
+                showToast('Error saving changes', 'error');
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        async function loadRepliesForPost(tempPostId) {
+            try {
+                // Try to find the post in outputs directory
+                const response = await fetch('/api/content');
+                if (response.ok) {
+                    const data = await response.json();
+                    const posts = data.posts || [];
+                    const post = posts.find(p => p.temp_post_id === tempPostId);
+                    
+                    const repliesSection = document.getElementById('repliesSection');
+                    if (post && post.comments && post.comments.length > 0) {
+                        repliesSection.innerHTML = `
+                            <h6 class="mb-3">${post.comments.length} Comments</h6>
+                            ${post.comments.map(comment => `
+                                <div class="comment-item border-bottom pb-2 mb-2">
+                                    <div class="d-flex justify-content-between">
+                                        <strong>${comment.username}</strong>
+                                        <small class="text-muted">${formatDate(comment.created_at)}</small>
+                                    </div>
+                                    <div class="mt-1">${comment.content}</div>
+                                </div>
+                            `).join('')}
+                        `;
+                    } else {
+                        repliesSection.innerHTML = `
+                            <div class="text-muted text-center">
+                                <i class="fas fa-comment-slash"></i> No replies found for this post
+                            </div>
+                        `;
+                    }
+                } else {
+                    throw new Error('Failed to load posts');
+                }
+            } catch (error) {
+                const repliesSection = document.getElementById('repliesSection');
+                if (repliesSection) {
+                    repliesSection.innerHTML = `
+                        <div class="text-danger text-center">
+                            <i class="fas fa-exclamation-triangle"></i> Error loading replies
+                        </div>
+                    `;
+                }
+            }
+        }
+
+        function filterTable() {
+            const typeFilter = document.getElementById('typeFilter').value;
+            const statusFilter = document.getElementById('statusFilter').value;
+            const searchFilter = document.getElementById('tableSearch').value.toLowerCase();
+
+            const rows = document.querySelectorAll('#workflowTableBody tr');
+            rows.forEach(row => {
+                const type = row.getAttribute('data-type');
+                const status = row.getAttribute('data-status');
+                const title = row.querySelector('.item-title').textContent.toLowerCase();
+
+                const typeMatch = !typeFilter || type === typeFilter;
+                const statusMatch = !statusFilter || status === statusFilter;
+                const searchMatch = !searchFilter || title.includes(searchFilter);
+
+                row.style.display = typeMatch && statusMatch && searchMatch ? '' : 'none';
+            });
+        }
+
+        function updateStatistics() {
+            let totalItems = 0;
+            let searchResults = 0;
+            let parsedNews = 0;
+            let generatedPosts = 0;
+
+            function countItems(items) {
+                items.forEach(item => {
+                    totalItems++;
+                    if (item.type === 'search_result') searchResults++;
+                    else if (item.type === 'parsed_news') parsedNews++;
+                    else if (item.type === 'generated_post') generatedPosts++;
+
+                    if (item.children) {
+                        countItems(item.children);
+                    }
+                });
+            }
+
+            countItems(workflowData);
+
+            document.getElementById('totalItems').textContent = totalItems;
+            document.getElementById('searchResults').textContent = searchResults;
+            document.getElementById('parsedNews').textContent = parsedNews;
+            document.getElementById('generatedPosts').textContent = generatedPosts;
+        }
+
+        function refreshWorkflow() {
+            loadWorkflowData();
+        }
+
+        function expandAll() {
+            const rows = document.querySelectorAll('#workflowTableBody tr');
+            rows.forEach(row => row.style.display = '');
+        }
+
+        function collapseAll() {
+            const rows = document.querySelectorAll('#workflowTableBody tr');
+            rows.forEach(row => {
+                const level = parseInt(row.getAttribute('data-level') || '0');
+                if (level > 0) {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        function showLoading(show) {
+            document.getElementById('loadingOverlay').style.display = show ? 'flex' : 'none';
+        }
+
+        function showToast(message, type = 'info') {
+            const toastContainer = document.querySelector('.toast-container');
+            const toastId = 'toast-' + Date.now();
+            
+            const toastColors = {
+                'success': 'text-bg-success',
+                'error': 'text-bg-danger', 
+                'warning': 'text-bg-warning',
+                'info': 'text-bg-info'
+            };
+
+            const toastHtml = `
+                <div class="toast ${toastColors[type] || toastColors.info}" role="alert" id="${toastId}">
+                    <div class="toast-body">
+                        ${message}
+                        <button type="button" class="btn-close btn-close-white float-end" data-bs-dismiss="toast"></button>
+                    </div>
+                </div>
+            `;
+
+            toastContainer.insertAdjacentHTML('beforeend', toastHtml);
+            
+            const toastElement = document.getElementById(toastId);
+            const toast = new bootstrap.Toast(toastElement, { delay: 5000 });
+            toast.show();
+
+            toastElement.addEventListener('hidden.bs.toast', () => {
+                toastElement.remove();
+            });
+        }
+    </script>
+</body>
+</html>
