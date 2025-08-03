@@ -7,6 +7,7 @@ import os
 import requests
 from dotenv import load_dotenv
 from main import process_article, load_topics
+from database import db
 import re
 
 # Load environment variables from .env file
@@ -68,6 +69,15 @@ def index():
             errors.append("Please enter a search query.")
 
     topics = list(load_topics())[:5]
+    
+    # If this is an AJAX request or API call, return JSON
+    if request.headers.get('Content-Type') == 'application/json' or request.args.get('format') == 'json':
+        return jsonify({
+            'news_results': news_results,
+            'query': query,
+            'errors': errors
+        })
+    
     return render_template('index.html', sample_topics=topics, news_results=news_results, query=query, errors=errors, all_topics=list(load_topics()))
 
 @app.route('/process_selected', methods=['POST'])
@@ -263,46 +273,295 @@ def content_page():
     """Display generated content in cards"""
     return render_template('content.html')
 
+@app.route('/scraped-news')
+def scraped_news_page():
+    """Display scraped news articles in cards"""
+    return render_template('scraped-news.html')
+
+@app.route('/unified')
+def unified_dashboard():
+    """Display unified dashboard with all functionality"""
+    return render_template('unified.html')
+
+@app.route('/api/topics')
+def get_topics():
+    """API endpoint to get all available topics"""
+    try:
+        topics = list(load_topics())
+        return jsonify({
+            'success': True,
+            'topics': topics
+        })
+    except Exception as e:
+        print(f"Error loading topics: {e}")
+        return jsonify({
+            'success': False,
+            'error': str(e),
+            'topics': ['NIFTY', 'BANKNIFTY', 'STOCKS', 'IPO', 'GENERAL']  # Fallback
+        })
+
 @app.route('/api/content')
 def get_content():
     """API endpoint to get all generated content"""
     content_list = []
     
-    if not os.path.exists('outputs'):
-        return jsonify(content_list)
+    # First, load from JSON files (existing method)
+    if os.path.exists('outputs'):
+        for filename in os.listdir('outputs'):
+            if filename.endswith('.json') and filename.startswith('output_'):
+                filepath = os.path.join('outputs', filename)
+                try:
+                    with open(filepath, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                        
+                    if 'posts' in data and data['posts']:
+                        for post_index, post in enumerate(data['posts']):
+                            content_item = {
+                                'id': post.get('temp_post_id', f"{filename}_{post_index}"),
+                                'title': post.get('title', 'No Title'),
+                                'content': post.get('content', ''),
+                                'topic': post.get('topic', 'GENERAL'),
+                                'username': post.get('username', 'Anonymous'),
+                                'created_at': post.get('created_at', ''),
+                                'comments': post.get('comments', []),
+                                'filename': filename,
+                                'post_index': post_index,
+                                'preview': strip_html_tags(post.get('content', ''))[:200] + '...' if len(strip_html_tags(post.get('content', ''))) > 200 else strip_html_tags(post.get('content', '')),
+                                'published': post.get('published', False),
+                                'published_at': post.get('published_at', ''),
+                                'external_id': post.get('external_id', ''),
+                                'source': 'file'
+                            }
+                            content_list.append(content_item)
+                except Exception as e:
+                    print(f"Error reading {filename}: {e}")
+                    continue
     
-    for filename in os.listdir('outputs'):
-        if filename.endswith('.json') and filename.startswith('output_'):
-            filepath = os.path.join('outputs', filename)
+    # FALLBACK: Also load from database (for posts generated via unified dashboard)
+    try:
+        db_posts = db.get_all_posts()
+        for db_post in db_posts:
             try:
-                with open(filepath, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                    
-                if 'posts' in data and data['posts']:
-                    for post_index, post in enumerate(data['posts']):
-                        content_item = {
-                            'id': post.get('temp_post_id', f"{filename}_{post_index}"),
-                            'title': post.get('title', 'No Title'),
-                            'content': post.get('content', ''),
-                            'topic': post.get('topic', 'GENERAL'),
-                            'username': post.get('username', 'Anonymous'),
-                            'created_at': post.get('created_at', ''),
-                            'comments': post.get('comments', []),
-                            'filename': filename,
-                            'post_index': post_index,
-                            'preview': strip_html_tags(post.get('content', ''))[:200] + '...' if len(strip_html_tags(post.get('content', ''))) > 200 else strip_html_tags(post.get('content', '')),
-                            'published': post.get('published', False),
-                            'published_at': post.get('published_at', ''),
-                            'external_id': post.get('external_id', '')
-                        }
-                        content_list.append(content_item)
+                output_data = json.loads(db_post['output'])
+                if 'posts' in output_data and output_data['posts']:
+                    for post_index, post in enumerate(output_data['posts']):
+                        # Check if this post is already in content_list (avoid duplicates)
+                        post_id = post.get('temp_post_id', f"db_{db_post['url']}_{post_index}")
+                        if not any(item['id'] == post_id for item in content_list):
+                            content_item = {
+                                'id': post_id,
+                                'title': post.get('title', 'No Title'),
+                                'content': post.get('content', ''),
+                                'topic': post.get('topic', 'GENERAL'),
+                                'username': post.get('username', 'Anonymous'),
+                                'created_at': post.get('created_at', ''),
+                                'comments': post.get('comments', []),
+                                'filename': f"database_{db_post['created_at']}",
+                                'post_index': post_index,
+                                'preview': strip_html_tags(post.get('content', ''))[:200] + '...' if len(strip_html_tags(post.get('content', ''))) > 200 else strip_html_tags(post.get('content', '')),
+                                'published': post.get('published', False),
+                                'published_at': post.get('published_at', ''),
+                                'external_id': post.get('external_id', ''),
+                                'source': 'database'
+                            }
+                            content_list.append(content_item)
             except Exception as e:
-                print(f"Error reading {filename}: {e}")
+                print(f"Error processing database post: {e}")
                 continue
+    except Exception as e:
+        print(f"Error loading from database: {e}")
     
     # Sort by created_at descending (newest first)
     content_list.sort(key=lambda x: x.get('created_at', ''), reverse=True)
     return jsonify(content_list)
+
+@app.route('/api/scrape-article', methods=['POST'])
+def scrape_article():
+    """Scrape a single article and store in database without generating post"""
+    try:
+        data = request.get_json()
+        url = data.get('url')
+        
+        if not url:
+            return jsonify({'success': False, 'error': 'URL is required'}), 400
+        
+        # Check if already scraped
+        existing_article = db.get_article(url)
+        if existing_article:
+            return jsonify({
+                'success': True,
+                'message': 'Article already scraped',
+                'article': existing_article
+            })
+        
+        # Import the scraper function
+        from news_scraper import extract_article
+        
+        # Scrape the article
+        article = extract_article(url)
+        if not article:
+            return jsonify({'success': False, 'error': 'Failed to extract article content'}), 400
+        
+        # Save to database
+        db.save_article(url, article['title'], article['text'])
+        
+        return jsonify({
+            'success': True,
+            'message': 'Article scraped successfully',
+            'article': {
+                'url': url,
+                'title': article['title'],
+                'text': article['text'],
+                'word_count': len(article['text'].split()) if article['text'] else 0
+            }
+        })
+        
+    except Exception as e:
+        print(f"Error scraping article: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/scraped-articles')
+def get_scraped_articles():
+    """API endpoint to get all scraped articles from database"""
+    try:
+        articles = db.get_all_articles()
+        
+        # Format articles for frontend display
+        article_list = []
+        for article in articles:
+            # Create preview from text
+            text = article.get('text', '')
+            preview = text[:300] + '...' if len(text) > 300 else text
+            
+            article_item = {
+                'id': f"article_{hash(article['url'])}",
+                'url': article['url'],
+                'title': article.get('title', 'No Title'),
+                'text': text,
+                'preview': preview,
+                'extracted_at': article.get('extracted_at', ''),
+                'source_domain': extract_domain(article['url']),
+                'word_count': len(text.split()) if text else 0
+            }
+            article_list.append(article_item)
+        
+        # Sort by extracted_at descending (newest first)
+        article_list.sort(key=lambda x: x.get('extracted_at', ''), reverse=True)
+        return jsonify(article_list)
+        
+    except Exception as e:
+        print(f"Error fetching scraped articles: {e}")
+        return jsonify([])
+
+@app.route('/api/search-news', methods=['POST'])
+def search_news_api():
+    """API endpoint for news search"""
+    try:
+        data = request.get_json()
+        query = data.get('query', '').strip()
+        
+        if not query:
+            return jsonify({'success': False, 'error': 'Search query is required'}), 400
+        
+        api_token = os.getenv('MARKETAUX_API_TOKEN')
+        if not api_token:
+            return jsonify({'success': False, 'error': 'API token not configured'}), 500
+        
+        api_url = 'https://api.marketaux.com/v1/news/all'
+        three_days_ago = datetime.now() - timedelta(days=3)
+        params = {
+            'api_token': api_token,
+            'search': query,
+            'entity_types': 'equity',
+            'language': 'en',
+            'countries': 'in',
+            'limit': 15,
+            'published_after': three_days_ago.strftime('%Y-%m-%dT%H:%M:%S')
+        }
+        
+        response = requests.get(api_url, params=params, timeout=10)
+        response.raise_for_status()
+        news_data = response.json()
+        news_results = news_data.get('data', [])
+        
+        # Format results for frontend
+        formatted_results = []
+        for article in news_results:
+            formatted_results.append({
+                'url': article.get('url', ''),
+                'title': article.get('title', ''),
+                'description': article.get('description', ''),
+                'source': article.get('source', ''),
+                'published_on': article.get('published_at', ''),
+                'image_url': article.get('image_url', ''),
+                'snippet': article.get('snippet', '')
+            })
+        
+        return jsonify({
+            'success': True,
+            'results': formatted_results,
+            'query': query,
+            'count': len(formatted_results)
+        })
+        
+    except requests.exceptions.RequestException as e:
+        return jsonify({'success': False, 'error': f'News API error: {str(e)}'}), 500
+    except Exception as e:
+        print(f"Search API error: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/generate-post', methods=['POST'])
+def generate_post_from_scraped():
+    """Generate a forum post from a scraped article"""
+    try:
+        data = request.get_json()
+        url = data.get('url')
+        topic = data.get('topic')
+        
+        if not url or not topic:
+            return jsonify({'success': False, 'error': 'URL and topic are required'}), 400
+        
+        # Check if article exists in database
+        article = db.get_article(url)
+        if not article:
+            return jsonify({'success': False, 'error': 'Article not found in database. Please scrape it first.'}), 404
+        
+        # Generate the post using existing process_article function
+        result = process_article(url, topic)
+        
+        if result and result.get('posts'):
+            # IMPORTANT: Also save to JSON file so it appears in /api/content
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+            output_filename = f'outputs/output_unified_{timestamp}.json'
+            
+            try:
+                with open(output_filename, 'w', encoding='utf-8') as f:
+                    json.dump(result, f, indent=2, ensure_ascii=False)
+                print(f"DEBUG: Saved unified post to {output_filename}")
+            except Exception as e:
+                print(f"WARNING: Failed to save to JSON file: {e}")
+            
+            return jsonify({
+                'success': True,
+                'message': 'Post generated successfully',
+                'post': result['posts'][0] if result['posts'] else None
+            })
+        elif result and result.get('error'):
+            return jsonify({'success': False, 'error': result['message']}), 400
+        else:
+            return jsonify({'success': False, 'error': 'Failed to generate post'}), 500
+            
+    except Exception as e:
+        print(f"Error generating post: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+def extract_domain(url):
+    """Extract domain from URL for display"""
+    try:
+        from urllib.parse import urlparse
+        return urlparse(url).netloc
+    except:
+        return 'Unknown'
 
 def create_backup(filepath):
     """Create a backup of the file before editing"""
@@ -977,6 +1236,447 @@ def direct_publish_test():
             'details': error_details
         }), 500
 
+
+# Workflow Management API Endpoints
+
+@app.route('/workflow')
+def workflow():
+    """Main workflow management page"""
+    return render_template('workflow.html')
+
+def _get_action_buttons(item):
+    buttons = []
+    # Preview button is always available
+    buttons.append(
+        f'<button class="action-btn btn-preview" data-action="preview" data-item-id="{item["id"]}" title="Preview">'
+        '<i class="fas fa-eye"></i>'
+        '</button>'
+    )
+
+    # Add other buttons based on type and status
+    if item['type'] == 'search_result' and item['status'] == 'pending':
+        buttons.append(
+            f'<button class="action-btn btn-parse" data-action="parse" data-item-id="{item["id"]}" title="Parse Article">'
+            '<i class="fas fa-download"></i>'
+            '</button>'
+        )
+    elif item['type'] == 'parsed_news' and item['status'] == 'pending':
+        buttons.append(
+            f'<button class="action-btn btn-generate" data-action="generate" data-item-id="{item["id"]}" title="Generate Post">'
+            '<i class="fas fa-magic"></i>'
+            '</button>'
+        )
+    elif item['type'] == 'generated_post' and item['status'] == 'pending':
+        buttons.append(
+            f'<button class="action-btn btn-publish" data-action="publish" data-item-id="{item["id"]}" title="Publish Post">'
+            '<i class="fas fa-share"></i>'
+            '</button>'
+        )
+    
+    return ' '.join(buttons)
+
+def _process_item_for_response(item):
+    # Add the server-generated action buttons HTML to the item dictionary
+    item['actions_html'] = _get_action_buttons(item)
+    if 'children' in item:
+        item['children'] = [_process_item_for_response(child) for child in item['children']]
+    return item
+
+@app.route('/api/workflow-items')
+def get_workflow_items():
+    """Get all workflow items in hierarchical structure with server-side generated actions"""
+    try:
+        hierarchy = db.get_workflow_hierarchy()
+        # Process each item in the hierarchy to add the actions_html
+        processed_hierarchy = [_process_item_for_response(item) for item in hierarchy]
+        return jsonify(processed_hierarchy)
+    except Exception as e:
+        print(f"Error fetching workflow items: {e}")
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/workflow-items', methods=['POST'])
+def create_workflow_item():
+    """Create a new workflow item from search results"""
+    try:
+        data = request.get_json()
+        search_results = data.get('search_results', [])
+        
+        created_items = []
+        for result in search_results:
+            item_id = db.create_workflow_item(
+                item_type='search_result',
+                title=result.get('title', 'Untitled'),
+                url=result.get('url'),
+                metadata={
+                    'source': result.get('source', ''),
+                    'published_date': result.get('published_date', ''),
+                    'description': result.get('description', '')
+                }
+            )
+            created_items.append(item_id)
+        
+        return jsonify({
+            'success': True,
+            'created_items': created_items,
+            'message': f'Created {len(created_items)} workflow items'
+        })
+    except Exception as e:
+        print(f"Error creating workflow items: {e}")
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/workflow-items/<int:item_id>/parse', methods=['POST'])
+def parse_workflow_item(item_id):
+    """Parse a search result URL to extract article content"""
+    try:
+        from news_scraper import extract_article
+        
+        item = db.get_workflow_item(item_id)
+        if not item or item['type'] != 'search_result':
+            return jsonify({'error': 'Invalid item or not a search result'}), 400
+        
+        # Update status to processing
+        db.update_workflow_item(item_id, status='processing')
+        
+        # Extract article using existing working function
+        result = extract_article(item['url'])
+        if result and result.get('title') and result.get('text'):
+            # Create parsed news child item
+            parsed_id = db.create_workflow_item(
+                item_type='parsed_news',
+                title=result['title'],
+                url=item['url'],
+                content=result['text'],  # Use 'text' field from extract_article
+                parent_id=item_id,
+                metadata={
+                    'extraction_method': 'news_scraper',
+                    'original_search_title': item['title']
+                }
+            )
+            
+            # Update parent status
+            db.update_workflow_item(item_id, status='completed')
+            
+            # Also save to existing articles table for compatibility
+            db.save_article(item['url'], result['title'], result['text'])
+            
+            return jsonify({
+                'success': True,
+                'parsed_item_id': parsed_id,
+                'title': result['title'],
+                'word_count': len(result['text'].split()),
+                'message': 'Article parsed successfully'
+            })
+        else:
+            db.update_workflow_item(item_id, status='failed')
+            return jsonify({'error': 'Failed to parse article - no content extracted'}), 500
+            
+    except Exception as e:
+        print(f"Error parsing workflow item: {e}")
+        db.update_workflow_item(item_id, status='failed')
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/workflow-items/<int:item_id>/generate', methods=['POST'])
+def generate_post_from_workflow(item_id):
+    """Generate post from parsed news item"""
+    print(f"=== POST GENERATION START ===")
+    print(f"Item ID: {item_id}")
+    
+    try:
+        data = request.get_json()
+        topic = data.get('topic', 'GENERAL')
+        print(f"Topic: {topic}")
+        
+        item = db.get_workflow_item(item_id)
+        if not item or item['type'] != 'parsed_news':
+            print(f"ERROR: Invalid item - Type: {item['type'] if item else 'None'}")
+            return jsonify({'error': 'Invalid item or not parsed news'}), 400
+        
+        print(f"Item details - Title: {item['title'][:50]}..., URL: {item['url']}")
+        print(f"Item content length: {len(item.get('content', ''))} chars")
+        
+        # Update status to processing
+        db.update_workflow_item(item_id, status='processing')
+        print(f"Updated item status to 'processing'")
+        
+        # Generate post using existing process_article function
+        print(f"Calling process_article with URL: {item['url']}, Topic: {topic}")
+        result = process_article(item['url'], forced_topic=topic)
+        print(f"process_article returned: {type(result)}")
+        
+        if result:
+            print(f"Result keys: {list(result.keys()) if isinstance(result, dict) else 'Not a dict'}")
+            if isinstance(result, dict) and 'error' in result:
+                print(f"ERROR in result: {result['error']} - {result.get('message', '')}")
+                db.update_workflow_item(item_id, status='failed')
+                return jsonify({'error': result['message']}), 500
+        
+        if result and result.get('posts'):
+            post_data = result['posts'][0]
+            print(f"Generated post title: {post_data.get('title', 'No title')}")
+            print(f"Generated post content length: {len(post_data.get('content', ''))}")
+            
+            # Create generated post child item
+            post_id = db.create_workflow_item(
+                item_type='generated_post',
+                title=post_data.get('title', 'Generated Post'),
+                url=item['url'],
+                content=post_data.get('content', ''),
+                parent_id=item_id,
+                metadata={
+                    'topic': topic,
+                    'username': post_data.get('username', ''),
+                    'generation_method': 'openrouter_api',
+                    'temp_post_id': post_data.get('temp_post_id', '')
+                }
+            )
+            
+            # Update parent to completed (post has been generated)
+            # Generated post starts as pending (until published)
+            db.update_workflow_item(item_id, status='completed')  # Update parent (parsed_news) - post generated
+            # post_id starts as pending by default - ready to be published
+            print(f"Created generated post with ID: {post_id}")
+            
+            # Save to JSON file for compatibility
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+            output_filename = f'outputs/output_workflow_{timestamp}.json'
+            try:
+                with open(output_filename, 'w', encoding='utf-8') as f:
+                    json.dump(result, f, indent=2, ensure_ascii=False)
+                print(f"Saved output to: {output_filename}")
+            except Exception as e:
+                print(f"WARNING: Failed to save to JSON file: {e}")
+            
+            print(f"=== POST GENERATION SUCCESS ===")
+            return jsonify({
+                'success': True,
+                'post_item_id': post_id,
+                'post': post_data,
+                'message': 'Post generated successfully'
+            })
+        else:
+            print(f"ERROR: No posts in result or result is None")
+            print(f"Result value: {result}")
+            db.update_workflow_item(item_id, status='failed')
+            return jsonify({'error': 'Failed to generate post - no content returned'}), 500
+            
+    except Exception as e:
+        print(f"EXCEPTION in generate_post_from_workflow: {e}")
+        import traceback
+        print(f"Traceback: {traceback.format_exc()}")
+        try:
+            db.update_workflow_item(item_id, status='failed')
+        except Exception as db_error:
+            print(f"Additional error updating item status: {db_error}")
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/workflow-items/<int:item_id>/publish', methods=['POST'])
+def publish_workflow_post(item_id):
+    """Publish generated post to external API"""
+    try:
+        item = db.get_workflow_item(item_id)
+        if not item or item['type'] != 'generated_post':
+            return jsonify({'error': 'Invalid item or not a generated post'}), 400
+        
+        print(f"Publishing workflow post with ID: {item_id}")
+        print(f"Post title: {item['title']}")
+        print(f"Post metadata: {item.get('metadata', {})}")
+        
+        # Update status to processing
+        db.update_workflow_item(item_id, status='processing')
+        
+        # Get the temp_post_id from metadata
+        metadata = item.get('metadata', {})
+        temp_post_id = metadata.get('temp_post_id')
+        
+        if not temp_post_id:
+            print(f"No temp_post_id found in metadata, generating one")
+            import time
+            import random
+            timestamp = str(int(time.time()))[-6:]
+            random_num = random.randint(100, 999)
+            temp_post_id = f"workflow_{timestamp}_{random_num}"
+        
+        # Try to load comments/replies from existing JSON files like content page does
+        comments = []
+        try:
+            output_files = glob.glob(os.path.join('outputs', 'output_*.json'))
+            for filepath in output_files:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    file_data = json.load(f)
+                    posts = file_data.get('posts', [])
+                    for post in posts:
+                        if post.get('temp_post_id') == temp_post_id:
+                            comments = post.get('comments', [])
+                            print(f"Found {len(comments)} comments for temp_post_id: {temp_post_id}")
+                            break
+                    if comments:
+                        break
+        except Exception as e:
+            print(f"Error loading comments: {e}")
+            comments = []
+        
+        # Create post data in the same format as the working publish endpoint
+        post_data = {
+            'temp_post_id': temp_post_id,
+            'title': item['title'],
+            'content': item['content'],
+            'topic': metadata.get('topic', 'GENERAL'),
+            'username': metadata.get('username', 'standardizedquantum'),
+            'created_at': item['created_at'],
+            'comments': comments  # Include any existing comments/replies
+        }
+        
+        print(f"Publishing post data: {post_data}")
+        
+        # Import and use the same TickertalkAPI class as the working publish endpoint
+        from external_api import TickertalkAPI
+        
+        api = TickertalkAPI()
+        result = api.publish_post(post_data)
+        
+        print(f"=== PUBLISH RESULT FROM TICKERTALK ===")
+        print(f"Full result: {result}")
+        print(f"Success: {result.get('success')}")
+        print(f"Error: {result.get('error')}")
+        print(f"Message: {result.get('message')}")
+        if 'results' in result:
+            print(f"Results: {result['results']}")
+        print(f"=====================================")
+        
+        # Check if the post was actually successfully published
+        # TickerTalk returns success=true even when posts fail
+        # We need to check the individual post result
+        post_published_successfully = False
+        if result.get('success') and result.get('results'):
+            first_result = result['results'][0]
+            if first_result.get('status') == 'success' or (result.get('successful', 0) > 0):
+                post_published_successfully = True
+        
+        if post_published_successfully:
+            # Update workflow item with published status - change from pending to completed
+            db.update_workflow_item(item_id, status='completed', metadata={
+                **metadata,
+                'published': True,
+                'published_at': datetime.now().isoformat(),
+                'external_id': result.get('results', [{}])[0].get('post_id') if result.get('results') else None,
+                'temp_post_id': temp_post_id,
+                'publish_response': result  # Store the full response for debugging
+            })
+            
+            # Check if we're using mock mode
+            use_mock = os.getenv("USE_MOCK_API", "true").lower() == "true"
+            if use_mock:
+                result['message'] = "Post published successfully (using mock API)"
+                print("Using mock API mode - post marked as published")
+            else:
+                # Show detailed success message with external validation
+                if result.get('results') and result['results'][0].get('post_id'):
+                    result['message'] = f"Post published successfully to TickerTalk (ID: {result['results'][0]['post_id']})"
+                else:
+                    result['message'] = "Post published successfully (no external ID returned)"
+            
+            return jsonify(result)
+        else:
+            # Publishing failed - extract the actual error message
+            error_message = "Failed to publish post"
+            if result.get('results') and result['results'][0].get('message'):
+                error_message = result['results'][0]['message']
+            elif result.get('message'):
+                error_message = result['message']
+            elif result.get('error'):
+                error_message = result['error']
+            
+            db.update_workflow_item(item_id, status='failed')
+            return jsonify({
+                'success': False,
+                'error': error_message,
+                'message': f"TickerTalk rejected the post: {error_message}"
+            }), 400
+        
+    except Exception as e:
+        print(f"Error publishing workflow post: {e}")
+        import traceback
+        print(f"Traceback: {traceback.format_exc()}")
+        db.update_workflow_item(item_id, status='failed')
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/workflow-items/<int:item_id>/preview')
+def preview_workflow_item(item_id):
+    """Get preview data for workflow item"""
+    try:
+        item = db.get_workflow_item(item_id)
+        if not item:
+            return jsonify({'error': 'Item not found'}), 404
+        
+        preview_data = {
+            'id': item['id'],
+            'type': item['type'],
+            'title': item['title'],
+            'url': item.get('url'),
+            'content': item.get('content', ''),
+            'word_count': item.get('word_count', 0),
+            'status': item['status'],
+            'created_at': item['created_at'],
+            'metadata': item.get('metadata', {})
+        }
+        
+        return jsonify(preview_data)
+        
+    except Exception as e:
+        print(f"Error getting preview: {e}")
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/workflow-items/<int:item_id>', methods=['PATCH'])
+def update_workflow_item_content(item_id):
+    """Update workflow item content and title"""
+    try:
+        data = request.get_json()
+        
+        item = db.get_workflow_item(item_id)
+        if not item:
+            return jsonify({'error': 'Item not found'}), 404
+        
+        # Only allow editing parsed_news and generated_post
+        if item['type'] not in ['parsed_news', 'generated_post']:
+            return jsonify({'error': 'Item type not editable'}), 400
+        
+        update_fields = {}
+        
+        # Update content if provided
+        if 'content' in data:
+            update_fields['content'] = data['content']
+            # Recalculate word count
+            import re
+            text_content = re.sub(r'<[^>]*>', '', data['content'])  # Strip HTML
+            word_count = len(text_content.split()) if text_content.strip() else 0
+            update_fields['word_count'] = word_count
+        
+        # Update title if provided (for generated posts)
+        if 'title' in data and item['type'] == 'generated_post':
+            # Ensure title is plain text and within limits
+            title = data['title'].strip()
+            title = re.sub(r'<[^>]*>', '', title)  # Strip HTML
+            title = title.replace('<', '').replace('>', '')  # Remove angle brackets
+            if len(title) > 150:
+                title = title[:150].rstrip()
+                last_space = title.rfind(' ')
+                if last_space > 20:  # Don't cut too early
+                    title = title[:last_space]
+            update_fields['title'] = title
+        
+        if not update_fields:
+            return jsonify({'error': 'No valid fields to update'}), 400
+        
+        print(f"Updating workflow item {item_id} with fields: {list(update_fields.keys())}")
+        
+        # Update the item
+        db.update_workflow_item(item_id, **update_fields)
+        
+        return jsonify({'message': 'Item updated successfully'})
+        
+    except Exception as e:
+        print(f"Error updating workflow item: {e}")
+        return jsonify({'error': str(e)}), 500
 
 # Ensure the app entrypoint is the last thing in the file
 if __name__ == '__main__':

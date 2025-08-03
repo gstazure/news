@@ -13,7 +13,11 @@ from replies import generate_reply
 load_dotenv()
 
 def generate_temp_id(prefix, index):
-    return f"{prefix}_{str(index).zfill(3)}"
+    """Generate a unique temporary ID using timestamp and random number"""
+    import time
+    timestamp = str(int(time.time()))[-6:]  # Last 6 digits of timestamp
+    random_num = random.randint(100, 999)
+    return f"{prefix}_{timestamp}_{random_num}"
 
 def generate_random_past_timestamp(reference_time):
     """Generate a random timestamp within the last 24 hours"""
@@ -112,31 +116,63 @@ def create_formatted_output(post_content, post_author, comments, forced_topic=No
 
 def process_article(url, forced_topic=None):
     """Process a single article URL and return the generated post data"""
+    print(f"[MAIN] Starting process_article for URL: {url}")
+    print(f"[MAIN] Forced topic: {forced_topic}")
     
     # Check cache first
     if forced_topic:
+        print(f"[MAIN] Checking cache for URL: {url}, Topic: {forced_topic}")
         cached_post = db.get_generated_post(url, forced_topic)
         if cached_post:
+            print(f"[MAIN] Found cached post, returning cached result")
             return cached_post['output']
+        else:
+            print(f"[MAIN] No cached post found")
     
     # Load personas
-    with open('personas.json', 'r', encoding='utf-8') as f:
-        personas = json.load(f)
+    print(f"[MAIN] Loading personas...")
+    try:
+        with open('personas.json', 'r', encoding='utf-8') as f:
+            personas = json.load(f)
+        print(f"[MAIN] Loaded {len(personas)} personas")
+    except Exception as e:
+        print(f"[MAIN] ERROR loading personas: {e}")
+        return {
+            "error": "persona_load_failed",
+            "message": f"Failed to load personas: {str(e)}",
+            "url": url
+        }
 
+    print(f"[MAIN] Extracting article from URL...")
     article = extract_article(url)
     
     if not article:
-        return None
+        print(f"[MAIN] ERROR: Article extraction failed")
+        return {
+            "error": "article_extraction_failed",
+            "message": "Failed to extract article content",
+            "url": url
+        }
+    
+    print(f"[MAIN] Article extracted - Title: {article.get('title', 'No title')[:50]}...")
+    print(f"[MAIN] Article text length: {len(article.get('text', ''))} chars")
 
     persona = random.choice(personas)  # Pick a random persona
+    print(f"[MAIN] Selected persona: {persona['name']} ({persona['style']})")
+    
+    print(f"[MAIN] Calling generate_post...")
     generated_post = generate_post(article['title'], article['text'], persona)
     
     if not generated_post:
+        print(f"[MAIN] ERROR: generate_post returned None")
         return {
             "error": "post_generation_failed",
             "message": "Failed to generate post using OpenRouter API",
             "url": url
         }
+    
+    print(f"[MAIN] Post generated successfully")
+    print(f"[MAIN] Generated post keys: {list(generated_post.keys()) if isinstance(generated_post, dict) else 'Not a dict'}")
     
     # Extract title and content from the generated post
     title = generated_post['title']

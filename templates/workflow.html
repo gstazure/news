@@ -1028,13 +1028,13 @@
                         
                         <!-- Preview Mode -->
                         <div id="previewMode" style="display: none;">
-                            <div class="border p-3 bg-light" style="min-height: 300px;">
-                                <div id="contentPreview">${item.content || 'No content available'}</div>
+                            <div class="border p-3 bg-light" style="min-height: 300px; white-space: pre-wrap;">
+                                <div id="contentPreview"></div>
                             </div>
                         </div>
                     ` : `
-                        <div class="border p-3" style="max-height: 400px; overflow-y: auto;">
-                            ${item.type === 'generated_post' ? item.content : (item.content || 'No content available')}
+                        <div class="border p-3" style="max-height: 400px; overflow-y: auto; white-space: pre-wrap;">
+                            <div class="content-display"></div>
                         </div>
                     `}
                 </div>
@@ -1050,6 +1050,19 @@
                 </div>
                 ` : ''}
             `;
+
+            // Set content using innerHTML for proper HTML rendering
+            setTimeout(() => {
+                const contentPreview = document.getElementById('contentPreview');
+                const contentDisplay = document.querySelector('.content-display');
+                
+                if (contentPreview) {
+                    contentPreview.innerHTML = item.content || 'No content available';
+                }
+                if (contentDisplay) {
+                    contentDisplay.innerHTML = item.content || 'No content available';
+                }
+            }, 10);
 
             // Load replies if this is a generated post
             if (item.type === 'generated_post' && item.metadata && item.metadata.temp_post_id) {
